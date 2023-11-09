@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "454458254376",
+    "project_id": "sgbd-nisidental",
+    "storage_bucket": "sgbd-nisidental.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454458254376:android:a25960b05f8e4917d0c11d",
+        "android_client_info": {
+          "package_name": "com.sofwarecr.nisidental"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqUH85Jam_dT9HIab3hr2ef4-YGFuBLn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
