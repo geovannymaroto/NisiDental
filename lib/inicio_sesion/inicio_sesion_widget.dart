@@ -225,7 +225,7 @@ class _InicioSesionWidgetState extends State<InicioSesionWidget> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    '¿Olvidó su contraseña? Recuperar ahora',
+                    '¿Olvidó su contraseña? Recuperar contraseña ahora?',
                     style: FlutterFlowTheme.of(context).bodyMedium,
                   ),
                 ],

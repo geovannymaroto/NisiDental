@@ -55,7 +55,7 @@ class _SuministroMedicoWidgetState extends State<SuministroMedicoWidget> {
           backgroundColor: FlutterFlowTheme.of(context).secondary,
           automaticallyImplyLeading: false,
           title: Text(
-            '           Inventario de suministro médico',
+            '           Inventario suministros médicos',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,

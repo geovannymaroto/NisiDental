@@ -55,7 +55,7 @@ class _GaleriaWidgetState extends State<GaleriaWidget> {
           backgroundColor: FlutterFlowTheme.of(context).secondary,
           automaticallyImplyLeading: false,
           title: Text(
-            '                                   Galeria',
+            '                                   Galeria NISI',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,

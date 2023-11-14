@@ -103,7 +103,7 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                                   ),
                                 ),
                                 Text(
-                                  'Ale Alvarado',
+                                  'Ale Alvarado Soto',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(

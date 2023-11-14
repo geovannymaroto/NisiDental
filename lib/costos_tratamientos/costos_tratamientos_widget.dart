@@ -103,7 +103,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                           ),
                     ),
                     Text(
-                      'Precio: ₡ 20.000',
+                      'Precio: ₡ 25.000',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             fontSize: 15.0,
