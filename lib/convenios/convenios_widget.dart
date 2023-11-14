@@ -52,13 +52,14 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondary,
+          backgroundColor: Color(0xFF020A09),
           automaticallyImplyLeading: false,
           title: Text(
-            'Convenios asociados a NISI',
+            '        Asociaciones con NISI',
+            textAlign: TextAlign.end,
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
-                  color: Colors.white,
+                  fontFamily: 'Playfair Display',
+                  color: FlutterFlowTheme.of(context).secondary,
                   fontSize: 22.0,
                 ),
           ),
@@ -96,7 +97,7 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
                           child: Image.asset(
-                            'assets/images/samtec.png',
+                            'assets/images/dos-pinos-1.png',
                             width: 300.0,
                             height: 200.0,
                             fit: BoxFit.cover,

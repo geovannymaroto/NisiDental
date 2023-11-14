@@ -126,6 +126,51 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Convenios',
           path: '/convenios',
           builder: (context, params) => ConveniosWidget(),
+        ),
+        FFRoute(
+          name: 'Contactanos',
+          path: '/contactanos',
+          builder: (context, params) => ContactanosWidget(),
+        ),
+        FFRoute(
+          name: 'Services',
+          path: '/services',
+          builder: (context, params) => ServicesWidget(),
+        ),
+        FFRoute(
+          name: 'PreguntasFrecuentes',
+          path: '/preguntasFrecuentes',
+          builder: (context, params) => PreguntasFrecuentesWidget(),
+        ),
+        FFRoute(
+          name: 'ResenaClientes',
+          path: '/resenaClientes',
+          builder: (context, params) => ResenaClientesWidget(),
+        ),
+        FFRoute(
+          name: 'Galeria',
+          path: '/galeria',
+          builder: (context, params) => GaleriaWidget(),
+        ),
+        FFRoute(
+          name: 'CostosTratamientos',
+          path: '/costosTratamientos',
+          builder: (context, params) => CostosTratamientosWidget(),
+        ),
+        FFRoute(
+          name: 'SuministroMedico',
+          path: '/suministroMedico',
+          builder: (context, params) => SuministroMedicoWidget(),
+        ),
+        FFRoute(
+          name: 'InicioSesion',
+          path: '/inicioSesion',
+          builder: (context, params) => InicioSesionWidget(),
+        ),
+        FFRoute(
+          name: 'Registro',
+          path: '/registro',
+          builder: (context, params) => RegistroWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

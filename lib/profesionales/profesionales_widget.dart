@@ -52,9 +52,9 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFF1F4F8),
+        backgroundColor: Color(0xFF020A09),
         appBar: AppBar(
-          backgroundColor: Color(0xFFF1F4F8),
+          backgroundColor: Color(0xFF020A09),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -92,14 +92,14 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text(
-                            'Profesionales  NISI',
+                            'Profesionales  ',
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context)
                                 .headlineSmall
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  fontFamily: 'Merriweather',
                                   color: FlutterFlowTheme.of(context).secondary,
-                                  fontSize: 22.0,
+                                  fontSize: 27.0,
                                   fontWeight: FontWeight.bold,
                                 ),
                           ),
@@ -147,14 +147,15 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 8.0),
                                   child: Text(
-                                    'NISI Dental Costa Rica',
+                                    '            NISI Dental',
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
                                         .override(
-                                          fontFamily: 'Plus Jakarta Sans',
+                                          fontFamily: 'Merriweather',
                                           color: Color(0xFF101213),
                                           fontSize: 24.0,
-                                          fontWeight: FontWeight.w500,
+                                          fontWeight: FontWeight.normal,
+                                          fontStyle: FontStyle.italic,
                                         ),
                                   ),
                                 ),
@@ -172,7 +173,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 8.0, 0.0, 0.0),
+                                      0.0, 10.0, 0.0, 0.0),
                                   child: Text(
                                     'Brinda el más cálido servicio en Odontología  de mano de altos profesionales, con equipos de alta tecnología, y excelentes instalaciones.\n\nNuestro equipo de profesionales con grandes capacidades y conocimientos en el campo de la salud dental está a su más atenta disposición.',
                                     textAlign: TextAlign.start,
@@ -236,8 +237,8 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                       decoration: BoxDecoration(
                                                         shape: BoxShape.circle,
                                                       ),
-                                                      child: Image.network(
-                                                        'https://images.unsplash.com/photo-1654701473955-9aacc05202d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60',
+                                                      child: Image.asset(
+                                                        'assets/images/dennis.png',
                                                         fit: BoxFit.cover,
                                                       ),
                                                     ),
@@ -257,7 +258,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                                 .start,
                                                         children: [
                                                           Text(
-                                                            'Andrew Daniels',
+                                                            'Dr.Dennis Quintero',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyLarge
@@ -282,18 +283,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                               children: [
                                                                 TextSpan(
                                                                   text:
-                                                                      '@correo',
-                                                                  style:
-                                                                      TextStyle(),
-                                                                ),
-                                                                TextSpan(
-                                                                  text: ' • ',
-                                                                  style:
-                                                                      TextStyle(),
-                                                                ),
-                                                                TextSpan(
-                                                                  text:
-                                                                      'texto adicional',
+                                                                      '- Conferencista nacional e internacional.\n- Gold Member Style Italiano Endodontics\n- Especialista Salvando Dientes\n',
                                                                   style:
                                                                       TextStyle(),
                                                                 )
@@ -339,7 +329,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                                   4.0,
                                                                   12.0),
                                                       child: Text(
-                                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
+                                                        'El Dr.  Dennis, cofundador de NISI Dental, profesional apasionado por la odontología.\n\nSu compromiso con la salud bucal contribuye al bienestar integral de quienes confían en su experiencia y dedicación.',
                                                         style: FlutterFlowTheme
                                                                 .of(context)
                                                             .labelMedium
@@ -403,8 +393,8 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                       decoration: BoxDecoration(
                                                         shape: BoxShape.circle,
                                                       ),
-                                                      child: Image.network(
-                                                        'https://images.unsplash.com/photo-1654701473955-9aacc05202d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60',
+                                                      child: Image.asset(
+                                                        'assets/images/Jason.png',
                                                         fit: BoxFit.cover,
                                                       ),
                                                     ),
@@ -424,7 +414,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                                 .start,
                                                         children: [
                                                           Text(
-                                                            'Andrew Daniels',
+                                                            'Dr. Jason Quintero',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyLarge
@@ -449,18 +439,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                               children: [
                                                                 TextSpan(
                                                                   text:
-                                                                      '@correo',
-                                                                  style:
-                                                                      TextStyle(),
-                                                                ),
-                                                                TextSpan(
-                                                                  text: ' • ',
-                                                                  style:
-                                                                      TextStyle(),
-                                                                ),
-                                                                TextSpan(
-                                                                  text:
-                                                                      'texto ',
+                                                                      '-Odontologo general\n-Se especializa en tratamiento de alineadores',
                                                                   style:
                                                                       TextStyle(),
                                                                 )
@@ -506,7 +485,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                                   4.0,
                                                                   12.0),
                                                       child: Text(
-                                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
+                                                        'El Dr.  Jason, cofundador de NISI Dental.\nEl profesional en odontología, más allá de ser un experto en técnicas y procedimientos, es un cuidador dedicado que valora la importancia de una sonrisa saludable en la calidad de vida.',
                                                         style: FlutterFlowTheme
                                                                 .of(context)
                                                             .labelMedium
@@ -552,8 +531,8 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                   decoration: BoxDecoration(
                                                     shape: BoxShape.circle,
                                                   ),
-                                                  child: Image.network(
-                                                    'https://images.unsplash.com/photo-1654701473955-9aacc05202d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60',
+                                                  child: Image.asset(
+                                                    'assets/images/raquel.png',
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -569,7 +548,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'Andrew Daniels',
+                                                        'Raquel Madrigal',
                                                         style: FlutterFlowTheme
                                                                 .of(context)
                                                             .bodyLarge
@@ -592,17 +571,8 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                         text: TextSpan(
                                                           children: [
                                                             TextSpan(
-                                                              text: '@correo',
-                                                              style:
-                                                                  TextStyle(),
-                                                            ),
-                                                            TextSpan(
-                                                              text: ' • ',
-                                                              style:
-                                                                  TextStyle(),
-                                                            ),
-                                                            TextSpan(
-                                                              text: 'texto',
+                                                              text:
+                                                                  'Asistente en NISI',
                                                               style:
                                                                   TextStyle(),
                                                             )
@@ -642,7 +612,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                       .fromSTEB(
                                                           0.0, 4.0, 4.0, 12.0),
                                                   child: Text(
-                                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
+                                                    'Es asistente de NISI desde hace 5 años, nos brinda  el funcionamiento eficiente y acogedor de la práctica odontológica. Su destreza administrativa y habilidades interpersonales hacen que la experiencia del paciente sea fluida y cómoda desde el momento en que ingresan por la puerta.',
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelMedium
@@ -689,8 +659,8 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
-                                        child: Image.network(
-                                          'https://images.unsplash.com/photo-1654701473955-9aacc05202d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60',
+                                        child: Image.asset(
+                                          'assets/images/angie.png',
                                           fit: BoxFit.cover,
                                         ),
                                       ),
@@ -703,7 +673,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'Andrew Daniels',
+                                              'Angie León',
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyLarge
@@ -722,15 +692,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                               text: TextSpan(
                                                 children: [
                                                   TextSpan(
-                                                    text: '@correo',
-                                                    style: TextStyle(),
-                                                  ),
-                                                  TextSpan(
-                                                    text: ' • ',
-                                                    style: TextStyle(),
-                                                  ),
-                                                  TextSpan(
-                                                    text: 'texto',
+                                                    text: 'Asistente en NISI',
                                                     style: TextStyle(),
                                                   )
                                                 ],
@@ -766,7 +728,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 4.0, 4.0, 12.0),
                                         child: Text(
-                                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
+                                          'Es asistente en NISI desde hace 8 años no solo es la experta en logística detrás de escena, sino también la sonrisa amigable que da la bienvenida y guía a los pacientes en su viaje hacia una salud bucal óptima.',
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
