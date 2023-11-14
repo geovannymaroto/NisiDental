@@ -11,6 +11,18 @@ class RegistroModel extends FlutterFlowModel<RegistroWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
+  // State field(s) for txtnombre widget.
+  FocusNode? txtnombreFocusNode;
+  TextEditingController? txtnombreController;
+  String? Function(BuildContext, String?)? txtnombreControllerValidator;
+  // State field(s) for txtemail widget.
+  FocusNode? txtemailFocusNode;
+  TextEditingController? txtemailController;
+  String? Function(BuildContext, String?)? txtemailControllerValidator;
+  // State field(s) for txtcontrasena widget.
+  FocusNode? txtcontrasenaFocusNode;
+  TextEditingController? txtcontrasenaController;
+  String? Function(BuildContext, String?)? txtcontrasenaControllerValidator;
 
   /// Initialization and disposal methods.
 
@@ -18,6 +30,14 @@ class RegistroModel extends FlutterFlowModel<RegistroWidget> {
 
   void dispose() {
     unfocusNode.dispose();
+    txtnombreFocusNode?.dispose();
+    txtnombreController?.dispose();
+
+    txtemailFocusNode?.dispose();
+    txtemailController?.dispose();
+
+    txtcontrasenaFocusNode?.dispose();
+    txtcontrasenaController?.dispose();
   }
 
   /// Action blocks are added here.
