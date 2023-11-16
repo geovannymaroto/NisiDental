@@ -74,17 +74,8 @@ class _ProductosDisponiblesWidgetState extends State<ProductosDisponiblesWidget>
               color: FlutterFlowTheme.of(context).primaryText,
               size: 30.0,
             ),
-            onPressed: () async {
-              context.pushNamed(
-                'null',
-                extra: <String, dynamic>{
-                  kTransitionInfoKey: TransitionInfo(
-                    hasTransition: true,
-                    transitionType: PageTransitionType.leftToRight,
-                    duration: Duration(milliseconds: 220),
-                  ),
-                },
-              );
+            onPressed: () {
+              print('IconButton pressed ...');
             },
           ),
           title: Text(

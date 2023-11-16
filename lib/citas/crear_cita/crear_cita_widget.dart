@@ -242,6 +242,8 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                               motivoconsulta: _model.listaMotivosValue,
                               doctor: _model.listamedicosValue,
                             ));
+
+                        context.pushNamed('CitaAgendada');
                       },
                       text: 'Crear Cita',
                       options: FFButtonOptions(
