@@ -21,3 +21,5 @@ export '/inicio_sesion/inicio_sesion_widget.dart' show InicioSesionWidget;
 export '/citas/registro/registro_widget.dart' show RegistroWidget;
 export '/productos_disponibles/productos_disponibles_widget.dart'
     show ProductosDisponiblesWidget;
+export '/beneficiosde_n_i_s_i/beneficiosde_n_i_s_i_widget.dart'
+    show BeneficiosdeNISIWidget;
