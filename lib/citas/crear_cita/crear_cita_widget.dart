@@ -50,6 +50,8 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
       );
     }
 
+    context.watch<FFAppState>();
+
     return GestureDetector(
       onTap: () => _model.unfocusNode.canRequestFocus
           ? FocusScope.of(context).requestFocus(_model.unfocusNode)
@@ -242,8 +244,6 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                               motivoconsulta: _model.listaMotivosValue,
                               doctor: _model.listamedicosValue,
                             ));
-
-                        context.pushNamed('CitaAgendada');
                       },
                       text: 'Crear Cita',
                       options: FFButtonOptions(

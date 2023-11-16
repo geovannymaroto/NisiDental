@@ -44,6 +44,8 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
       );
     }
 
+    context.watch<FFAppState>();
+
     return GestureDetector(
       onTap: () => _model.unfocusNode.canRequestFocus
           ? FocusScope.of(context).requestFocus(_model.unfocusNode)

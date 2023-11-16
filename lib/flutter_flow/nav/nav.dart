@@ -171,16 +171,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Registro',
           path: '/registro',
           builder: (context, params) => RegistroWidget(),
-        ),
-        FFRoute(
-          name: 'ProductosDisponibles',
-          path: '/productosDisponibles',
-          builder: (context, params) => ProductosDisponiblesWidget(),
-        ),
-        FFRoute(
-          name: 'BeneficiosdeNISI',
-          path: '/beneficiosdeNISI',
-          builder: (context, params) => BeneficiosdeNISIWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

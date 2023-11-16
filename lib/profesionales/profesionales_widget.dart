@@ -46,6 +46,8 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
       );
     }
 
+    context.watch<FFAppState>();
+
     return GestureDetector(
       onTap: () => _model.unfocusNode.canRequestFocus
           ? FocusScope.of(context).requestFocus(_model.unfocusNode)
