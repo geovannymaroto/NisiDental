@@ -171,6 +171,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Registro',
           path: '/registro',
           builder: (context, params) => RegistroWidget(),
+        ),
+        FFRoute(
+          name: 'ProductosDisponibles',
+          path: '/productosDisponibles',
+          builder: (context, params) => ProductosDisponiblesWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
