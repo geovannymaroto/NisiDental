@@ -168,7 +168,6 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                           context: context,
                           builder: (alertDialogContext) {
                             return AlertDialog(
-                              title: Text('Registro'),
                               content: Text('Registro exitoso...'),
                               actions: [
                                 TextButton(

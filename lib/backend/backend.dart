@@ -7,9 +7,9 @@ import 'schema/util/firestore_util.dart';
 
 import 'schema/users_record.dart';
 import 'schema/citas_record.dart';
-import 'schema/materiales_record.dart';
-import 'schema/registrar_material_record.dart';
 import 'schema/lista_medicos_record.dart';
+import 'schema/materiales_record.dart';
+import 'schema/registro_material_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart';
@@ -19,9 +19,9 @@ export 'schema/util/schema_util.dart';
 
 export 'schema/users_record.dart';
 export 'schema/citas_record.dart';
-export 'schema/materiales_record.dart';
-export 'schema/registrar_material_record.dart';
 export 'schema/lista_medicos_record.dart';
+export 'schema/materiales_record.dart';
+export 'schema/registro_material_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -97,6 +97,43 @@ Future<List<CitasRecord>> queryCitasRecordOnce({
       singleRecord: singleRecord,
     );
 
+/// Functions to query ListaMedicosRecords (as a Stream and as a Future).
+Future<int> queryListaMedicosRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      ListaMedicosRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<ListaMedicosRecord>> queryListaMedicosRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      ListaMedicosRecord.collection,
+      ListaMedicosRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<ListaMedicosRecord>> queryListaMedicosRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      ListaMedicosRecord.collection,
+      ListaMedicosRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
 /// Functions to query MaterialesRecords (as a Stream and as a Future).
 Future<int> queryMaterialesRecordCount({
   Query Function(Query)? queryBuilder,
@@ -134,78 +171,38 @@ Future<List<MaterialesRecord>> queryMaterialesRecordOnce({
       singleRecord: singleRecord,
     );
 
-/// Functions to query RegistrarMaterialRecords (as a Stream and as a Future).
-Future<int> queryRegistrarMaterialRecordCount({
-  DocumentReference? parent,
+/// Functions to query RegistroMaterialRecords (as a Stream and as a Future).
+Future<int> queryRegistroMaterialRecordCount({
   Query Function(Query)? queryBuilder,
   int limit = -1,
 }) =>
     queryCollectionCount(
-      RegistrarMaterialRecord.collection(parent),
+      RegistroMaterialRecord.collection,
       queryBuilder: queryBuilder,
       limit: limit,
     );
 
-Stream<List<RegistrarMaterialRecord>> queryRegistrarMaterialRecord({
-  DocumentReference? parent,
+Stream<List<RegistroMaterialRecord>> queryRegistroMaterialRecord({
   Query Function(Query)? queryBuilder,
   int limit = -1,
   bool singleRecord = false,
 }) =>
     queryCollection(
-      RegistrarMaterialRecord.collection(parent),
-      RegistrarMaterialRecord.fromSnapshot,
+      RegistroMaterialRecord.collection,
+      RegistroMaterialRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,
     );
 
-Future<List<RegistrarMaterialRecord>> queryRegistrarMaterialRecordOnce({
-  DocumentReference? parent,
+Future<List<RegistroMaterialRecord>> queryRegistroMaterialRecordOnce({
   Query Function(Query)? queryBuilder,
   int limit = -1,
   bool singleRecord = false,
 }) =>
     queryCollectionOnce(
-      RegistrarMaterialRecord.collection(parent),
-      RegistrarMaterialRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-/// Functions to query ListaMedicosRecords (as a Stream and as a Future).
-Future<int> queryListaMedicosRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      ListaMedicosRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<ListaMedicosRecord>> queryListaMedicosRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      ListaMedicosRecord.collection,
-      ListaMedicosRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<ListaMedicosRecord>> queryListaMedicosRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      ListaMedicosRecord.collection,
-      ListaMedicosRecord.fromSnapshot,
+      RegistroMaterialRecord.collection,
+      RegistroMaterialRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

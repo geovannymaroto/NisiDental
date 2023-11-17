@@ -16,7 +16,7 @@ class MaterialesRecord extends FirestoreRecord {
     _initializeFields();
   }
 
-  // "Nombre" field.
+  // "nombre" field.
   String? _nombre;
   String get nombre => _nombre ?? '';
   bool hasNombre() => _nombre != null;
@@ -32,7 +32,7 @@ class MaterialesRecord extends FirestoreRecord {
   bool hasCantidad() => _cantidad != null;
 
   void _initializeFields() {
-    _nombre = snapshotData['Nombre'] as String?;
+    _nombre = snapshotData['nombre'] as String?;
     _imagen = snapshotData['imagen'] as String?;
     _cantidad = castToType<int>(snapshotData['cantidad']);
   }
@@ -78,7 +78,7 @@ Map<String, dynamic> createMaterialesRecordData({
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
-      'Nombre': nombre,
+      'nombre': nombre,
       'imagen': imagen,
       'cantidad': cantidad,
     }.withoutNulls,

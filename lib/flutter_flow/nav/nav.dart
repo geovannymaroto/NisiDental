@@ -163,16 +163,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => SuministroMedicoWidget(),
         ),
         FFRoute(
-          name: 'InicioSesion',
-          path: '/inicioSesion',
-          builder: (context, params) => InicioSesionWidget(),
-        ),
-        FFRoute(
-          name: 'Registro',
-          path: '/registro',
-          builder: (context, params) => RegistroWidget(),
-        ),
-        FFRoute(
           name: 'homePage',
           path: '/homePage',
           builder: (context, params) => HomePageWidget(),

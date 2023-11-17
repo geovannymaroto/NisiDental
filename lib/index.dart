@@ -20,8 +20,6 @@ export '/costos_tratamientos/costos_tratamientos_widget.dart'
     show CostosTratamientosWidget;
 export '/suministro_medico/suministro_medico_widget.dart'
     show SuministroMedicoWidget;
-export '/inicio_sesion/inicio_sesion_widget.dart' show InicioSesionWidget;
-export '/registro/registro_widget.dart' show RegistroWidget;
 export '/inicio/home_page/home_page_widget.dart' show HomePageWidget;
 export '/administrador/agregar_datos_admin/agregar_datos_admin_widget.dart'
     show AgregarDatosAdminWidget;
