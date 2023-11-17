@@ -7,25 +7,25 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'home_page_model.dart';
-export 'home_page_model.dart';
+import 'registro_in_model.dart';
+export 'registro_in_model.dart';
 
-class HomePageWidget extends StatefulWidget {
-  const HomePageWidget({Key? key}) : super(key: key);
+class RegistroInWidget extends StatefulWidget {
+  const RegistroInWidget({Key? key}) : super(key: key);
 
   @override
-  _HomePageWidgetState createState() => _HomePageWidgetState();
+  _RegistroInWidgetState createState() => _RegistroInWidgetState();
 }
 
-class _HomePageWidgetState extends State<HomePageWidget> {
-  late HomePageModel _model;
+class _RegistroInWidgetState extends State<RegistroInWidget> {
+  late RegistroInModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => HomePageModel());
+    _model = createModel(context, () => RegistroInModel());
 
     _model.txtUserController ??= TextEditingController();
     _model.txtUserFocusNode ??= FocusNode();
@@ -248,7 +248,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           }
 
                           context.goNamedAuth(
-                              'RegistrodeMateriales', context.mounted);
+                              'SuministroMedico', context.mounted);
                         },
                         text: 'Ingresar',
                         options: FFButtonOptions(
@@ -289,7 +289,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           }
 
                           context.goNamedAuth(
-                              'RegistrodeMateriales', context.mounted);
+                              'SuministroMedico', context.mounted);
                         },
                         text: 'Registrar',
                         options: FFButtonOptions(

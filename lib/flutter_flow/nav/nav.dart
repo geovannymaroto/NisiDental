@@ -78,21 +78,20 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? RegistrodeMaterialesWidget()
-          : InicioWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? SuministroMedicoWidget() : InicioWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? RegistrodeMaterialesWidget()
+              ? SuministroMedicoWidget()
               : InicioWidget(),
         ),
         FFRoute(
-          name: 'HomePage',
-          path: '/homePage',
-          builder: (context, params) => HomePageWidget(),
+          name: 'RegistroIn',
+          path: '/registroIn',
+          builder: (context, params) => RegistroInWidget(),
         ),
         FFRoute(
           name: 'Inicio',
@@ -160,9 +159,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => CostosTratamientosWidget(),
         ),
         FFRoute(
-          name: 'RegistrodeMateriales',
-          path: '/registrodeMateriales',
-          builder: (context, params) => RegistrodeMaterialesWidget(),
+          name: 'SuministroMedico',
+          path: '/suministroMedico',
+          builder: (context, params) => SuministroMedicoWidget(),
         ),
         FFRoute(
           name: 'InicioSesion',
@@ -173,6 +172,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Registro',
           path: '/registro',
           builder: (context, params) => RegistroWidget(),
+        ),
+        FFRoute(
+          name: 'homePage',
+          path: '/homePage',
+          builder: (context, params) => HomePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

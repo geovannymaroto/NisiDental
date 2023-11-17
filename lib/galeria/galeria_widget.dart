@@ -54,12 +54,13 @@ class _GaleriaWidgetState extends State<GaleriaWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondary,
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           title: Text(
             '                                   Galeria NISI',
+            textAlign: TextAlign.start,
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
+                  fontFamily: 'Noto Serif',
                   color: Colors.white,
                   fontSize: 22.0,
                 ),

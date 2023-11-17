@@ -54,14 +54,14 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFF020A09),
+          backgroundColor: Color(0xFFFFBF69),
           automaticallyImplyLeading: false,
           title: Text(
             '        Asociaciones con NISI',
             textAlign: TextAlign.end,
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Playfair Display',
-                  color: FlutterFlowTheme.of(context).secondary,
+                  fontFamily: 'Noto Serif',
+                  color: Colors.white,
                   fontSize: 22.0,
                 ),
           ),

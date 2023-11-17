@@ -55,7 +55,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondary,
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           title: Text(
             '                      Costo de Tratamientos',

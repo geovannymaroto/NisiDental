@@ -53,15 +53,15 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0x6F71D1B2),
+        backgroundColor: Color(0xFFCBF3F0),
         appBar: AppBar(
-          backgroundColor: Color(0xFF020A09),
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           title: Text(
             '               Preguntas Frecuentes',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
-                  color: FlutterFlowTheme.of(context).secondary,
+                  color: Colors.white,
                   fontSize: 22.0,
                 ),
           ),

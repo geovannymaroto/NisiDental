@@ -56,7 +56,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFF020A09),
+          backgroundColor: Color(0xFFFFBF69),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -76,7 +76,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
             'Servicios',
             style: FlutterFlowTheme.of(context).bodyLarge.override(
                   fontFamily: 'Readex Pro',
-                  color: FlutterFlowTheme.of(context).secondary,
+                  color: Colors.white,
                 ),
           ),
           actions: [],
