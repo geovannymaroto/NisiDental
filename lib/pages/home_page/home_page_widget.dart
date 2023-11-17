@@ -248,7 +248,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           }
 
                           context.goNamedAuth(
-                              'SuministroMedico', context.mounted);
+                              'RegistrodeMateriales', context.mounted);
                         },
                         text: 'Ingresar',
                         options: FFButtonOptions(
@@ -289,7 +289,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           }
 
                           context.goNamedAuth(
-                              'SuministroMedico', context.mounted);
+                              'RegistrodeMateriales', context.mounted);
                         },
                         text: 'Registrar',
                         options: FFButtonOptions(

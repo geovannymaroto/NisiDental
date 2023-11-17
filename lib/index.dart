@@ -15,7 +15,7 @@ export '/resena_clientes/resena_clientes_widget.dart' show ResenaClientesWidget;
 export '/galeria/galeria_widget.dart' show GaleriaWidget;
 export '/costos_tratamientos/costos_tratamientos_widget.dart'
     show CostosTratamientosWidget;
-export '/citas/suministro_medico/suministro_medico_widget.dart'
-    show SuministroMedicoWidget;
+export '/citas/registrode_materiales/registrode_materiales_widget.dart'
+    show RegistrodeMaterialesWidget;
 export '/inicio_sesion/inicio_sesion_widget.dart' show InicioSesionWidget;
 export '/citas/registro/registro_widget.dart' show RegistroWidget;

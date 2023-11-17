@@ -78,14 +78,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? SuministroMedicoWidget() : InicioWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? RegistrodeMaterialesWidget()
+          : InicioWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? SuministroMedicoWidget()
+              ? RegistrodeMaterialesWidget()
               : InicioWidget(),
         ),
         FFRoute(
@@ -159,9 +160,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => CostosTratamientosWidget(),
         ),
         FFRoute(
-          name: 'SuministroMedico',
-          path: '/suministroMedico',
-          builder: (context, params) => SuministroMedicoWidget(),
+          name: 'RegistrodeMateriales',
+          path: '/registrodeMateriales',
+          builder: (context, params) => RegistrodeMaterialesWidget(),
         ),
         FFRoute(
           name: 'InicioSesion',
