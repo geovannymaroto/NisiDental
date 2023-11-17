@@ -21,20 +21,20 @@ class MaterialesRecord extends FirestoreRecord {
   String get nombre => _nombre ?? '';
   bool hasNombre() => _nombre != null;
 
-  // "imagen" field.
-  String? _imagen;
-  String get imagen => _imagen ?? '';
-  bool hasImagen() => _imagen != null;
-
   // "cantidad" field.
   int? _cantidad;
   int get cantidad => _cantidad ?? 0;
   bool hasCantidad() => _cantidad != null;
 
+  // "imagen" field.
+  String? _imagen;
+  String get imagen => _imagen ?? '';
+  bool hasImagen() => _imagen != null;
+
   void _initializeFields() {
     _nombre = snapshotData['nombre'] as String?;
-    _imagen = snapshotData['imagen'] as String?;
     _cantidad = castToType<int>(snapshotData['cantidad']);
+    _imagen = snapshotData['imagen'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -73,14 +73,14 @@ class MaterialesRecord extends FirestoreRecord {
 
 Map<String, dynamic> createMaterialesRecordData({
   String? nombre,
-  String? imagen,
   int? cantidad,
+  String? imagen,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
       'nombre': nombre,
-      'imagen': imagen,
       'cantidad': cantidad,
+      'imagen': imagen,
     }.withoutNulls,
   );
 
@@ -93,13 +93,13 @@ class MaterialesRecordDocumentEquality implements Equality<MaterialesRecord> {
   @override
   bool equals(MaterialesRecord? e1, MaterialesRecord? e2) {
     return e1?.nombre == e2?.nombre &&
-        e1?.imagen == e2?.imagen &&
-        e1?.cantidad == e2?.cantidad;
+        e1?.cantidad == e2?.cantidad &&
+        e1?.imagen == e2?.imagen;
   }
 
   @override
   int hash(MaterialesRecord? e) =>
-      const ListEquality().hash([e?.nombre, e?.imagen, e?.cantidad]);
+      const ListEquality().hash([e?.nombre, e?.cantidad, e?.imagen]);
 
   @override
   bool isValidKey(Object? o) => o is MaterialesRecord;

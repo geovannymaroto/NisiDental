@@ -155,15 +155,6 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                     ),
                     FFButtonWidget(
                       onPressed: () async {
-                        await ListaMedicosRecord.collection.doc().set({
-                          ...mapToFirestore(
-                            {
-                              'NombreMedico': [
-                                _model.txtNombreMedicoController.text
-                              ],
-                            },
-                          ),
-                        });
                         await showDialog(
                           context: context,
                           builder: (alertDialogContext) {

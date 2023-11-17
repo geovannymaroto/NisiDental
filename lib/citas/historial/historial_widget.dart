@@ -115,8 +115,8 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed('Inicio');
+                    onPressed: () {
+                      print('btnVolver2 pressed ...');
                     },
                     text: 'Volver\n',
                     options: FFButtonOptions(

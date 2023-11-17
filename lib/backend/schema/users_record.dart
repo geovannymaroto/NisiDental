@@ -46,10 +46,15 @@ class UsersRecord extends FirestoreRecord {
   String get phoneNumber => _phoneNumber ?? '';
   bool hasPhoneNumber() => _phoneNumber != null;
 
-  // "role" field.
-  String? _role;
-  String get role => _role ?? '';
-  bool hasRole() => _role != null;
+  // "admin" field.
+  bool? _admin;
+  bool get admin => _admin ?? false;
+  bool hasAdmin() => _admin != null;
+
+  // "noAdmin" field.
+  bool? _noAdmin;
+  bool get noAdmin => _noAdmin ?? false;
+  bool hasNoAdmin() => _noAdmin != null;
 
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
@@ -58,7 +63,8 @@ class UsersRecord extends FirestoreRecord {
     _uid = snapshotData['uid'] as String?;
     _createdTime = snapshotData['created_time'] as DateTime?;
     _phoneNumber = snapshotData['phone_number'] as String?;
-    _role = snapshotData['role'] as String?;
+    _admin = snapshotData['admin'] as bool?;
+    _noAdmin = snapshotData['noAdmin'] as bool?;
   }
 
   static CollectionReference get collection =>
@@ -101,7 +107,8 @@ Map<String, dynamic> createUsersRecordData({
   String? uid,
   DateTime? createdTime,
   String? phoneNumber,
-  String? role,
+  bool? admin,
+  bool? noAdmin,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -111,7 +118,8 @@ Map<String, dynamic> createUsersRecordData({
       'uid': uid,
       'created_time': createdTime,
       'phone_number': phoneNumber,
-      'role': role,
+      'admin': admin,
+      'noAdmin': noAdmin,
     }.withoutNulls,
   );
 
@@ -129,7 +137,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.uid == e2?.uid &&
         e1?.createdTime == e2?.createdTime &&
         e1?.phoneNumber == e2?.phoneNumber &&
-        e1?.role == e2?.role;
+        e1?.admin == e2?.admin &&
+        e1?.noAdmin == e2?.noAdmin;
   }
 
   @override
@@ -140,7 +149,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.uid,
         e?.createdTime,
         e?.phoneNumber,
-        e?.role
+        e?.admin,
+        e?.noAdmin
       ]);
 
   @override

@@ -287,7 +287,8 @@ class _RegistroInWidgetState extends State<RegistroInWidget> {
                             return;
                           }
 
-                          context.goNamedAuth('RegistroIn', context.mounted);
+                          context.goNamedAuth(
+                              'MaterialesMedicos', context.mounted);
                         },
                         text: 'Registrar',
                         options: FFButtonOptions(

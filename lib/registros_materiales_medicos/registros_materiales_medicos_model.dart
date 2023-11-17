@@ -1,16 +1,20 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'suministro_medico_widget.dart' show SuministroMedicoWidget;
+import 'registros_materiales_medicos_widget.dart'
+    show RegistrosMaterialesMedicosWidget;
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class SuministroMedicoModel extends FlutterFlowModel<SuministroMedicoWidget> {
+class RegistrosMaterialesMedicosModel
+    extends FlutterFlowModel<RegistrosMaterialesMedicosWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
@@ -18,10 +22,10 @@ class SuministroMedicoModel extends FlutterFlowModel<SuministroMedicoWidget> {
   // State field(s) for DropDown widget.
   String? dropDownValue1;
   FormFieldController<String>? dropDownValueController1;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode;
-  TextEditingController? textController;
-  String? Function(BuildContext, String?)? textControllerValidator;
+  // State field(s) for TextFieldCantidad widget.
+  FocusNode? textFieldCantidadFocusNode;
+  TextEditingController? textFieldCantidadController;
+  String? Function(BuildContext, String?)? textFieldCantidadControllerValidator;
   // State field(s) for DropDown widget.
   String? dropDownValue2;
   FormFieldController<String>? dropDownValueController2;
@@ -32,8 +36,8 @@ class SuministroMedicoModel extends FlutterFlowModel<SuministroMedicoWidget> {
 
   void dispose() {
     unfocusNode.dispose();
-    textFieldFocusNode?.dispose();
-    textController?.dispose();
+    textFieldCantidadFocusNode?.dispose();
+    textFieldCantidadController?.dispose();
   }
 
   /// Action blocks are added here.

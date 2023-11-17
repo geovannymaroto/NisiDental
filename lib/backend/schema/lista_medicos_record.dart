@@ -16,13 +16,13 @@ class ListaMedicosRecord extends FirestoreRecord {
     _initializeFields();
   }
 
-  // "NombreMedico" field.
-  List<String>? _nombreMedico;
-  List<String> get nombreMedico => _nombreMedico ?? const [];
-  bool hasNombreMedico() => _nombreMedico != null;
+  // "nombreDoctor" field.
+  String? _nombreDoctor;
+  String get nombreDoctor => _nombreDoctor ?? '';
+  bool hasNombreDoctor() => _nombreDoctor != null;
 
   void _initializeFields() {
-    _nombreMedico = getDataList(snapshotData['NombreMedico']);
+    _nombreDoctor = snapshotData['nombreDoctor'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -59,9 +59,13 @@ class ListaMedicosRecord extends FirestoreRecord {
       reference.path.hashCode == other.reference.path.hashCode;
 }
 
-Map<String, dynamic> createListaMedicosRecordData() {
+Map<String, dynamic> createListaMedicosRecordData({
+  String? nombreDoctor,
+}) {
   final firestoreData = mapToFirestore(
-    <String, dynamic>{}.withoutNulls,
+    <String, dynamic>{
+      'nombreDoctor': nombreDoctor,
+    }.withoutNulls,
   );
 
   return firestoreData;
@@ -73,13 +77,12 @@ class ListaMedicosRecordDocumentEquality
 
   @override
   bool equals(ListaMedicosRecord? e1, ListaMedicosRecord? e2) {
-    const listEquality = ListEquality();
-    return listEquality.equals(e1?.nombreMedico, e2?.nombreMedico);
+    return e1?.nombreDoctor == e2?.nombreDoctor;
   }
 
   @override
   int hash(ListaMedicosRecord? e) =>
-      const ListEquality().hash([e?.nombreMedico]);
+      const ListEquality().hash([e?.nombreDoctor]);
 
   @override
   bool isValidKey(Object? o) => o is ListaMedicosRecord;

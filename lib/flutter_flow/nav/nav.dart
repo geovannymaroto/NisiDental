@@ -79,13 +79,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? RegistroInWidget() : HomePageWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : RegistroInWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? RegistroInWidget() : HomePageWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : RegistroInWidget(),
         ),
         FFRoute(
           name: 'RegistroIn',
@@ -158,9 +158,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => CostosTratamientosWidget(),
         ),
         FFRoute(
-          name: 'SuministroMedico',
-          path: '/suministroMedico',
-          builder: (context, params) => SuministroMedicoWidget(),
+          name: 'RegistrosMaterialesMedicos',
+          path: '/registrosMaterialesMedicos',
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'RegistrosMaterialesMedicos')
+              : RegistrosMaterialesMedicosWidget(),
         ),
         FFRoute(
           name: 'homePage',
@@ -171,6 +173,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'agregar_datos_admin',
           path: '/agregarDatosAdmin',
           builder: (context, params) => AgregarDatosAdminWidget(),
+        ),
+        FFRoute(
+          name: 'MaterialesMedicos',
+          path: '/materialesMedicos',
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'MaterialesMedicos')
+              : MaterialesMedicosWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -337,7 +346,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/homePage';
+            return '/registroIn';
           }
           return null;
         },

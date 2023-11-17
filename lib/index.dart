@@ -18,8 +18,10 @@ export '/nosotros/resena_clientes/resena_clientes_widget.dart'
 export '/nosotros/galeria/galeria_widget.dart' show GaleriaWidget;
 export '/costos_tratamientos/costos_tratamientos_widget.dart'
     show CostosTratamientosWidget;
-export '/suministro_medico/suministro_medico_widget.dart'
-    show SuministroMedicoWidget;
+export '/registros_materiales_medicos/registros_materiales_medicos_widget.dart'
+    show RegistrosMaterialesMedicosWidget;
 export '/inicio/home_page/home_page_widget.dart' show HomePageWidget;
 export '/administrador/agregar_datos_admin/agregar_datos_admin_widget.dart'
     show AgregarDatosAdminWidget;
+export '/materiales_medicos/materiales_medicos_widget.dart'
+    show MaterialesMedicosWidget;
