@@ -79,14 +79,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? SuministroMedicoWidget() : InicioWidget(),
+          appStateNotifier.loggedIn ? RegistroInWidget() : InicioWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.loggedIn
-              ? SuministroMedicoWidget()
-              : InicioWidget(),
+          builder: (context, _) =>
+              appStateNotifier.loggedIn ? RegistroInWidget() : InicioWidget(),
         ),
         FFRoute(
           name: 'RegistroIn',
@@ -177,6 +176,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'homePage',
           path: '/homePage',
           builder: (context, params) => HomePageWidget(),
+        ),
+        FFRoute(
+          name: 'agregar_datos_admin',
+          path: '/agregarDatosAdmin',
+          builder: (context, params) => AgregarDatosAdminWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

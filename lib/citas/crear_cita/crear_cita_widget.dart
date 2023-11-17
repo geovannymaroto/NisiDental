@@ -162,7 +162,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                     child: FlutterFlowDropDown<String>(
                       controller: _model.listamedicosValueController ??=
                           FormFieldController<String>(null),
-                      options: ['Dr. Dennis Quintero', 'Dr. Jason Quintero'],
+                      options: <String>[],
                       onChanged: (val) =>
                           setState(() => _model.listamedicosValue = val),
                       width: 300.0,

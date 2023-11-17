@@ -247,8 +247,7 @@ class _RegistroInWidgetState extends State<RegistroInWidget> {
                             return;
                           }
 
-                          context.goNamedAuth(
-                              'SuministroMedico', context.mounted);
+                          context.pushNamedAuth('CrearCita', context.mounted);
                         },
                         text: 'Ingresar',
                         options: FFButtonOptions(
@@ -288,8 +287,7 @@ class _RegistroInWidgetState extends State<RegistroInWidget> {
                             return;
                           }
 
-                          context.goNamedAuth(
-                              'SuministroMedico', context.mounted);
+                          context.goNamedAuth('RegistroIn', context.mounted);
                         },
                         text: 'Registrar',
                         options: FFButtonOptions(

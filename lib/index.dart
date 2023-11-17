@@ -1,11 +1,12 @@
 // Export pages
-export '/pages/registro_in/registro_in_widget.dart' show RegistroInWidget;
+export '/citas/registro_in/registro_in_widget.dart' show RegistroInWidget;
 export '/citas/inicio/inicio_widget.dart' show InicioWidget;
 export '/citas/crear_cita/crear_cita_widget.dart' show CrearCitaWidget;
 export '/citas/cita_agendada/cita_agendada_widget.dart' show CitaAgendadaWidget;
 export '/citas/historial/historial_widget.dart' show HistorialWidget;
 export '/citas/resumen/resumen_widget.dart' show ResumenWidget;
-export '/profesionales/profesionales_widget.dart' show ProfesionalesWidget;
+export '/pages/profesionales/profesionales_widget.dart'
+    show ProfesionalesWidget;
 export '/convenios/convenios_widget.dart' show ConveniosWidget;
 export '/contactanos/contactanos_widget.dart' show ContactanosWidget;
 export '/services/services_widget.dart' show ServicesWidget;
@@ -18,5 +19,7 @@ export '/costos_tratamientos/costos_tratamientos_widget.dart'
 export '/citas/suministro_medico/suministro_medico_widget.dart'
     show SuministroMedicoWidget;
 export '/inicio_sesion/inicio_sesion_widget.dart' show InicioSesionWidget;
-export '/citas/registro/registro_widget.dart' show RegistroWidget;
+export '/pages/registro/registro_widget.dart' show RegistroWidget;
 export '/home_page/home_page_widget.dart' show HomePageWidget;
+export '/agregar_datos_admin/agregar_datos_admin_widget.dart'
+    show AgregarDatosAdminWidget;
