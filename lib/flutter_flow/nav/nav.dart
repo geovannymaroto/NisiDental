@@ -79,13 +79,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? InicioWidget() : HomePageWidget(),
+          appStateNotifier.loggedIn ? SuministroMedicoWidget() : InicioWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? InicioWidget() : HomePageWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? SuministroMedicoWidget()
+              : InicioWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -337,7 +338,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/homePage';
+            return '/inicio';
           }
           return null;
         },

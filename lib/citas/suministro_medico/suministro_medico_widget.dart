@@ -147,7 +147,7 @@ class _SuministroMedicoWidgetState extends State<SuministroMedicoWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 140.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 170.0, 0.0),
                     child: Text(
                       'Guantes',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -199,6 +199,48 @@ class _SuministroMedicoWidgetState extends State<SuministroMedicoWidget> {
                     },
                   ),
                 ],
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Align(
+                    alignment: AlignmentDirectional(0.00, 0.00),
+                    child: FFButtonWidget(
+                      onPressed: () {
+                        print('Button pressed ...');
+                      },
+                      text: 'Agregar producto',
+                      options: FFButtonOptions(
+                        height: 40.0,
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: FlutterFlowTheme.of(context).primary,
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
+                        ),
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.00, 0.00),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [],
+                ),
               ),
             ],
           ),

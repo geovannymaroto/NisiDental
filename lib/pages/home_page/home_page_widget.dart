@@ -247,7 +247,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             return;
                           }
 
-                          context.goNamedAuth('Inicio', context.mounted);
+                          context.goNamedAuth(
+                              'SuministroMedico', context.mounted);
                         },
                         text: 'Ingresar',
                         options: FFButtonOptions(
@@ -287,7 +288,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             return;
                           }
 
-                          context.goNamedAuth('Inicio', context.mounted);
+                          context.goNamedAuth(
+                              'SuministroMedico', context.mounted);
                         },
                         text: 'Registrar',
                         options: FFButtonOptions(

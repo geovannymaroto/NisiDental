@@ -171,7 +171,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                         await authManager.signOut();
                         GoRouter.of(context).clearRedirectLocation();
 
-                        context.goNamedAuth('HomePage', context.mounted);
+                        context.goNamedAuth('Inicio', context.mounted);
                       },
                       child: Text(
                         'Salir ',
