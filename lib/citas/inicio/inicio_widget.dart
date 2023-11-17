@@ -171,7 +171,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                         await authManager.signOut();
                         GoRouter.of(context).clearRedirectLocation();
 
-                        context.goNamedAuth('Inicio', context.mounted);
+                        context.goNamedAuth('homePage', context.mounted);
                       },
                       child: Text(
                         'Salir ',
@@ -182,6 +182,41 @@ class _InicioWidgetState extends State<InicioWidget> {
                       ),
                     ),
                   ],
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.00, -1.00),
+                child: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.account_box,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 24.0,
+                      ),
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed('agregar_datos_admin');
+                        },
+                        child: Text(
+                          'Administracion',
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    fontFamily: 'Readex Pro',
+                                    fontSize: 16.0,
+                                  ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],

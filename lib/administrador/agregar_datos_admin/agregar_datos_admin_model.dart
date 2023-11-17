@@ -15,10 +15,10 @@ class AgregarDatosAdminModel extends FlutterFlowModel<AgregarDatosAdminWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
-  // State field(s) for txtnuevomedico widget.
-  FocusNode? txtnuevomedicoFocusNode;
-  TextEditingController? txtnuevomedicoController;
-  String? Function(BuildContext, String?)? txtnuevomedicoControllerValidator;
+  // State field(s) for txtNombreMedico widget.
+  FocusNode? txtNombreMedicoFocusNode;
+  TextEditingController? txtNombreMedicoController;
+  String? Function(BuildContext, String?)? txtNombreMedicoControllerValidator;
 
   /// Initialization and disposal methods.
 
@@ -26,8 +26,8 @@ class AgregarDatosAdminModel extends FlutterFlowModel<AgregarDatosAdminWidget> {
 
   void dispose() {
     unfocusNode.dispose();
-    txtnuevomedicoFocusNode?.dispose();
-    txtnuevomedicoController?.dispose();
+    txtNombreMedicoFocusNode?.dispose();
+    txtNombreMedicoController?.dispose();
   }
 
   /// Action blocks are added here.

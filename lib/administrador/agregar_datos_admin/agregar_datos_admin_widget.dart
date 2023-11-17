@@ -37,8 +37,8 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
           .set(createListaMedicosRecordData());
     });
 
-    _model.txtnuevomedicoController ??= TextEditingController();
-    _model.txtnuevomedicoFocusNode ??= FocusNode();
+    _model.txtNombreMedicoController ??= TextEditingController();
+    _model.txtNombreMedicoFocusNode ??= FocusNode();
   }
 
   @override
@@ -110,12 +110,11 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                         padding:
                             EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                         child: TextFormField(
-                          controller: _model.txtnuevomedicoController,
-                          focusNode: _model.txtnuevomedicoFocusNode,
+                          controller: _model.txtNombreMedicoController,
+                          focusNode: _model.txtNombreMedicoFocusNode,
                           autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: 'Label here...',
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -149,16 +148,22 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                             ),
                           ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
-                          validator: _model.txtnuevomedicoControllerValidator
+                          validator: _model.txtNombreMedicoControllerValidator
                               .asValidator(context),
                         ),
                       ),
                     ),
                     FFButtonWidget(
                       onPressed: () async {
-                        await ListaMedicosRecord.collection
-                            .doc()
-                            .set(createListaMedicosRecordData());
+                        await ListaMedicosRecord.collection.doc().set({
+                          ...mapToFirestore(
+                            {
+                              'NombreMedico': [
+                                _model.txtNombreMedicoController.text
+                              ],
+                            },
+                          ),
+                        });
                         await showDialog(
                           context: context,
                           builder: (alertDialogContext) {

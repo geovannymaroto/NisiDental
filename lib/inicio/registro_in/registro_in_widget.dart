@@ -247,7 +247,7 @@ class _RegistroInWidgetState extends State<RegistroInWidget> {
                             return;
                           }
 
-                          context.pushNamedAuth('CrearCita', context.mounted);
+                          context.pushNamedAuth('Inicio', context.mounted);
                         },
                         text: 'Ingresar',
                         options: FFButtonOptions(

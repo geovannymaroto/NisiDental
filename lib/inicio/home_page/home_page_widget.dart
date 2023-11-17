@@ -272,7 +272,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      context.pushNamed('CitaAgendada');
+                      context.pushNamed('RegistroIn');
                     },
                     child: Container(
                       width: double.infinity,
