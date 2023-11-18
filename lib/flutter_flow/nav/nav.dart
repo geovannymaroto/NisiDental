@@ -103,11 +103,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => CrearCitaWidget(),
         ),
         FFRoute(
-          name: 'CitaAgendada',
-          path: '/citaAgendada',
-          builder: (context, params) => CitaAgendadaWidget(),
-        ),
-        FFRoute(
           name: 'Historial',
           path: '/historial',
           builder: (context, params) => HistorialWidget(),
@@ -162,7 +157,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'homePage',
           path: '/homePage',
-          builder: (context, params) => HomePageWidget(),
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'homePage')
+              : HomePageWidget(),
         ),
         FFRoute(
           name: 'agregar_datos_admin',

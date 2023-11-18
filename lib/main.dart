@@ -122,7 +122,7 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'MaterialesMedicos';
+  String _currentPageName = 'homePage';
   late Widget? _currentPage;
 
   @override
@@ -136,6 +136,7 @@ class _NavBarPageState extends State<NavBarPage> {
   Widget build(BuildContext context) {
     final tabs = {
       'RegistrosMaterialesMedicos': RegistrosMaterialesMedicosWidget(),
+      'homePage': HomePageWidget(),
       'MaterialesMedicos': MaterialesMedicosWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
@@ -202,10 +203,34 @@ class _NavBarPageState extends State<NavBarPage> {
                   size: 24.0,
                 ),
                 Text(
-                  'Materiales',
+                  'Home',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 1
+                        ? FlutterFlowTheme.of(context).secondary
+                        : Color(0x8A000000),
+                    fontSize: 11.0,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          FloatingNavbarItem(
+            customWidget: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.home_outlined,
+                  color: currentIndex == 2
+                      ? FlutterFlowTheme.of(context).secondary
+                      : Color(0x8A000000),
+                  size: 24.0,
+                ),
+                Text(
+                  'Materiales',
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: currentIndex == 2
                         ? FlutterFlowTheme.of(context).secondary
                         : Color(0x8A000000),
                     fontSize: 11.0,

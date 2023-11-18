@@ -324,7 +324,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(115.0, 390.0, 0.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(115.0, 370.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button pressed ...');

@@ -71,7 +71,26 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                   fontSize: 22.0,
                 ),
           ),
-          actions: [],
+          actions: [
+            InkWell(
+              splashColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              onTap: () async {
+                GoRouter.of(context).prepareAuthEvent();
+                await authManager.signOut();
+                GoRouter.of(context).clearRedirectLocation();
+
+                context.goNamedAuth('Registro', context.mounted);
+              },
+              child: Icon(
+                Icons.output_sharp,
+                color: FlutterFlowTheme.of(context).secondaryText,
+                size: 30.0,
+              ),
+            ),
+          ],
           centerTitle: false,
           elevation: 2.0,
         ),
@@ -289,8 +308,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                             return;
                           }
 
-                          context.goNamedAuth(
-                              'MaterialesMedicos', context.mounted);
+                          context.goNamedAuth('homePage', context.mounted);
                         },
                         text: 'Registrar',
                         options: FFButtonOptions(
