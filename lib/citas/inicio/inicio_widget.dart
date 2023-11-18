@@ -53,9 +53,8 @@ class _InicioWidgetState extends State<InicioWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondary,
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           title: Text(
             'Inicio',
@@ -84,13 +83,16 @@ class _InicioWidgetState extends State<InicioWidget> {
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                     ),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/images/hbquv_0.jpg',
-                        width: 500.0,
-                        height: 300.0,
-                        fit: BoxFit.cover,
+                    child: Opacity(
+                      opacity: 0.5,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/logo2.jpg',
+                          width: 500.0,
+                          height: 300.0,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
@@ -171,7 +173,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                         await authManager.signOut();
                         GoRouter.of(context).clearRedirectLocation();
 
-                        context.goNamedAuth('RegistroIn', context.mounted);
+                        context.goNamedAuth('Registro', context.mounted);
                       },
                       child: Text(
                         'Salir ',
@@ -223,13 +225,17 @@ class _InicioWidgetState extends State<InicioWidget> {
                 onPressed: () async {
                   context.pushNamed('RegistrosMaterialesMedicos');
                 },
-                text: 'Button',
+                text: '',
+                icon: Icon(
+                  Icons.admin_panel_settings_outlined,
+                  size: 15.0,
+                ),
                 options: FFButtonOptions(
                   height: 40.0,
                   padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                   iconPadding:
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                  color: FlutterFlowTheme.of(context).primary,
+                  color: Color(0xFFFFBF69),
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Readex Pro',
                         color: Colors.white,
@@ -239,7 +245,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                     color: Colors.transparent,
                     width: 1.0,
                   ),
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(12.0),
                 ),
               ),
             ],

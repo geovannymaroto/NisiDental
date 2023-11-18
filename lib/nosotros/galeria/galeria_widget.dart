@@ -1,3 +1,4 @@
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -54,15 +55,27 @@ class _GaleriaWidgetState extends State<GaleriaWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFF2EC4B6),
+          backgroundColor: Color(0xFFFFBF69),
           automaticallyImplyLeading: false,
+          leading: FlutterFlowIconButton(
+            borderColor: Color(0xFFFFBF69),
+            fillColor: Color(0xFFFFBF69),
+            icon: Icon(
+              Icons.arrow_back,
+              color: FlutterFlowTheme.of(context).primaryText,
+              size: 24.0,
+            ),
+            onPressed: () async {
+              context.safePop();
+            },
+          ),
           title: Text(
             '                                   Galeria NISI',
-            textAlign: TextAlign.start,
+            textAlign: TextAlign.center,
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Noto Serif',
                   color: Colors.white,
-                  fontSize: 22.0,
+                  fontSize: 20.0,
                 ),
           ),
           actions: [],

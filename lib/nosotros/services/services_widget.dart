@@ -68,8 +68,8 @@ class _ServicesWidgetState extends State<ServicesWidget> {
               color: FlutterFlowTheme.of(context).alternate,
               size: 30.0,
             ),
-            onPressed: () {
-              print('IconButton pressed ...');
+            onPressed: () async {
+              context.safePop();
             },
           ),
           title: Text(
@@ -77,6 +77,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
             style: FlutterFlowTheme.of(context).bodyLarge.override(
                   fontFamily: 'Readex Pro',
                   color: Colors.white,
+                  fontSize: 20.0,
                 ),
           ),
           actions: [],

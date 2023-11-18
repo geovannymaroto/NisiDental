@@ -1,3 +1,4 @@
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -57,6 +58,17 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
         appBar: AppBar(
           backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
+          leading: FlutterFlowIconButton(
+            buttonSize: 40.0,
+            icon: Icon(
+              Icons.arrow_back,
+              color: FlutterFlowTheme.of(context).primaryText,
+              size: 24.0,
+            ),
+            onPressed: () async {
+              context.safePop();
+            },
+          ),
           title: Text(
             '               Preguntas Frecuentes',
             style: FlutterFlowTheme.of(context).headlineMedium.override(

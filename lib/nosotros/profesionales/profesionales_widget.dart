@@ -54,9 +54,9 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF020A09),
+        backgroundColor: Color(0xFFFFBF69),
         appBar: AppBar(
-          backgroundColor: Color(0xFF020A09),
+          backgroundColor: Color(0xFFFFBF69),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -100,7 +100,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                 .headlineSmall
                                 .override(
                                   fontFamily: 'Merriweather',
-                                  color: FlutterFlowTheme.of(context).secondary,
+                                  color: Colors.white,
                                   fontSize: 27.0,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -153,7 +153,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
                                         .override(
-                                          fontFamily: 'Merriweather',
+                                          fontFamily: 'Noto Serif',
                                           color: Color(0xFF101213),
                                           fontSize: 24.0,
                                           fontWeight: FontWeight.normal,

@@ -1,3 +1,4 @@
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -56,6 +57,19 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
         appBar: AppBar(
           backgroundColor: Color(0xFFFFBF69),
           automaticallyImplyLeading: false,
+          leading: FlutterFlowIconButton(
+            borderRadius: 20.0,
+            borderWidth: 1.0,
+            buttonSize: 40.0,
+            icon: Icon(
+              Icons.arrow_back,
+              color: FlutterFlowTheme.of(context).primaryText,
+              size: 24.0,
+            ),
+            onPressed: () async {
+              context.safePop();
+            },
+          ),
           title: Text(
             '        Asociaciones con NISI',
             textAlign: TextAlign.end,

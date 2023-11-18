@@ -106,7 +106,7 @@ class _RegistrosMaterialesMedicosWidgetState
                     context.pushNamed('MaterialesMedicos');
                   },
                   child: Icon(
-                    Icons.logout_sharp,
+                    Icons.double_arrow,
                     color: FlutterFlowTheme.of(context).secondaryText,
                     size: 24.0,
                   ),

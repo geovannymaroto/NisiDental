@@ -80,6 +80,20 @@ class _MaterialesMedicosWidgetState extends State<MaterialesMedicosWidget> {
             appBar: AppBar(
               backgroundColor: FlutterFlowTheme.of(context).secondary,
               automaticallyImplyLeading: false,
+              leading: InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.pushNamed('RegistrosMaterialesMedicos');
+                },
+                child: Icon(
+                  Icons.keyboard_arrow_left,
+                  color: FlutterFlowTheme.of(context).secondaryText,
+                  size: 29.0,
+                ),
+              ),
               title: Text(
                 'Materiales médicos',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
@@ -88,22 +102,7 @@ class _MaterialesMedicosWidgetState extends State<MaterialesMedicosWidget> {
                       fontSize: 22.0,
                     ),
               ),
-              actions: [
-                InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    context.pushNamed('RegistrosMaterialesMedicos');
-                  },
-                  child: Icon(
-                    Icons.logout_sharp,
-                    color: FlutterFlowTheme.of(context).secondaryText,
-                    size: 24.0,
-                  ),
-                ),
-              ],
+              actions: [],
               centerTitle: false,
               elevation: 2.0,
             ),

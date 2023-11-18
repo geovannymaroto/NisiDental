@@ -79,18 +79,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : RegistroInWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : RegistroWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : RegistroInWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : RegistroWidget(),
         ),
         FFRoute(
-          name: 'RegistroIn',
-          path: '/registroIn',
-          builder: (context, params) => RegistroInWidget(),
+          name: 'Registro',
+          path: '/registro',
+          builder: (context, params) => RegistroWidget(),
         ),
         FFRoute(
           name: 'Inicio',
@@ -111,11 +111,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Historial',
           path: '/historial',
           builder: (context, params) => HistorialWidget(),
-        ),
-        FFRoute(
-          name: 'Resumen',
-          path: '/resumen',
-          builder: (context, params) => ResumenWidget(),
         ),
         FFRoute(
           name: 'Profesionales',
@@ -346,7 +341,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/registroIn';
+            return '/registro';
           }
           return null;
         },

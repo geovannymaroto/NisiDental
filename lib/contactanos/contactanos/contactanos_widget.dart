@@ -66,8 +66,8 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
               color: FlutterFlowTheme.of(context).alternate,
               size: 30.0,
             ),
-            onPressed: () {
-              print('IconButton pressed ...');
+            onPressed: () async {
+              context.safePop();
             },
           ),
           title: Text(
@@ -215,8 +215,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                             color: FlutterFlowTheme.of(context).secondary,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            await launchURL(
+                                'https://www.facebook.com/ClinicaNisiDental/');
                           },
                         ),
                       ),
@@ -233,8 +234,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                             color: FlutterFlowTheme.of(context).primaryText,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            await launchURL(
+                                'https://www.instagram.com/nisi.dental/');
                           },
                         ),
                       ),
@@ -251,8 +253,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                             color: FlutterFlowTheme.of(context).secondary,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            await launchURL(
+                                'https://api.whatsapp.com/send?phone=50672313845');
                           },
                         ),
                       ),

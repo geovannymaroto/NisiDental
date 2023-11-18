@@ -82,8 +82,8 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     FFButtonWidget(
-                      onPressed: () async {
-                        context.pushNamed('Resumen');
+                      onPressed: () {
+                        print('btnUltCita pressed ...');
                       },
                       text: 'Ultima Cita',
                       options: FFButtonOptions(

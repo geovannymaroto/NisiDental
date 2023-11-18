@@ -1,10 +1,9 @@
 // Export pages
-export '/inicio/registro_in/registro_in_widget.dart' show RegistroInWidget;
+export '/inicio/registro/registro_widget.dart' show RegistroWidget;
 export '/citas/inicio/inicio_widget.dart' show InicioWidget;
 export '/citas/crear_cita/crear_cita_widget.dart' show CrearCitaWidget;
 export '/citas/cita_agendada/cita_agendada_widget.dart' show CitaAgendadaWidget;
 export '/citas/historial/historial_widget.dart' show HistorialWidget;
-export '/citas/resumen/resumen_widget.dart' show ResumenWidget;
 export '/nosotros/profesionales/profesionales_widget.dart'
     show ProfesionalesWidget;
 export '/convenios/convenios_widget.dart' show ConveniosWidget;

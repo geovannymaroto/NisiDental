@@ -4,28 +4,27 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'registro_in_model.dart';
-export 'registro_in_model.dart';
+import 'registro_model.dart';
+export 'registro_model.dart';
 
-class RegistroInWidget extends StatefulWidget {
-  const RegistroInWidget({Key? key}) : super(key: key);
+class RegistroWidget extends StatefulWidget {
+  const RegistroWidget({Key? key}) : super(key: key);
 
   @override
-  _RegistroInWidgetState createState() => _RegistroInWidgetState();
+  _RegistroWidgetState createState() => _RegistroWidgetState();
 }
 
-class _RegistroInWidgetState extends State<RegistroInWidget> {
-  late RegistroInModel _model;
+class _RegistroWidgetState extends State<RegistroWidget> {
+  late RegistroModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => RegistroInModel());
+    _model = createModel(context, () => RegistroModel());
 
     _model.txtUserController ??= TextEditingController();
     _model.txtUserFocusNode ??= FocusNode();
@@ -87,16 +86,19 @@ class _RegistroInWidgetState extends State<RegistroInWidget> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/images/Logo.JPG',
-                        width: 300.0,
-                        height: 200.0,
-                        fit: BoxFit.contain,
+                  Align(
+                    alignment: AlignmentDirectional(-1.00, 1.00),
+                    child: Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/logo.jpg',
+                          width: 300.0,
+                          height: 200.0,
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
                   ),
@@ -311,26 +313,6 @@ class _RegistroInWidgetState extends State<RegistroInWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    FaIcon(
-                      FontAwesomeIcons.instagram,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 60.0,
-                    ),
-                    FaIcon(
-                      FontAwesomeIcons.facebookSquare,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 60.0,
                     ),
                   ],
                 ),
