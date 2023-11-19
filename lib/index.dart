@@ -19,7 +19,11 @@ export '/modulo_inicio/costos_tratamientos/costos_tratamientos_widget.dart'
 export '/pages/registros_materiales_medicos/registros_materiales_medicos_widget.dart'
     show RegistrosMaterialesMedicosWidget;
 export '/modulo_inicio/home_page/home_page_widget.dart' show HomePageWidget;
-export '/modulo_administrador/agregar_datos_admin/agregar_datos_admin_widget.dart'
-    show AgregarDatosAdminWidget;
+export '/modulo_administrador/agregar_datos_admin_doctores/agregar_datos_admin_doctores_widget.dart'
+    show AgregarDatosAdminDoctoresWidget;
 export '/pages/materiales_medicos/materiales_medicos_widget.dart'
     show MaterialesMedicosWidget;
+export '/modulo_administrador/agregar_datos_tratamientos/agregar_datos_tratamientos_widget.dart'
+    show AgregarDatosTratamientosWidget;
+export '/modulo_administrador/menu_administrador/menu_administrador_widget.dart'
+    show MenuAdministradorWidget;

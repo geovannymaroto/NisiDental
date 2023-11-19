@@ -11,26 +11,27 @@ import 'package:flutter/services.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'agregar_datos_admin_model.dart';
-export 'agregar_datos_admin_model.dart';
+import 'agregar_datos_tratamientos_model.dart';
+export 'agregar_datos_tratamientos_model.dart';
 
-class AgregarDatosAdminWidget extends StatefulWidget {
-  const AgregarDatosAdminWidget({Key? key}) : super(key: key);
+class AgregarDatosTratamientosWidget extends StatefulWidget {
+  const AgregarDatosTratamientosWidget({Key? key}) : super(key: key);
 
   @override
-  _AgregarDatosAdminWidgetState createState() =>
-      _AgregarDatosAdminWidgetState();
+  _AgregarDatosTratamientosWidgetState createState() =>
+      _AgregarDatosTratamientosWidgetState();
 }
 
-class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
-  late AgregarDatosAdminModel _model;
+class _AgregarDatosTratamientosWidgetState
+    extends State<AgregarDatosTratamientosWidget> {
+  late AgregarDatosTratamientosModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => AgregarDatosAdminModel());
+    _model = createModel(context, () => AgregarDatosTratamientosModel());
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
@@ -39,8 +40,8 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
           .set(createListaMedicosRecordData());
     });
 
-    _model.txtNombreMedicoController ??= TextEditingController();
-    _model.txtNombreMedicoFocusNode ??= FocusNode();
+    _model.txtNombreTratamientoController ??= TextEditingController();
+    _model.txtNombreTratamientoFocusNode ??= FocusNode();
   }
 
   @override
@@ -111,7 +112,7 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Agregar nombre de nuevo medico:',
+                      'Agregar nombre de nuevo tratamientos:',
                       style: FlutterFlowTheme.of(context).bodyMedium,
                     ),
                   ],
@@ -127,8 +128,8 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                         padding:
                             EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                         child: TextFormField(
-                          controller: _model.txtNombreMedicoController,
-                          focusNode: _model.txtNombreMedicoFocusNode,
+                          controller: _model.txtNombreTratamientoController,
+                          focusNode: _model.txtNombreTratamientoFocusNode,
                           autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
@@ -165,19 +166,28 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                             ),
                           ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
-                          validator: _model.txtNombreMedicoControllerValidator
+                          validator: _model
+                              .txtNombreTratamientoControllerValidator
                               .asValidator(context),
                         ),
                       ),
                     ),
                     FFButtonWidget(
                       onPressed: () async {
-                        await ListaMedicosRecord.collection
-                            .doc()
-                            .set(createListaMedicosRecordData(
-                              nombreDoctor:
-                                  _model.txtNombreMedicoController.text,
-                            ));
+                        var tratamientosRecordReference =
+                            TratamientosRecord.collection.doc();
+                        await tratamientosRecordReference
+                            .set(createTratamientosRecordData(
+                          tratamientos:
+                              _model.txtNombreTratamientoController.text,
+                        ));
+                        _model.btnNuevoTratamiento =
+                            TratamientosRecord.getDocumentFromData(
+                                createTratamientosRecordData(
+                                  tratamientos: _model
+                                      .txtNombreTratamientoController.text,
+                                ),
+                                tratamientosRecordReference);
                         await showDialog(
                           context: context,
                           builder: (alertDialogContext) {
@@ -193,6 +203,8 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                             );
                           },
                         );
+
+                        setState(() {});
                       },
                       text: 'Registrar',
                       options: FFButtonOptions(
@@ -219,8 +231,8 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                 ),
               ),
               Expanded(
-                child: StreamBuilder<List<ListaMedicosRecord>>(
-                  stream: queryListaMedicosRecord(),
+                child: StreamBuilder<List<TratamientosRecord>>(
+                  stream: queryTratamientosRecord(),
                   builder: (context, snapshot) {
                     // Customize what your widget looks like when it's loading.
                     if (!snapshot.hasData) {
@@ -236,16 +248,16 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                         ),
                       );
                     }
-                    List<ListaMedicosRecord> listViewListaMedicosRecordList =
+                    List<TratamientosRecord> listViewTratamientosRecordList =
                         snapshot.data!;
                     return ListView.builder(
                       padding: EdgeInsets.zero,
                       shrinkWrap: true,
                       scrollDirection: Axis.vertical,
-                      itemCount: listViewListaMedicosRecordList.length,
+                      itemCount: listViewTratamientosRecordList.length,
                       itemBuilder: (context, listViewIndex) {
-                        final listViewListaMedicosRecord =
-                            listViewListaMedicosRecordList[listViewIndex];
+                        final listViewTratamientosRecord =
+                            listViewTratamientosRecordList[listViewIndex];
                         return Slidable(
                           endActionPane: ActionPane(
                             motion: const ScrollMotion(),
@@ -285,7 +297,7 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                                           ) ??
                                           false;
                                   if (confirmDialogResponse) {
-                                    await listViewListaMedicosRecord.reference
+                                    await listViewTratamientosRecord.reference
                                         .delete();
                                   }
                                 },
@@ -294,7 +306,7 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                           ),
                           child: ListTile(
                             title: Text(
-                              listViewListaMedicosRecord.nombreDoctor,
+                              listViewTratamientosRecord.tratamientos,
                               textAlign: TextAlign.center,
                               style: FlutterFlowTheme.of(context).titleLarge,
                             ),

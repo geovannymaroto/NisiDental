@@ -28,6 +28,12 @@ class FFAppState extends ChangeNotifier {
   set contador(int _value) {
     _contador = _value;
   }
+
+  DateTime? _dataselect;
+  DateTime? get dataselect => _dataselect;
+  set dataselect(DateTime? _value) {
+    _dataselect = _value;
+  }
 }
 
 LatLng? _latLngFromString(String? val) {

@@ -206,7 +206,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          context.pushNamed('agregar_datos_admin');
+                          context.pushNamed('Menu_Administrador');
                         },
                         child: Text(
                           'Administracion',

@@ -162,9 +162,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : HomePageWidget(),
         ),
         FFRoute(
-          name: 'agregar_datos_admin',
-          path: '/agregarDatosAdmin',
-          builder: (context, params) => AgregarDatosAdminWidget(),
+          name: 'agregar_datos_admin_doctores',
+          path: '/agregarDatosAdminDoctores',
+          builder: (context, params) => AgregarDatosAdminDoctoresWidget(),
         ),
         FFRoute(
           name: 'MaterialesMedicos',
@@ -172,6 +172,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'MaterialesMedicos')
               : MaterialesMedicosWidget(),
+        ),
+        FFRoute(
+          name: 'agregar_datos_tratamientos',
+          path: '/agregarDatosTratamientos',
+          builder: (context, params) => AgregarDatosTratamientosWidget(),
+        ),
+        FFRoute(
+          name: 'Menu_Administrador',
+          path: '/menuAdministrador',
+          builder: (context, params) => MenuAdministradorWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
