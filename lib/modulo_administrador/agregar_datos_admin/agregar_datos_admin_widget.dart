@@ -8,6 +8,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'agregar_datos_admin_model.dart';
@@ -107,6 +108,7 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Agregar nombre de nuevo medico:',
@@ -116,7 +118,7 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -170,11 +172,17 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                     ),
                     FFButtonWidget(
                       onPressed: () async {
+                        await ListaMedicosRecord.collection
+                            .doc()
+                            .set(createListaMedicosRecordData(
+                              nombreDoctor:
+                                  _model.txtNombreMedicoController.text,
+                            ));
                         await showDialog(
                           context: context,
                           builder: (alertDialogContext) {
                             return AlertDialog(
-                              content: Text('Registro exitoso...'),
+                              content: Text('Registro exitoso'),
                               actions: [
                                 TextButton(
                                   onPressed: () =>
@@ -208,6 +216,103 @@ class _AgregarDatosAdminWidgetState extends State<AgregarDatosAdminWidget> {
                       ),
                     ),
                   ],
+                ),
+              ),
+              Expanded(
+                child: StreamBuilder<List<ListaMedicosRecord>>(
+                  stream: queryListaMedicosRecord(),
+                  builder: (context, snapshot) {
+                    // Customize what your widget looks like when it's loading.
+                    if (!snapshot.hasData) {
+                      return Center(
+                        child: SizedBox(
+                          width: 50.0,
+                          height: 50.0,
+                          child: CircularProgressIndicator(
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              FlutterFlowTheme.of(context).primary,
+                            ),
+                          ),
+                        ),
+                      );
+                    }
+                    List<ListaMedicosRecord> listViewListaMedicosRecordList =
+                        snapshot.data!;
+                    return ListView.builder(
+                      padding: EdgeInsets.zero,
+                      shrinkWrap: true,
+                      scrollDirection: Axis.vertical,
+                      itemCount: listViewListaMedicosRecordList.length,
+                      itemBuilder: (context, listViewIndex) {
+                        final listViewListaMedicosRecord =
+                            listViewListaMedicosRecordList[listViewIndex];
+                        return Slidable(
+                          endActionPane: ActionPane(
+                            motion: const ScrollMotion(),
+                            extentRatio: 0.25,
+                            children: [
+                              SlidableAction(
+                                label: 'Borrar',
+                                backgroundColor:
+                                    FlutterFlowTheme.of(context).error,
+                                icon: Icons.delete,
+                                onPressed: (_) async {
+                                  // accionborrar
+                                  var confirmDialogResponse =
+                                      await showDialog<bool>(
+                                            context: context,
+                                            builder: (alertDialogContext) {
+                                              return AlertDialog(
+                                                title: Text('Borrar'),
+                                                actions: [
+                                                  TextButton(
+                                                    onPressed: () =>
+                                                        Navigator.pop(
+                                                            alertDialogContext,
+                                                            false),
+                                                    child: Text('Cancel'),
+                                                  ),
+                                                  TextButton(
+                                                    onPressed: () =>
+                                                        Navigator.pop(
+                                                            alertDialogContext,
+                                                            true),
+                                                    child: Text('Confirm'),
+                                                  ),
+                                                ],
+                                              );
+                                            },
+                                          ) ??
+                                          false;
+                                  if (confirmDialogResponse) {
+                                    await listViewListaMedicosRecord.reference
+                                        .delete();
+                                  }
+                                },
+                              ),
+                            ],
+                          ),
+                          child: ListTile(
+                            title: Text(
+                              listViewListaMedicosRecord.nombreDoctor,
+                              textAlign: TextAlign.center,
+                              style: FlutterFlowTheme.of(context).titleLarge,
+                            ),
+                            trailing: Icon(
+                              Icons.arrow_forward_ios,
+                              color: FlutterFlowTheme.of(context).secondaryText,
+                              size: 20.0,
+                            ),
+                            tileColor: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            dense: false,
+                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                          ),
+                        );
+                      },
+                    );
+                  },
                 ),
               ),
             ],

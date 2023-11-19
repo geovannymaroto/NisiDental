@@ -72,22 +72,25 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                 ),
           ),
           actions: [
-            InkWell(
-              splashColor: Colors.transparent,
-              focusColor: Colors.transparent,
-              hoverColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              onTap: () async {
-                GoRouter.of(context).prepareAuthEvent();
-                await authManager.signOut();
-                GoRouter.of(context).clearRedirectLocation();
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+              child: InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  GoRouter.of(context).prepareAuthEvent();
+                  await authManager.signOut();
+                  GoRouter.of(context).clearRedirectLocation();
 
-                context.goNamedAuth('Registro', context.mounted);
-              },
-              child: Icon(
-                Icons.output_sharp,
-                color: FlutterFlowTheme.of(context).secondaryText,
-                size: 30.0,
+                  context.goNamedAuth('Registro', context.mounted);
+                },
+                child: Icon(
+                  Icons.output_sharp,
+                  color: FlutterFlowTheme.of(context).secondaryText,
+                  size: 30.0,
+                ),
               ),
             ),
           ],
