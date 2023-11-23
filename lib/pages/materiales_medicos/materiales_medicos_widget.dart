@@ -96,7 +96,7 @@ class _MaterialesMedicosWidgetState extends State<MaterialesMedicosWidget> {
               ),
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'ahfnjuvr' /* Materiales médicos */,
+                  'mad1taoq' /* Materiales médicos */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',

@@ -32,15 +32,15 @@ class CitasRecord extends FirestoreRecord {
   bool hasDoctor() => _doctor != null;
 
   // "fecha" field.
-  String? _fecha;
-  String get fecha => _fecha ?? '';
+  DateTime? _fecha;
+  DateTime? get fecha => _fecha;
   bool hasFecha() => _fecha != null;
 
   void _initializeFields() {
     _hora = snapshotData['hora'] as String?;
     _motivoconsulta = snapshotData['motivoconsulta'] as String?;
     _doctor = snapshotData['doctor'] as String?;
-    _fecha = snapshotData['fecha'] as String?;
+    _fecha = snapshotData['fecha'] as DateTime?;
   }
 
   static CollectionReference get collection =>
@@ -80,7 +80,7 @@ Map<String, dynamic> createCitasRecordData({
   String? hora,
   String? motivoconsulta,
   String? doctor,
-  String? fecha,
+  DateTime? fecha,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{

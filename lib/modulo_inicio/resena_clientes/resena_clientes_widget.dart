@@ -70,7 +70,7 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              '7xso5sx5' /* Reseña de Clientes */,
+              'sxdccqb8' /* Reseña de Clientes */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -113,7 +113,7 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                                 Flexible(
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'bsfl0a6k' /* "Me encantó la atención de el.... */,
+                                      'wflp8m7i' /* "Me encantó la atención de el.... */,
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyMedium,
@@ -121,7 +121,7 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                                 ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    '79palk6x' /* Ale Alvarado Soto */,
+                                    'tbwk3dba' /* Ale Alvarado Soto */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -160,13 +160,13 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             children: [
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'h68arkal' /* "Exelente la atención recibida... */,
+                                  'iokdaayf' /* "Exelente la atención recibida... */,
                                 ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'lxsgbisx' /* Zaida Romero */,
+                                  '3hdrhhr9' /* Zaida Romero */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -202,13 +202,13 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             children: [
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  '7wtit33f' /* "La verdad son muy buenos en l... */,
+                                  'sgamlu6x' /* "La verdad son muy buenos en l... */,
                                 ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'ezdnsmf8' /* Alejandra Mendoza */,
+                                  'yjh2yhii' /* Alejandra Mendoza */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -244,13 +244,13 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             children: [
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'u6fs8ep8' /* "Recomendados. Carisma, profes... */,
+                                  'qx6hx0j7' /* "Recomendados. Carisma, profes... */,
                                 ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'n660hux0' /* Oscar Aguilar Aguero */,
+                                  'xrafq7ha' /* Oscar Aguilar Aguero */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -286,13 +286,13 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             children: [
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  '16qtkwho' /* " Cien por cieno recomendados,... */,
+                                  '5li95gtb' /* " Cien por cieno recomendados,... */,
                                 ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  '6jcq4lxn' /* Alejandra Mendoza */,
+                                  'y6zyg2fl' /* Alejandra Mendoza */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -328,13 +328,13 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             children: [
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'mlg8ivl9' /* "Son los mejores, los recomien... */,
+                                  'ptjqaaxj' /* "Son los mejores, los recomien... */,
                                 ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'fz02cs5q' /* Marianela Castro */,
+                                  '8glc1nrl' /* Marianela Castro */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium

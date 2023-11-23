@@ -1,6 +1,8 @@
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -58,7 +60,7 @@ class _HistorialWidgetState extends State<HistorialWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              'a3vc6ei2' /* Historial */,
+              'urgaog64' /* Historial */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -77,41 +79,87 @@ class _HistorialWidgetState extends State<HistorialWidget> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    FFButtonWidget(
-                      onPressed: () {
-                        print('btnUltCita pressed ...');
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        'm729603i' /* Ultima Cita */,
-                      ),
-                      options: FFButtonOptions(
-                        width: 150.0,
-                        height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFF2EC4B6),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+              Expanded(
+                child: StreamBuilder<List<CitasRecord>>(
+                  stream: queryCitasRecord(),
+                  builder: (context, snapshot) {
+                    // Customize what your widget looks like when it's loading.
+                    if (!snapshot.hasData) {
+                      return Center(
+                        child: SizedBox(
+                          width: 50.0,
+                          height: 50.0,
+                          child: CircularProgressIndicator(
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              FlutterFlowTheme.of(context).primary,
+                            ),
+                          ),
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                      );
+                    }
+                    List<CitasRecord> dataTableCitasRecordList = snapshot.data!;
+                    return DataTable2(
+                      columns: [
+                        DataColumn2(
+                          label: DefaultTextStyle.merge(
+                            softWrap: true,
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                'tgblg5f3' /* Fecha */,
+                              ),
+                              style: FlutterFlowTheme.of(context).labelLarge,
+                            ),
+                          ),
+                        ),
+                        DataColumn2(
+                          label: DefaultTextStyle.merge(
+                            softWrap: true,
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                'ssbym18v' /* Motivo */,
+                              ),
+                              style: FlutterFlowTheme.of(context).labelLarge,
+                            ),
+                          ),
+                        ),
+                      ],
+                      rows: dataTableCitasRecordList
+                          .mapIndexed((dataTableIndex, dataTableCitasRecord) =>
+                              [
+                                Text(
+                                  dateTimeFormat(
+                                    'yMMMd',
+                                    dataTableCitasRecord.fecha!,
+                                    locale: FFLocalizations.of(context)
+                                        .languageCode,
+                                  ),
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                ),
+                                Text(
+                                  dataTableCitasRecord.motivoconsulta,
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                ),
+                              ].map((c) => DataCell(c)).toList())
+                          .map((e) => DataRow(cells: e))
+                          .toList(),
+                      headingRowColor: MaterialStateProperty.all(
+                        FlutterFlowTheme.of(context).primaryBackground,
                       ),
-                    ),
-                  ],
+                      headingRowHeight: 56.0,
+                      dataRowColor: MaterialStateProperty.all(
+                        FlutterFlowTheme.of(context).secondaryBackground,
+                      ),
+                      dataRowHeight: 56.0,
+                      border: TableBorder(
+                        borderRadius: BorderRadius.circular(0.0),
+                      ),
+                      dividerThickness: 1.0,
+                      showBottomBorder: true,
+                      minWidth: 49.0,
+                    );
+                  },
                 ),
               ),
               Row(
@@ -119,11 +167,11 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   FFButtonWidget(
-                    onPressed: () {
-                      print('btnVolver2 pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('Inicio');
                     },
                     text: FFLocalizations.of(context).getText(
-                      'qoxqoimq' /* Volver
+                      'uq9iotr8' /* Volver
  */
                       ,
                     ),

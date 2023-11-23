@@ -150,9 +150,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'RegistrosMaterialesMedicos',
           path: '/registrosMaterialesMedicos',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'RegistrosMaterialesMedicos')
-              : RegistrosMaterialesMedicosWidget(),
+          builder: (context, params) => RegistrosMaterialesMedicosWidget(),
         ),
         FFRoute(
           name: 'homePage',
@@ -169,9 +167,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'MaterialesMedicos',
           path: '/materialesMedicos',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'MaterialesMedicos')
-              : MaterialesMedicosWidget(),
+          builder: (context, params) => MaterialesMedicosWidget(),
         ),
         FFRoute(
           name: 'agregar_datos_tratamientos',
@@ -186,17 +182,23 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'Promociones',
           path: '/promociones',
-          builder: (context, params) => PromocionesWidget(),
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'Promociones')
+              : PromocionesWidget(),
         ),
         FFRoute(
           name: 'TemasImportantes',
           path: '/temasImportantes',
-          builder: (context, params) => TemasImportantesWidget(),
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'TemasImportantes')
+              : TemasImportantesWidget(),
         ),
         FFRoute(
           name: 'MetodosDePago',
           path: '/metodosDePago',
-          builder: (context, params) => MetodosDePagoWidget(),
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'MetodosDePago')
+              : MetodosDePagoWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

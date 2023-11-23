@@ -73,7 +73,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'xfsh3mle' /* Promociones y descuentos */,
+              'of8nhyj6' /* Promociones y descuentos */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -94,7 +94,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 25.0, 0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    'qafipgxy' /* Promociones */,
+                    'v7dnofh0' /* Promociones */,
                   ),
                   style: FlutterFlowTheme.of(context).labelLarge,
                 ),
@@ -136,7 +136,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'b1uqbdcb' /* Al agendar tu segunda cita rec... */,
+                                'p9xufx9j' /* Al agendar tu segunda cita rec... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -184,7 +184,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '4vcae994' /* 25% de descuento al realizarte... */,
+                                'w121uxvo' /* 25% de descuento al realizarte... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -232,7 +232,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '8vv1w8ny' /* 30% de descuento al realizarte... */,
+                                '7hjj4cfw' /* 30% de descuento al realizarte... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -280,7 +280,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '3g5i4qxj' /* Recibe un 10% de descuento en ... */,
+                                'z14r2wj4' /* Recibe un 10% de descuento en ... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -295,7 +295,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 60.0, 0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    'lfoapy5w' /* Cupones de descuento* */,
+                    '7w99e22z' /* Cupones de descuento* */,
                   ),
                   style: FlutterFlowTheme.of(context).labelLarge,
                 ),
@@ -333,7 +333,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'fgrwz8rm' /* Menciona el codigo Nisi27 para... */,
+                                '1yejvkwe' /* Menciona el codigo Nisi27 para... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -377,7 +377,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'rouz899r' /* Menciona el codigo NavidadNisi... */,
+                                'f3z1fgyy' /* Menciona el codigo NavidadNisi... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -392,7 +392,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(10.0, 90.0, 0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    'pkgawbpx' /* *Los cupones pueden ser utiliz... */,
+                    'gjw593xf' /* *Los cupones pueden ser utiliz... */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium,
                 ),

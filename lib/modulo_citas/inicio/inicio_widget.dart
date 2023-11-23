@@ -58,7 +58,7 @@ class _InicioWidgetState extends State<InicioWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              '6npedqlg' /* Inicio */,
+              'leex037o' /* Inicio */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -121,7 +121,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                       },
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'ddqwn694' /* Agendar Cita */,
+                          'zpue4xyn' /* Agendar Cita */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge,
                       ),
@@ -150,7 +150,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                       },
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'a9ce3zai' /* Ver mi historial */,
+                          '6bycc2re' /* Ver mi historial */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge,
                       ),
@@ -183,7 +183,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                       },
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          '0pwncik3' /* Salir  */,
+                          '88kp6ice' /* Salir  */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
@@ -218,7 +218,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                         },
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '6veklech' /* Administracion */,
+                            'e7jklf6f' /* Administracion */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(

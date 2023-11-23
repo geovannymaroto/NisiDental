@@ -86,7 +86,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
-                  '4g7rrhmp' /* Crear Cita */,
+                  '8lihhevb' /* Crear Cita */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
@@ -154,42 +154,46 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          'jwdlhu9o' /* Hora */,
+                          'u9iyx58b' /* Hora */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
-                      FlutterFlowDropDown<String>(
-                        controller: _model.txtHoraValueController ??=
-                            FormFieldController<String>(null),
-                        options: [
-                          FFLocalizations.of(context).getText(
-                            '1nvth52m' /* 10:30 */,
-                          )
-                        ],
-                        onChanged: (val) =>
-                            setState(() => _model.txtHoraValue = val),
-                        width: 300.0,
-                        height: 50.0,
-                        textStyle: FlutterFlowTheme.of(context).bodyMedium,
-                        hintText: FFLocalizations.of(context).getText(
-                          'ai1uaw60' /* Please select... */,
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                        child: FlutterFlowDropDown<String>(
+                          controller: _model.txtHoraValueController ??=
+                              FormFieldController<String>(null),
+                          options: [
+                            FFLocalizations.of(context).getText(
+                              'j8ukadxv' /* 10:30 */,
+                            )
+                          ],
+                          onChanged: (val) =>
+                              setState(() => _model.txtHoraValue = val),
+                          width: 300.0,
+                          height: 50.0,
+                          textStyle: FlutterFlowTheme.of(context).bodyMedium,
+                          hintText: FFLocalizations.of(context).getText(
+                            'o36bz804' /* Please select... */,
+                          ),
+                          icon: Icon(
+                            Icons.keyboard_arrow_down_rounded,
+                            color: FlutterFlowTheme.of(context).secondaryText,
+                            size: 24.0,
+                          ),
+                          fillColor:
+                              FlutterFlowTheme.of(context).secondaryBackground,
+                          elevation: 2.0,
+                          borderColor: FlutterFlowTheme.of(context).alternate,
+                          borderWidth: 2.0,
+                          borderRadius: 8.0,
+                          margin: EdgeInsetsDirectional.fromSTEB(
+                              16.0, 4.0, 16.0, 4.0),
+                          hidesUnderline: true,
+                          isSearchable: false,
+                          isMultiSelect: false,
                         ),
-                        icon: Icon(
-                          Icons.keyboard_arrow_down_rounded,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
-                        ),
-                        fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
-                        elevation: 2.0,
-                        borderColor: FlutterFlowTheme.of(context).alternate,
-                        borderWidth: 2.0,
-                        borderRadius: 8.0,
-                        margin: EdgeInsetsDirectional.fromSTEB(
-                            16.0, 4.0, 16.0, 4.0),
-                        hidesUnderline: true,
-                        isSearchable: false,
-                        isMultiSelect: false,
                       ),
                     ],
                   ),
@@ -199,7 +203,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          '4yshuizr' /* Doctor */,
+                          'rinr4pfi' /* Doctor */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
@@ -246,7 +250,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                               textStyle:
                                   FlutterFlowTheme.of(context).bodyMedium,
                               hintText: FFLocalizations.of(context).getText(
-                                'exzlq8ja' /* Seleccionar... */,
+                                'nbubdoop' /* Seleccionar... */,
                               ),
                               icon: Icon(
                                 Icons.keyboard_arrow_down_rounded,
@@ -281,7 +285,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                       children: [
                         Text(
                           FFLocalizations.of(context).getText(
-                            'ills0zat' /* Motivo */,
+                            '5k4948sr' /* Motivo */,
                           ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
                         ),
@@ -318,7 +322,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                               textStyle:
                                   FlutterFlowTheme.of(context).bodyMedium,
                               hintText: FFLocalizations.of(context).getText(
-                                'vocs8wfc' /* Seleccionar... */,
+                                'z5e68t8c' /* Seleccionar... */,
                               ),
                               icon: Icon(
                                 Icons.keyboard_arrow_down_rounded,
@@ -356,10 +360,10 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                             await CitasRecord.collection
                                 .doc()
                                 .set(createCitasRecordData(
-                                  hora: '',
-                                  motivoconsulta: '',
-                                  doctor: '',
-                                  fecha: 't',
+                                  hora: _model.txtHoraValue,
+                                  motivoconsulta: _model.listaMotivosValue,
+                                  doctor: _model.listamedicosValue,
+                                  fecha: _model.calendarSelectedDay?.start,
                                 ));
                             await showDialog(
                               context: context,
@@ -378,7 +382,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                             );
                           },
                           text: FFLocalizations.of(context).getText(
-                            'rx9ho7ks' /* Crear Cita */,
+                            '22e7kke0' /* Crear Cita */,
                           ),
                           options: FFButtonOptions(
                             width: 150.0,
@@ -414,7 +418,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                           context.pushNamed('Inicio');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'thezksjn' /* Volver */,
+                          'yd8upjnj' /* Volver */,
                         ),
                         options: FFButtonOptions(
                           width: 150.0,
