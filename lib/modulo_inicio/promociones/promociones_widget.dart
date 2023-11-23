@@ -4,28 +4,27 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'services_model.dart';
-export 'services_model.dart';
+import 'promociones_model.dart';
+export 'promociones_model.dart';
 
-class ServicesWidget extends StatefulWidget {
-  const ServicesWidget({Key? key}) : super(key: key);
+class PromocionesWidget extends StatefulWidget {
+  const PromocionesWidget({Key? key}) : super(key: key);
 
   @override
-  _ServicesWidgetState createState() => _ServicesWidgetState();
+  _PromocionesWidgetState createState() => _PromocionesWidgetState();
 }
 
-class _ServicesWidgetState extends State<ServicesWidget> {
-  late ServicesModel _model;
+class _PromocionesWidgetState extends State<PromocionesWidget> {
+  late PromocionesModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ServicesModel());
+    _model = createModel(context, () => PromocionesModel());
   }
 
   @override
@@ -74,7 +73,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'hjy99ili' /* Servicios */,
+              'xfsh3mle' /* Promociones y descuentos */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -92,10 +91,10 @@ class _ServicesWidgetState extends State<ServicesWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 25.0, 0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    '366cqy6h' /* NISI */,
+                    'qafipgxy' /* Promociones */,
                   ),
                   style: FlutterFlowTheme.of(context).labelLarge,
                 ),
@@ -104,7 +103,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
-                  height: 50.0,
+                  height: 70.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     boxShadow: [
@@ -122,10 +121,14 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                            'assets/images/descuento3.png',
+                            width: 60.0,
+                            height: 60.0,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                         Expanded(
                           child: Padding(
@@ -133,7 +136,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'v4dt9apt' /* Limpieza Dental */,
+                                'b1uqbdcb' /* Al agendar tu segunda cita rec... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -148,7 +151,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
-                  height: 50.0,
+                  height: 70.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     boxShadow: [
@@ -166,10 +169,14 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                            'assets/images/descuento2.jpg',
+                            width: 60.0,
+                            height: 60.0,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                         Expanded(
                           child: Padding(
@@ -177,7 +184,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'u7b9guh4' /* Extracción */,
+                                '4vcae994' /* 25% de descuento al realizarte... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -192,7 +199,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
-                  height: 50.0,
+                  height: 70.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     boxShadow: [
@@ -210,10 +217,14 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                            'assets/images/descuento1.jpg',
+                            width: 60.0,
+                            height: 60.0,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                         Expanded(
                           child: Padding(
@@ -221,7 +232,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '6qtmphx7' /* Blanqueamiento */,
+                                '8vv1w8ny' /* 30% de descuento al realizarte... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -236,7 +247,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
-                  height: 50.0,
+                  height: 70.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     boxShadow: [
@@ -254,8 +265,65 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                            'assets/images/descuento3.jpg',
+                            width: 60.0,
+                            height: 60.0,
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                30.0, 0.0, 0.0, 0.0),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                '3g5i4qxj' /* Recibe un 10% de descuento en ... */,
+                              ),
+                              style: FlutterFlowTheme.of(context).bodyLarge,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 60.0, 0.0, 0.0),
+                child: Text(
+                  FFLocalizations.of(context).getText(
+                    'lfoapy5w' /* Cupones de descuento* */,
+                  ),
+                  style: FlutterFlowTheme.of(context).labelLarge,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
+                child: Container(
+                  width: double.infinity,
+                  height: 70.0,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 5.0,
+                        color: Color(0x3416202A),
+                        offset: Offset(0.0, 2.0),
+                      )
+                    ],
+                    borderRadius: BorderRadius.circular(20.0),
+                    shape: BoxShape.rectangle,
+                  ),
+                  child: Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Icon(
+                          Icons.discount_rounded,
                           color: FlutterFlowTheme.of(context).secondaryText,
                           size: 24.0,
                         ),
@@ -265,7 +333,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'v0nh6swm' /* Tratamiento de nervio */,
+                                'fgrwz8rm' /* Menciona el codigo Nisi27 para... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -280,7 +348,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
-                  height: 50.0,
+                  height: 70.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     boxShadow: [
@@ -298,8 +366,8 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
+                        Icon(
+                          Icons.discount_rounded,
                           color: FlutterFlowTheme.of(context).secondaryText,
                           size: 24.0,
                         ),
@@ -309,7 +377,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'a2ititqb' /* Puentes */,
+                                'rouz899r' /* Menciona el codigo NavidadNisi... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -321,267 +389,12 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 50.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 5.0,
-                        color: Color(0x3416202A),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(20.0),
-                    shape: BoxShape.rectangle,
+                padding: EdgeInsetsDirectional.fromSTEB(10.0, 90.0, 0.0, 0.0),
+                child: Text(
+                  FFLocalizations.of(context).getText(
+                    'j9r2sj4g' /* *Los cupones pueden ser utiliz... */,
                   ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                30.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'om13x33a' /* Coronas */,
-                              ),
-                              style: FlutterFlowTheme.of(context).bodyLarge,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 50.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 5.0,
-                        color: Color(0x3416202A),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(20.0),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                30.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                '1chmivv5' /* Prótesis parciales removibles */,
-                              ),
-                              style: FlutterFlowTheme.of(context).bodyLarge,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 50.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 5.0,
-                        color: Color(0x3416202A),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(20.0),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                30.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                '8wnuf36p' /* Cirugías */,
-                              ),
-                              style: FlutterFlowTheme.of(context).bodyLarge,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 50.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 5.0,
-                        color: Color(0x3416202A),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(20.0),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                30.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                '988p6jph' /* Ortodoncia */,
-                              ),
-                              style: FlutterFlowTheme.of(context).bodyLarge,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 50.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 5.0,
-                        color: Color(0x3416202A),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(20.0),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                30.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'x3u8jv70' /* Implantes Dentales */,
-                              ),
-                              style: FlutterFlowTheme.of(context).bodyLarge,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 50.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 5.0,
-                        color: Color(0x3416202A),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(20.0),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        FaIcon(
-                          FontAwesomeIcons.tooth,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                30.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'g4mwgjgy' /* Estética */,
-                              ),
-                              style: FlutterFlowTheme.of(context).bodyLarge,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  style: FlutterFlowTheme.of(context).bodyMedium,
                 ),
               ),
             ],

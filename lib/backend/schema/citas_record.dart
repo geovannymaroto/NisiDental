@@ -31,10 +31,16 @@ class CitasRecord extends FirestoreRecord {
   String get doctor => _doctor ?? '';
   bool hasDoctor() => _doctor != null;
 
+  // "fecha" field.
+  String? _fecha;
+  String get fecha => _fecha ?? '';
+  bool hasFecha() => _fecha != null;
+
   void _initializeFields() {
     _hora = snapshotData['hora'] as String?;
     _motivoconsulta = snapshotData['motivoconsulta'] as String?;
     _doctor = snapshotData['doctor'] as String?;
+    _fecha = snapshotData['fecha'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -74,12 +80,14 @@ Map<String, dynamic> createCitasRecordData({
   String? hora,
   String? motivoconsulta,
   String? doctor,
+  String? fecha,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
       'hora': hora,
       'motivoconsulta': motivoconsulta,
       'doctor': doctor,
+      'fecha': fecha,
     }.withoutNulls,
   );
 
@@ -93,12 +101,13 @@ class CitasRecordDocumentEquality implements Equality<CitasRecord> {
   bool equals(CitasRecord? e1, CitasRecord? e2) {
     return e1?.hora == e2?.hora &&
         e1?.motivoconsulta == e2?.motivoconsulta &&
-        e1?.doctor == e2?.doctor;
+        e1?.doctor == e2?.doctor &&
+        e1?.fecha == e2?.fecha;
   }
 
   @override
-  int hash(CitasRecord? e) =>
-      const ListEquality().hash([e?.hora, e?.motivoconsulta, e?.doctor]);
+  int hash(CitasRecord? e) => const ListEquality()
+      .hash([e?.hora, e?.motivoconsulta, e?.doctor, e?.fecha]);
 
   @override
   bool isValidKey(Object? o) => o is CitasRecord;

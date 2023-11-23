@@ -54,7 +54,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFCBF3F0),
+        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
           backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
@@ -62,7 +62,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
             buttonSize: 40.0,
             icon: Icon(
               Icons.arrow_back,
-              color: FlutterFlowTheme.of(context).primaryText,
+              color: FlutterFlowTheme.of(context).primaryBackground,
               size: 24.0,
             ),
             onPressed: () async {
@@ -70,7 +70,9 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
             },
           ),
           title: Text(
-            '               Preguntas Frecuentes',
+            FFLocalizations.of(context).getText(
+              'ex7ick2q' /* Preguntas Frecuentes */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -91,7 +93,9 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Text(
-                    '¿Cuantas veces al día debemos cepillarnos?',
+                    FFLocalizations.of(context).getText(
+                      '35v706vy' /* ¿Cuantas veces al día debemos ... */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Roboto',
                           fontWeight: FontWeight.bold,
@@ -101,14 +105,18 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                   child: Text(
-                    'Es fundamental cepillarse al menos dos veces por día los dientes. Si se puede más, mejor. Busca siempre pastas dentales con fluoruro.',
+                    FFLocalizations.of(context).getText(
+                      '52r35i7a' /* Es fundamental cepillarse al m... */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium,
                   ),
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Text(
-                    '¿Se puede compartir el cepillo de dientes?',
+                    FFLocalizations.of(context).getText(
+                      'c33unplr' /* ¿Se puede compartir el cepillo... */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
                           fontWeight: FontWeight.bold,
@@ -116,13 +124,17 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   ),
                 ),
                 Text(
-                  'No es bueno compartir el cepillo de dientes. Esto puede lograr que tú te contagies alguna infección bucal.',
+                  FFLocalizations.of(context).getText(
+                    'wtzz9mlf' /* No es bueno compartir el cepil... */,
+                  ),
                   style: FlutterFlowTheme.of(context).bodyMedium,
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: Text(
-                    '¿Como puedo desinfectar mi cepillo de dientes?',
+                    FFLocalizations.of(context).getText(
+                      'an4zqhwm' /* ¿Como puedo desinfectar mi cep... */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
                           fontWeight: FontWeight.bold,
@@ -130,13 +142,17 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   ),
                 ),
                 Text(
-                  '¡No lo hagas! No limpies tu cepillo en soluciones desinfectantes, enjuagues bucales, lava vajillas, dispositivos de microondas para desinfectar o rayos ultravioleta.',
+                  FFLocalizations.of(context).getText(
+                    '0dad3krd' /* ¡No lo hagas! No limpies tu ce... */,
+                  ),
                   style: FlutterFlowTheme.of(context).bodyMedium,
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Text(
-                    '¿cada cuanto debo cambiar mi cepillo de dientes?',
+                    FFLocalizations.of(context).getText(
+                      '5sjsyjmg' /* ¿cada cuanto debo cambiar mi c... */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
                           fontWeight: FontWeight.bold,
@@ -144,13 +160,17 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   ),
                 ),
                 Text(
-                  'Cada 3 ó 4 meses debes cambiar tu cepillo. Antes si tú vez que tiene las puntas de las cerdas gastadas o dobladas.',
+                  FFLocalizations.of(context).getText(
+                    'y5wld3rp' /* Cada 3 ó 4 meses debes cambiar... */,
+                  ),
                   style: FlutterFlowTheme.of(context).bodyMedium,
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Text(
-                    '¿Cada cuato utilizar el hilo dental?',
+                    FFLocalizations.of(context).getText(
+                      'cm33ahe4' /* ¿Cada cuato utilizar el hilo d... */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
                           fontWeight: FontWeight.bold,
@@ -158,7 +178,9 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   ),
                 ),
                 Text(
-                  'Es fundamental. Debes usarlo a diario. Busca hilos dentales aprobados por la Academia Dental Americana (ADA).',
+                  FFLocalizations.of(context).getText(
+                    'dtwvtlfk' /* Es fundamental. Debes usarlo a... */,
+                  ),
                   style: FlutterFlowTheme.of(context).bodyMedium,
                 ),
               ],

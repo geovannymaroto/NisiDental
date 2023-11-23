@@ -78,7 +78,7 @@ class _MaterialesMedicosWidgetState extends State<MaterialesMedicosWidget> {
             key: scaffoldKey,
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             appBar: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).secondary,
+              backgroundColor: Color(0xFF2EC4B6),
               automaticallyImplyLeading: false,
               leading: InkWell(
                 splashColor: Colors.transparent,
@@ -90,16 +90,17 @@ class _MaterialesMedicosWidgetState extends State<MaterialesMedicosWidget> {
                 },
                 child: Icon(
                   Icons.keyboard_arrow_left,
-                  color: FlutterFlowTheme.of(context).secondaryText,
+                  color: FlutterFlowTheme.of(context).primaryBackground,
                   size: 29.0,
                 ),
               ),
               title: Text(
-                'Materiales médicos',
+                FFLocalizations.of(context).getText(
+                  'ahfnjuvr' /* Materiales médicos */,
+                ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
-                      color: Colors.white,
-                      fontSize: 22.0,
+                      color: FlutterFlowTheme.of(context).primaryBackground,
                     ),
               ),
               actions: [],

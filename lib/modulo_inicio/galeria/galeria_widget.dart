@@ -55,14 +55,14 @@ class _GaleriaWidgetState extends State<GaleriaWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFFFFBF69),
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
-            borderColor: Color(0xFFFFBF69),
-            fillColor: Color(0xFFFFBF69),
+            borderColor: FlutterFlowTheme.of(context).secondary,
+            fillColor: FlutterFlowTheme.of(context).secondary,
             icon: Icon(
               Icons.arrow_back,
-              color: FlutterFlowTheme.of(context).primaryText,
+              color: FlutterFlowTheme.of(context).primaryBackground,
               size: 24.0,
             ),
             onPressed: () async {
@@ -70,12 +70,13 @@ class _GaleriaWidgetState extends State<GaleriaWidget> {
             },
           ),
           title: Text(
-            '                                   Galeria NISI',
+            FFLocalizations.of(context).getText(
+              'euy8kdb9' /* Galeria NISI */,
+            ),
             textAlign: TextAlign.center,
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Noto Serif',
-                  color: Colors.white,
-                  fontSize: 20.0,
+                  fontFamily: 'Outfit',
+                  color: FlutterFlowTheme.of(context).primaryBackground,
                 ),
           ),
           actions: [],

@@ -57,7 +57,9 @@ class _InicioWidgetState extends State<InicioWidget> {
           backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           title: Text(
-            'Inicio',
+            FFLocalizations.of(context).getText(
+              '6npedqlg' /* Inicio */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -104,22 +106,31 @@ class _InicioWidgetState extends State<InicioWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
-                      Icons.person_outlined,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 24.0,
-                    ),
-                    InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
+                    FFButtonWidget(
+                      onPressed: () async {
                         context.pushNamed('CrearCita');
                       },
-                      child: Text(
-                        'Agendar Cita',
-                        style: FlutterFlowTheme.of(context).bodyLarge,
+                      text: FFLocalizations.of(context).getText(
+                        'qjnj2lqf' /* Agendar Cita */,
+                      ),
+                      options: FFButtonOptions(
+                        height: 40.0,
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFFFFBF69),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
+                        ),
+                        borderRadius: BorderRadius.circular(15.0),
                       ),
                     ),
                   ],
@@ -131,22 +142,31 @@ class _InicioWidgetState extends State<InicioWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
-                      Icons.medical_information_sharp,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 24.0,
-                    ),
-                    InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
+                    FFButtonWidget(
+                      onPressed: () async {
                         context.pushNamed('Historial');
                       },
-                      child: Text(
-                        'Ver mi historial',
-                        style: FlutterFlowTheme.of(context).bodyLarge,
+                      text: FFLocalizations.of(context).getText(
+                        'l7equg4v' /* Ver mi historial */,
+                      ),
+                      options: FFButtonOptions(
+                        height: 40.0,
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFFFFBF69),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
+                        ),
+                        borderRadius: BorderRadius.circular(15.0),
                       ),
                     ),
                   ],
@@ -176,7 +196,9 @@ class _InicioWidgetState extends State<InicioWidget> {
                         context.goNamedAuth('Registro', context.mounted);
                       },
                       child: Text(
-                        'Salir ',
+                        FFLocalizations.of(context).getText(
+                          '0pwncik3' /* Salir  */,
+                        ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
                               fontSize: 16.0,
@@ -209,7 +231,9 @@ class _InicioWidgetState extends State<InicioWidget> {
                           context.pushNamed('Menu_Administrador');
                         },
                         child: Text(
-                          'Administracion',
+                          FFLocalizations.of(context).getText(
+                            '6veklech' /* Administracion */,
+                          ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Readex Pro',

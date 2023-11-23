@@ -182,6 +182,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Menu_Administrador',
           path: '/menuAdministrador',
           builder: (context, params) => MenuAdministradorWidget(),
+        ),
+        FFRoute(
+          name: 'Promociones',
+          path: '/promociones',
+          builder: (context, params) => PromocionesWidget(),
+        ),
+        FFRoute(
+          name: 'MetodosDePago',
+          path: '/metodosDePago',
+          builder: (context, params) => MetodosDePagoWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

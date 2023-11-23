@@ -55,13 +55,13 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFFCBF3F0),
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             buttonSize: 40.0,
             icon: Icon(
               Icons.arrow_back,
-              color: FlutterFlowTheme.of(context).primaryText,
+              color: FlutterFlowTheme.of(context).primaryBackground,
               size: 24.0,
             ),
             onPressed: () async {
@@ -69,12 +69,12 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
             },
           ),
           title: Text(
-            '                     Reseña de Clientes',
+            FFLocalizations.of(context).getText(
+              '7xso5sx5' /* Reseña de Clientes */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Noto Serif',
-                  color: Color(0xFFFFBF69),
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Outfit',
+                  color: FlutterFlowTheme.of(context).primaryBackground,
                 ),
           ),
           actions: [],
@@ -112,13 +112,17 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                               children: [
                                 Flexible(
                                   child: Text(
-                                    '\"Me encantó la atención de el. Yo le tengo horror al dentista y el doc me trato de maravilla.Super recomendado\"',
+                                    FFLocalizations.of(context).getText(
+                                      'bsfl0a6k' /* "Me encantó la atención de el.... */,
+                                    ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyMedium,
                                   ),
                                 ),
                                 Text(
-                                  'Ale Alvarado Soto',
+                                  FFLocalizations.of(context).getText(
+                                    '79palk6x' /* Ale Alvarado Soto */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -155,11 +159,15 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                '\"Exelente la atención recibida, muy profesionales\"',
+                                FFLocalizations.of(context).getText(
+                                  'h68arkal' /* "Exelente la atención recibida... */,
+                                ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               Text(
-                                'Zaida Romero',
+                                FFLocalizations.of(context).getText(
+                                  'lxsgbisx' /* Zaida Romero */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -193,11 +201,15 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                '\"La verdad son muy buenos en lo que hacen, excelente trato y atencion\"',
+                                FFLocalizations.of(context).getText(
+                                  '7wtit33f' /* "La verdad son muy buenos en l... */,
+                                ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               Text(
-                                'Alejandra Mendoza',
+                                FFLocalizations.of(context).getText(
+                                  'ezdnsmf8' /* Alejandra Mendoza */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -231,11 +243,15 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                '\"Recomendados. Carisma, profesionalismo y excelente comunicación\"',
+                                FFLocalizations.of(context).getText(
+                                  'u6fs8ep8' /* "Recomendados. Carisma, profes... */,
+                                ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               Text(
-                                'Oscar Aguilar Aguero',
+                                FFLocalizations.of(context).getText(
+                                  'n660hux0' /* Oscar Aguilar Aguero */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -269,11 +285,15 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Text(
-                                '\" Cien por cieno recomendados, excelente atencion\"',
+                                FFLocalizations.of(context).getText(
+                                  '16qtkwho' /* " Cien por cieno recomendados,... */,
+                                ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               Text(
-                                'Alejandra Mendoza',
+                                FFLocalizations.of(context).getText(
+                                  '6jcq4lxn' /* Alejandra Mendoza */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -307,11 +327,15 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Text(
-                                '\"Son los mejores, los recomienbdo al 100 %, están en San Frascisco de Heredia.\"',
+                                FFLocalizations.of(context).getText(
+                                  'mlg8ivl9' /* "Son los mejores, los recomien... */,
+                                ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               Text(
-                                'Marianela Castro',
+                                FFLocalizations.of(context).getText(
+                                  'fz02cs5q' /* Marianela Castro */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(

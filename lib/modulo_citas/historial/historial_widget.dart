@@ -54,10 +54,12 @@ class _HistorialWidgetState extends State<HistorialWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondary,
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           title: Text(
-            'Historial',
+            FFLocalizations.of(context).getText(
+              'a3vc6ei2' /* Historial */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -85,7 +87,9 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                       onPressed: () {
                         print('btnUltCita pressed ...');
                       },
-                      text: 'Ultima Cita',
+                      text: FFLocalizations.of(context).getText(
+                        'm729603i' /* Ultima Cita */,
+                      ),
                       options: FFButtonOptions(
                         width: 150.0,
                         height: 40.0,
@@ -93,7 +97,7 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).secondary,
+                        color: Color(0xFF2EC4B6),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Readex Pro',
@@ -118,7 +122,11 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                     onPressed: () {
                       print('btnVolver2 pressed ...');
                     },
-                    text: 'Volver\n',
+                    text: FFLocalizations.of(context).getText(
+                      'qoxqoimq' /* Volver
+ */
+                      ,
+                    ),
                     options: FFButtonOptions(
                       width: 150.0,
                       height: 40.0,
@@ -126,7 +134,7 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                           EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).secondary,
+                      color: Color(0xFF2EC4B6),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Readex Pro',

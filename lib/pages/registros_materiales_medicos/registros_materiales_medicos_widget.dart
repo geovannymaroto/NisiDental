@@ -86,14 +86,15 @@ class _RegistrosMaterialesMedicosWidgetState
             key: scaffoldKey,
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             appBar: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).secondary,
+              backgroundColor: Color(0xFF2EC4B6),
               automaticallyImplyLeading: false,
               title: Text(
-                '     Registro de materiales médicos',
+                FFLocalizations.of(context).getText(
+                  'jq2zuzuw' /*      Registro de materiales mé... */,
+                ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
-                      color: Colors.white,
-                      fontSize: 22.0,
+                      color: FlutterFlowTheme.of(context).primaryBackground,
                     ),
               ),
               actions: [
@@ -107,7 +108,7 @@ class _RegistrosMaterialesMedicosWidgetState
                   },
                   child: Icon(
                     Icons.double_arrow,
-                    color: FlutterFlowTheme.of(context).secondaryText,
+                    color: FlutterFlowTheme.of(context).primaryBackground,
                     size: 24.0,
                   ),
                 ),
@@ -163,7 +164,9 @@ class _RegistrosMaterialesMedicosWidgetState
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Text(
-                                    'Elige un material',
+                                    FFLocalizations.of(context).getText(
+                                      'jxrq97xb' /* Elige un material */,
+                                    ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyMedium,
                                   ),
@@ -193,7 +196,9 @@ class _RegistrosMaterialesMedicosWidgetState
                                 height: 50.0,
                                 textStyle:
                                     FlutterFlowTheme.of(context).bodyMedium,
-                                hintText: 'Please select...',
+                                hintText: FFLocalizations.of(context).getText(
+                                  'z3ak3h4m' /* Please select... */,
+                                ),
                                 icon: Icon(
                                   Icons.keyboard_arrow_down_rounded,
                                   color: FlutterFlowTheme.of(context)
@@ -224,7 +229,9 @@ class _RegistrosMaterialesMedicosWidgetState
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Text(
-                              'Elige una cantidad',
+                              FFLocalizations.of(context).getText(
+                                'rqtzu90p' /* Elige una cantidad */,
+                              ),
                               style: FlutterFlowTheme.of(context).bodyMedium,
                             ),
                           ],
@@ -313,7 +320,9 @@ class _RegistrosMaterialesMedicosWidgetState
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Text(
-                              'Operacion',
+                              FFLocalizations.of(context).getText(
+                                'l3vtfbly' /* Operacion */,
+                              ),
                               style: FlutterFlowTheme.of(context).bodyMedium,
                             ),
                           ],
@@ -329,9 +338,19 @@ class _RegistrosMaterialesMedicosWidgetState
                               child: FlutterFlowDropDown<String>(
                                 controller: _model.dropDownValueController2 ??=
                                     FormFieldController<String>(
-                                  _model.dropDownValue2 ??= 'Sumar',
+                                  _model.dropDownValue2 ??=
+                                      FFLocalizations.of(context).getText(
+                                    'qm9ynvpp' /* Sumar */,
+                                  ),
                                 ),
-                                options: ['Sumar', 'Restar'],
+                                options: [
+                                  FFLocalizations.of(context).getText(
+                                    'v9ickksj' /* Sumar */,
+                                  ),
+                                  FFLocalizations.of(context).getText(
+                                    '6eky9e9v' /* Restar */,
+                                  )
+                                ],
                                 onChanged: (val) =>
                                     setState(() => _model.dropDownValue2 = val),
                                 width: 300.0,
@@ -427,14 +446,16 @@ class _RegistrosMaterialesMedicosWidgetState
                               ),
                             );
                           },
-                          text: 'Registrar',
+                          text: FFLocalizations.of(context).getText(
+                            'eylw72uy' /* Registrar */,
+                          ),
                           options: FFButtonOptions(
                             height: 40.0,
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
                             iconPadding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).secondary,
+                            color: Color(0xFF2EC4B6),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(

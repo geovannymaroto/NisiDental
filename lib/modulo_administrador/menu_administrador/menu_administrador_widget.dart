@@ -56,7 +56,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primary,
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -73,7 +73,9 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
             },
           ),
           title: Text(
-            'Page Title',
+            FFLocalizations.of(context).getText(
+              '8mej5dba' /* Page Title */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -95,14 +97,16 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                   onPressed: () async {
                     context.pushNamed('agregar_datos_admin_doctores');
                   },
-                  text: 'Agregar doctor',
+                  text: FFLocalizations.of(context).getText(
+                    '1q5192kk' /* Agregar doctor */,
+                  ),
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:
                         EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                     iconPadding:
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: FlutterFlowTheme.of(context).primary,
+                    color: Color(0xFF2EC4B6),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Readex Pro',
                           color: Colors.white,
@@ -122,14 +126,16 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                   onPressed: () async {
                     context.pushNamed('agregar_datos_tratamientos');
                   },
-                  text: 'Agregar Tratamiento',
+                  text: FFLocalizations.of(context).getText(
+                    'u5ndv8ru' /* Agregar Tratamiento */,
+                  ),
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:
                         EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                     iconPadding:
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: FlutterFlowTheme.of(context).primary,
+                    color: Color(0xFF2EC4B6),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Readex Pro',
                           color: Colors.white,

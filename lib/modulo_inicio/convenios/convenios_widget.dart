@@ -55,7 +55,7 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFFFFBF69),
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderRadius: 20.0,
@@ -63,7 +63,7 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
             buttonSize: 40.0,
             icon: Icon(
               Icons.arrow_back,
-              color: FlutterFlowTheme.of(context).primaryText,
+              color: FlutterFlowTheme.of(context).primaryBackground,
               size: 24.0,
             ),
             onPressed: () async {
@@ -71,12 +71,13 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
             },
           ),
           title: Text(
-            '        Asociaciones con NISI',
+            FFLocalizations.of(context).getText(
+              'mo2obmxw' /* Asociaciones con NISI */,
+            ),
             textAlign: TextAlign.end,
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Noto Serif',
-                  color: Colors.white,
-                  fontSize: 22.0,
+                  fontFamily: 'Outfit',
+                  color: FlutterFlowTheme.of(context).primaryBackground,
                 ),
           ),
           actions: [],

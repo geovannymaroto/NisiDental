@@ -54,9 +54,9 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFFFBF69),
+        backgroundColor: Color(0xFF2EC4B6),
         appBar: AppBar(
-          backgroundColor: Color(0xFFFFBF69),
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -65,12 +65,22 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: Color(0xFF57636C),
+              color: FlutterFlowTheme.of(context).primaryBackground,
               size: 30.0,
             ),
             onPressed: () async {
               context.pop();
             },
+          ),
+          title: Text(
+            FFLocalizations.of(context).getText(
+              'j59jh0ao' /* Profesionales   */,
+            ),
+            textAlign: TextAlign.center,
+            style: FlutterFlowTheme.of(context).headlineSmall.override(
+                  fontFamily: 'Outfit',
+                  color: FlutterFlowTheme.of(context).primaryBackground,
+                ),
           ),
           actions: [],
           centerTitle: false,
@@ -81,36 +91,6 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Expanded(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Profesionales  ',
-                            textAlign: TextAlign.center,
-                            style: FlutterFlowTheme.of(context)
-                                .headlineSmall
-                                .override(
-                                  fontFamily: 'Merriweather',
-                                  color: Colors.white,
-                                  fontSize: 27.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
               Expanded(
                 child: Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
@@ -149,7 +129,9 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 8.0),
                                   child: Text(
-                                    '            NISI Dental',
+                                    FFLocalizations.of(context).getText(
+                                      '6yg2f9zo' /*             NISI Dental */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
                                         .override(
@@ -162,7 +144,9 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                   ),
                                 ),
                                 Text(
-                                  'Bio',
+                                  FFLocalizations.of(context).getText(
+                                    'sx5rbj4h' /* Bio */,
+                                  ),
                                   textAlign: TextAlign.start,
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
@@ -177,7 +161,9 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 0.0),
                                   child: Text(
-                                    'Brinda el más cálido servicio en Odontología  de mano de altos profesionales, con equipos de alta tecnología, y excelentes instalaciones.\n\nNuestro equipo de profesionales con grandes capacidades y conocimientos en el campo de la salud dental está a su más atenta disposición.',
+                                    FFLocalizations.of(context).getText(
+                                      'r1822ead' /* Brinda el más cálido servicio ... */,
+                                    ),
                                     textAlign: TextAlign.start,
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
@@ -260,7 +246,11 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                                 .start,
                                                         children: [
                                                           Text(
-                                                            'Dr.Dennis Quintero',
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                              'eptfozdt' /* Dr.Dennis Quintero */,
+                                                            ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyLarge
@@ -284,8 +274,11 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                             text: TextSpan(
                                                               children: [
                                                                 TextSpan(
-                                                                  text:
-                                                                      '- Conferencista nacional e internacional.\n- Gold Member Style Italiano Endodontics\n- Especialista Salvando Dientes\n',
+                                                                  text: FFLocalizations.of(
+                                                                          context)
+                                                                      .getText(
+                                                                    'qy58vasw' /* - Conferencista nacional e int... */,
+                                                                  ),
                                                                   style:
                                                                       TextStyle(),
                                                                 )
@@ -331,7 +324,11 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                                   4.0,
                                                                   12.0),
                                                       child: Text(
-                                                        'El Dr.  Dennis, cofundador de NISI Dental, profesional apasionado por la odontología.\n\nSu compromiso con la salud bucal contribuye al bienestar integral de quienes confían en su experiencia y dedicación.',
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                          '09nhwyjx' /* El Dr.  Dennis, cofundador de ... */,
+                                                        ),
                                                         style: FlutterFlowTheme
                                                                 .of(context)
                                                             .labelMedium
@@ -416,7 +413,11 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                                 .start,
                                                         children: [
                                                           Text(
-                                                            'Dr. Jason Quintero',
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                              'ro5zsy5l' /* Dr. Jason Quintero */,
+                                                            ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyLarge
@@ -440,8 +441,13 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                             text: TextSpan(
                                                               children: [
                                                                 TextSpan(
-                                                                  text:
-                                                                      '-Odontologo general\n-Se especializa en tratamiento de alineadores',
+                                                                  text: FFLocalizations.of(
+                                                                          context)
+                                                                      .getText(
+                                                                    'r252ytv7' /* -Odontologo general
+-Se especi... */
+                                                                    ,
+                                                                  ),
                                                                   style:
                                                                       TextStyle(),
                                                                 )
@@ -487,7 +493,11 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                                   4.0,
                                                                   12.0),
                                                       child: Text(
-                                                        'El Dr.  Jason, cofundador de NISI Dental.\nEl profesional en odontología, más allá de ser un experto en técnicas y procedimientos, es un cuidador dedicado que valora la importancia de una sonrisa saludable en la calidad de vida.',
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                          '4ii1a9ut' /* El Dr.  Jason, cofundador de N... */,
+                                                        ),
                                                         style: FlutterFlowTheme
                                                                 .of(context)
                                                             .labelMedium
@@ -550,7 +560,11 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'Raquel Madrigal',
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                          '2frlfq4f' /* Raquel Madrigal */,
+                                                        ),
                                                         style: FlutterFlowTheme
                                                                 .of(context)
                                                             .bodyLarge
@@ -573,8 +587,11 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                         text: TextSpan(
                                                           children: [
                                                             TextSpan(
-                                                              text:
-                                                                  'Asistente en NISI',
+                                                              text: FFLocalizations
+                                                                      .of(context)
+                                                                  .getText(
+                                                                'iklkx1rj' /* Asistente en NISI */,
+                                                              ),
                                                               style:
                                                                   TextStyle(),
                                                             )
@@ -614,7 +631,10 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                       .fromSTEB(
                                                           0.0, 4.0, 4.0, 12.0),
                                                   child: Text(
-                                                    'Es asistente de NISI desde hace 5 años, nos brinda  el funcionamiento eficiente y acogedor de la práctica odontológica. Su destreza administrativa y habilidades interpersonales hacen que la experiencia del paciente sea fluida y cómoda desde el momento en que ingresan por la puerta.',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'n7xcu57d' /* Es asistente de NISI desde hac... */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelMedium
@@ -675,7 +695,10 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'Angie León',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'lfm9mlxs' /* Angie León */,
+                                              ),
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyLarge
@@ -694,7 +717,11 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                               text: TextSpan(
                                                 children: [
                                                   TextSpan(
-                                                    text: 'Asistente en NISI',
+                                                    text: FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      '13lwfx2m' /* Asistente en NISI */,
+                                                    ),
                                                     style: TextStyle(),
                                                   )
                                                 ],
@@ -730,7 +757,9 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 4.0, 4.0, 12.0),
                                         child: Text(
-                                          'Es asistente en NISI desde hace 8 años no solo es la experta en logística detrás de escena, sino también la sonrisa amigable que da la bienvenida y guía a los pacientes en su viaje hacia una salud bucal óptima.',
+                                          FFLocalizations.of(context).getText(
+                                            'fwnfzae1' /* Es asistente en NISI desde hac... */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(

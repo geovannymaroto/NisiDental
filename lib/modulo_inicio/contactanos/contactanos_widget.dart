@@ -56,7 +56,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFF020A09),
+          backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderRadius: 30.0,
@@ -71,11 +71,12 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
             },
           ),
           title: Text(
-            'Contactanos ',
-            style: FlutterFlowTheme.of(context).titleMedium.override(
-                  fontFamily: 'Readex Pro',
-                  color: FlutterFlowTheme.of(context).secondary,
-                  fontSize: 23.0,
+            FFLocalizations.of(context).getText(
+              'c9xmmbs3' /* Contactanos  */,
+            ),
+            style: FlutterFlowTheme.of(context).headlineMedium.override(
+                  fontFamily: 'Outfit',
+                  color: FlutterFlowTheme.of(context).primaryBackground,
                 ),
           ),
           actions: [],
@@ -93,7 +94,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                   child: Text(
-                    'Informacion de contacto',
+                    FFLocalizations.of(context).getText(
+                      'o2ujcyok' /* Informacion de contacto */,
+                    ),
                     style: FlutterFlowTheme.of(context).headlineMedium.override(
                           fontFamily: 'Outfit',
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -103,7 +106,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 16.0, 0.0),
                   child: Text(
-                    'Estamos aquí para responder a todas tus preguntas y brindarte la mejor atención dental. Si necesitas agendar una cita, resolver dudas o simplemente quieres obtener más información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros.',
+                    FFLocalizations.of(context).getText(
+                      'pu65el4g' /* Estamos aquí para responder a ... */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -113,7 +118,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 8.0, 0.0),
                   child: Text(
-                    'Correo:',
+                    FFLocalizations.of(context).getText(
+                      'y2s5z7qc' /* Correo: */,
+                    ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -123,7 +130,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                   child: Text(
-                    'dennisqs@gmail.com',
+                    FFLocalizations.of(context).getText(
+                      '5yfd3fb6' /* dennisqs@gmail.com */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -133,7 +142,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 8.0, 0.0),
                   child: Text(
-                    'Telefono:',
+                    FFLocalizations.of(context).getText(
+                      's1j97ly7' /* Telefono: */,
+                    ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -143,7 +154,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                   child: Text(
-                    '(506) 2262-1052',
+                    FFLocalizations.of(context).getText(
+                      'gku54qi6' /* (506) 2262-1052 */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -153,7 +166,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 8.0, 0.0),
                   child: Text(
-                    'Dirección:',
+                    FFLocalizations.of(context).getText(
+                      'jf3ewsqv' /* Dirección: */,
+                    ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -163,7 +178,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                   child: Text(
-                    '100 metros sur, 50 metros oeste del Centro Comercial Multiflores, San Francisco de Heredia, Heredia, Costa Rica.',
+                    FFLocalizations.of(context).getText(
+                      'ipbt7mo1' /* 100 metros sur, 50 metros oest... */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -173,7 +190,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Text(
-                    'Horarios:',
+                    FFLocalizations.of(context).getText(
+                      'pkb0u02a' /* Horarios: */,
+                    ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',
                           color: Color(0xFF020A09),
@@ -181,7 +200,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   ),
                 ),
                 Text(
-                  'Lunea a Viernes | 9:00 am a 5:00 pm\nSabados | 9:00 am a 12 : 00 md',
+                  FFLocalizations.of(context).getText(
+                    'nsb0933h' /* Lunea a Viernes | 9:00 am a 5:... */,
+                  ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -190,7 +211,9 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 8.0, 0.0),
                   child: Text(
-                    'Redes Sociales',
+                    FFLocalizations.of(context).getText(
+                      'yte4jcp3' /* Redes Sociales */,
+                    ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',
                           color: FlutterFlowTheme.of(context).primaryText,

@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_calendar.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
@@ -5,6 +6,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -83,7 +85,9 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
               backgroundColor: Color(0xFF2EC4B6),
               automaticallyImplyLeading: false,
               title: Text(
-                'Crear Cita',
+                FFLocalizations.of(context).getText(
+                  '4g7rrhmp' /* Crear Cita */,
+                ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -123,6 +127,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                           FlutterFlowTheme.of(context).titleSmall,
                       inactiveDateStyle:
                           FlutterFlowTheme.of(context).labelMedium,
+                      locale: FFLocalizations.of(context).languageCode,
                     ),
                   ),
                   Padding(
@@ -133,7 +138,11 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          dateTimeFormat('yMMMd', FFAppState().dataselect),
+                          dateTimeFormat(
+                            'yMMMd',
+                            FFAppState().dataselect,
+                            locale: FFLocalizations.of(context).languageCode,
+                          ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
                         ),
                       ],
@@ -144,7 +153,54 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Text(
-                        'Doctor',
+                        FFLocalizations.of(context).getText(
+                          'jwdlhu9o' /* Hora */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyMedium,
+                      ),
+                      FlutterFlowDropDown<String>(
+                        controller: _model.txtHoraValueController ??=
+                            FormFieldController<String>(null),
+                        options: [
+                          FFLocalizations.of(context).getText(
+                            '1nvth52m' /* 10:30 */,
+                          )
+                        ],
+                        onChanged: (val) =>
+                            setState(() => _model.txtHoraValue = val),
+                        width: 300.0,
+                        height: 50.0,
+                        textStyle: FlutterFlowTheme.of(context).bodyMedium,
+                        hintText: FFLocalizations.of(context).getText(
+                          'ai1uaw60' /* Please select... */,
+                        ),
+                        icon: Icon(
+                          Icons.keyboard_arrow_down_rounded,
+                          color: FlutterFlowTheme.of(context).secondaryText,
+                          size: 24.0,
+                        ),
+                        fillColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        elevation: 2.0,
+                        borderColor: FlutterFlowTheme.of(context).alternate,
+                        borderWidth: 2.0,
+                        borderRadius: 8.0,
+                        margin: EdgeInsetsDirectional.fromSTEB(
+                            16.0, 4.0, 16.0, 4.0),
+                        hidesUnderline: true,
+                        isSearchable: false,
+                        isMultiSelect: false,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text(
+                        FFLocalizations.of(context).getText(
+                          '4yshuizr' /* Doctor */,
+                        ),
                         style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
                       Padding(
@@ -189,7 +245,9 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                               height: 50.0,
                               textStyle:
                                   FlutterFlowTheme.of(context).bodyMedium,
-                              hintText: 'Seleccionar...',
+                              hintText: FFLocalizations.of(context).getText(
+                                'exzlq8ja' /* Seleccionar... */,
+                              ),
                               icon: Icon(
                                 Icons.keyboard_arrow_down_rounded,
                                 color:
@@ -222,7 +280,9 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text(
-                          'Motivo',
+                          FFLocalizations.of(context).getText(
+                            'ills0zat' /* Motivo */,
+                          ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
                         ),
                         StreamBuilder<List<TratamientosRecord>>(
@@ -257,7 +317,9 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                               height: 50.0,
                               textStyle:
                                   FlutterFlowTheme.of(context).bodyMedium,
-                              hintText: 'Seleccionar...',
+                              hintText: FFLocalizations.of(context).getText(
+                                'vocs8wfc' /* Seleccionar... */,
+                              ),
                               icon: Icon(
                                 Icons.keyboard_arrow_down_rounded,
                                 color:
@@ -290,10 +352,34 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         FFButtonWidget(
-                          onPressed: () {
-                            print('btnCrearCita pressed ...');
+                          onPressed: () async {
+                            await CitasRecord.collection
+                                .doc()
+                                .set(createCitasRecordData(
+                                  hora: '',
+                                  motivoconsulta: '',
+                                  doctor: '',
+                                  fecha: 't',
+                                ));
+                            await showDialog(
+                              context: context,
+                              builder: (alertDialogContext) {
+                                return AlertDialog(
+                                  content: Text('REGISTRADO'),
+                                  actions: [
+                                    TextButton(
+                                      onPressed: () =>
+                                          Navigator.pop(alertDialogContext),
+                                      child: Text('Ok'),
+                                    ),
+                                  ],
+                                );
+                              },
+                            );
                           },
-                          text: 'Crear Cita',
+                          text: FFLocalizations.of(context).getText(
+                            'rx9ho7ks' /* Agendar */,
+                          ),
                           options: FFButtonOptions(
                             width: 150.0,
                             height: 40.0,
@@ -327,7 +413,9 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                         onPressed: () async {
                           context.pushNamed('Inicio');
                         },
-                        text: 'Volver',
+                        text: FFLocalizations.of(context).getText(
+                          'thezksjn' /* Volver */,
+                        ),
                         options: FFButtonOptions(
                           width: 150.0,
                           height: 40.0,

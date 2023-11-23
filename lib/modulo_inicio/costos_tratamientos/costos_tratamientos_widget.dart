@@ -62,7 +62,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
             buttonSize: 40.0,
             icon: Icon(
               Icons.arrow_back,
-              color: FlutterFlowTheme.of(context).primaryText,
+              color: FlutterFlowTheme.of(context).primaryBackground,
               size: 24.0,
             ),
             onPressed: () async {
@@ -70,7 +70,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
             },
           ),
           title: Text(
-            '                      Costo de Tratamientos',
+            FFLocalizations.of(context).getText(
+              'h83tsg9a' /* Costo de Tratamientos */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -109,7 +111,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                       ),
                     ),
                     Text(
-                      'Extracción',
+                      FFLocalizations.of(context).getText(
+                        '1jbkvjdl' /* Extracción */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             color: FlutterFlowTheme.of(context).secondary,
@@ -117,7 +121,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                           ),
                     ),
                     Text(
-                      'Precio: ₡ 25.000',
+                      FFLocalizations.of(context).getText(
+                        '82jh3lut' /* Precio: ₡ 25.000 */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             fontSize: 15.0,
@@ -149,7 +155,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                       ),
                     ),
                     Text(
-                      'Calza Dental ',
+                      FFLocalizations.of(context).getText(
+                        'bgiu476n' /* Calza Dental  */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             color: FlutterFlowTheme.of(context).secondary,
@@ -157,7 +165,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                           ),
                     ),
                     Text(
-                      'Precio: ₡ 95.000',
+                      FFLocalizations.of(context).getText(
+                        '4oay2j44' /* Precio: ₡ 95.000 */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             fontSize: 15.0,
@@ -189,7 +199,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                       ),
                     ),
                     Text(
-                      'Implante ',
+                      FFLocalizations.of(context).getText(
+                        '4hh0tn0i' /* Implante  */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             color: FlutterFlowTheme.of(context).secondary,
@@ -197,7 +209,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                           ),
                     ),
                     Text(
-                      'Precio: ₡ 35.000',
+                      FFLocalizations.of(context).getText(
+                        'ugzs5nkn' /* Precio: ₡ 35.000 */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             fontSize: 15.0,
@@ -229,7 +243,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                       ),
                     ),
                     Text(
-                      'Protesis',
+                      FFLocalizations.of(context).getText(
+                        'na94r58d' /* Protesis */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             color: FlutterFlowTheme.of(context).secondary,
@@ -237,7 +253,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                           ),
                     ),
                     Text(
-                      'Precio: ₡ 80.000',
+                      FFLocalizations.of(context).getText(
+                        '9tq35lxn' /* Precio: ₡ 80.000 */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             fontSize: 15.0,
@@ -269,7 +287,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                       ),
                     ),
                     Text(
-                      'Corona',
+                      FFLocalizations.of(context).getText(
+                        '8eiml0du' /* Corona */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             color: FlutterFlowTheme.of(context).secondary,
@@ -277,7 +297,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                           ),
                     ),
                     Text(
-                      'Precio: ₡ 70.000',
+                      FFLocalizations.of(context).getText(
+                        'c7bg254r' /* Precio: ₡ 70.000 */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             fontSize: 15.0,
@@ -309,7 +331,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                       ),
                     ),
                     Text(
-                      'Limpieza',
+                      FFLocalizations.of(context).getText(
+                        '8u15n32u' /* Limpieza */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             color: FlutterFlowTheme.of(context).secondary,
@@ -317,7 +341,9 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                           ),
                     ),
                     Text(
-                      'Precio: ₡ 20.000',
+                      FFLocalizations.of(context).getText(
+                        'e6nq6bax' /* Precio: ₡ 20.000 */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             fontSize: 15.0,
