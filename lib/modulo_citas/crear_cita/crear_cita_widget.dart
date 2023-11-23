@@ -86,7 +86,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
-                  '8lihhevb' /* Crear Cita */,
+                  '4g7rrhmp' /* Crear Cita */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
@@ -154,7 +154,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          'u9iyx58b' /* Hora */,
+                          'jwdlhu9o' /* Hora */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
@@ -163,7 +163,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                             FormFieldController<String>(null),
                         options: [
                           FFLocalizations.of(context).getText(
-                            'j8ukadxv' /* 10:30 */,
+                            '1nvth52m' /* 10:30 */,
                           )
                         ],
                         onChanged: (val) =>
@@ -172,7 +172,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                         height: 50.0,
                         textStyle: FlutterFlowTheme.of(context).bodyMedium,
                         hintText: FFLocalizations.of(context).getText(
-                          'o36bz804' /* Please select... */,
+                          'ai1uaw60' /* Please select... */,
                         ),
                         icon: Icon(
                           Icons.keyboard_arrow_down_rounded,
@@ -199,7 +199,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          'rinr4pfi' /* Doctor */,
+                          '4yshuizr' /* Doctor */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
@@ -246,7 +246,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                               textStyle:
                                   FlutterFlowTheme.of(context).bodyMedium,
                               hintText: FFLocalizations.of(context).getText(
-                                'nbubdoop' /* Seleccionar... */,
+                                'exzlq8ja' /* Seleccionar... */,
                               ),
                               icon: Icon(
                                 Icons.keyboard_arrow_down_rounded,
@@ -281,7 +281,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                       children: [
                         Text(
                           FFLocalizations.of(context).getText(
-                            '5k4948sr' /* Motivo */,
+                            'ills0zat' /* Motivo */,
                           ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
                         ),
@@ -318,7 +318,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                               textStyle:
                                   FlutterFlowTheme.of(context).bodyMedium,
                               hintText: FFLocalizations.of(context).getText(
-                                'z5e68t8c' /* Seleccionar... */,
+                                'vocs8wfc' /* Seleccionar... */,
                               ),
                               icon: Icon(
                                 Icons.keyboard_arrow_down_rounded,
@@ -378,7 +378,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                             );
                           },
                           text: FFLocalizations.of(context).getText(
-                            '22e7kke0' /* Crear Cita */,
+                            'rx9ho7ks' /* Crear Cita */,
                           ),
                           options: FFButtonOptions(
                             width: 150.0,
@@ -414,7 +414,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                           context.pushNamed('Inicio');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'yd8upjnj' /* Volver */,
+                          'thezksjn' /* Volver */,
                         ),
                         options: FFButtonOptions(
                           width: 150.0,

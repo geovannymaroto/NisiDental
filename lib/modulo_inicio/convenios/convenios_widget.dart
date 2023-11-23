@@ -72,7 +72,7 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'dj711e1h' /* Asociaciones con NISI */,
+              'mo2obmxw' /* Asociaciones con NISI */,
             ),
             textAlign: TextAlign.end,
             style: FlutterFlowTheme.of(context).headlineMedium.override(

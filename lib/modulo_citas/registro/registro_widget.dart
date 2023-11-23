@@ -65,7 +65,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              'gkdluj1n' /* NisiDental */,
+              'shg1uqu8' /* NisiDental */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -144,7 +144,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                           obscureText: false,
                           decoration: InputDecoration(
                             labelText: FFLocalizations.of(context).getText(
-                              'ozs7xis2' /* Usuario */,
+                              'q7dt94y4' /* Usuario */,
                             ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
@@ -201,7 +201,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                         obscureText: !_model.txtPassVisibility,
                         decoration: InputDecoration(
                           labelText: FFLocalizations.of(context).getText(
-                            'p9s1u1lr' /* Contraseña */,
+                            '36cz5qs6' /* Contraseña */,
                           ),
                           labelStyle: FlutterFlowTheme.of(context).labelMedium,
                           hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -280,7 +280,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                           context.pushNamedAuth('Inicio', context.mounted);
                         },
                         text: FFLocalizations.of(context).getText(
-                          'ld90q7je' /* Ingresar */,
+                          'bswhk8ad' /* Ingresar */,
                         ),
                         options: FFButtonOptions(
                           height: 40.0,
@@ -322,7 +322,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                           context.goNamedAuth('homePage', context.mounted);
                         },
                         text: FFLocalizations.of(context).getText(
-                          'ma23xa6j' /* Registrar */,
+                          'dwlhnolv' /* Registrar */,
                         ),
                         options: FFButtonOptions(
                           height: 40.0,

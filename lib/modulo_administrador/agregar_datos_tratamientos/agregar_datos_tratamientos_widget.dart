@@ -90,7 +90,7 @@ class _AgregarDatosTratamientosWidgetState
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'bur8rum2' /* Agregar datos administrador */,
+              'dv72pnsx' /* Agregar datos administrador */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -115,7 +115,7 @@ class _AgregarDatosTratamientosWidgetState
                   children: [
                     Text(
                       FFLocalizations.of(context).getText(
-                        'd62ccegg' /* Agregar nombre de nuevo tratam... */,
+                        'qq4cwx3j' /* Agregar nombre de nuevo tratam... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium,
                     ),
@@ -211,7 +211,7 @@ class _AgregarDatosTratamientosWidgetState
                         setState(() {});
                       },
                       text: FFLocalizations.of(context).getText(
-                        'k0y3f45x' /* Registrar */,
+                        '2gzk47iv' /* Registrar */,
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
@@ -271,7 +271,7 @@ class _AgregarDatosTratamientosWidgetState
                             children: [
                               SlidableAction(
                                 label: FFLocalizations.of(context).getText(
-                                  'bnef44vd' /* Borrar */,
+                                  '488vs7h9' /* Borrar */,
                                 ),
                                 backgroundColor:
                                     FlutterFlowTheme.of(context).error,

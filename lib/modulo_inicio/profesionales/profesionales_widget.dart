@@ -74,7 +74,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'vto5s2ga' /* Profesionales   */,
+              'j59jh0ao' /* Profesionales   */,
             ),
             textAlign: TextAlign.center,
             style: FlutterFlowTheme.of(context).headlineSmall.override(
@@ -130,7 +130,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                       0.0, 0.0, 0.0, 8.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'fhk68j9y' /*             NISI Dental */,
+                                      '6yg2f9zo' /*             NISI Dental */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
@@ -145,7 +145,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                 ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'z5hmrxq3' /* Bio */,
+                                    'sx5rbj4h' /* Bio */,
                                   ),
                                   textAlign: TextAlign.start,
                                   style: FlutterFlowTheme.of(context)
@@ -162,7 +162,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                       0.0, 10.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'jriy8hgf' /* Brinda el más cálido servicio ... */,
+                                      'r1822ead' /* Brinda el más cálido servicio ... */,
                                     ),
                                     textAlign: TextAlign.start,
                                     style: FlutterFlowTheme.of(context)
@@ -249,7 +249,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                              'tdije9s7' /* Dr.Dennis Quintero */,
+                                                              'eptfozdt' /* Dr.Dennis Quintero */,
                                                             ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
@@ -277,7 +277,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                                   text: FFLocalizations.of(
                                                                           context)
                                                                       .getText(
-                                                                    '4t4r73pf' /* - Conferencista nacional e int... */,
+                                                                    'qy58vasw' /* - Conferencista nacional e int... */,
                                                                   ),
                                                                   style:
                                                                       TextStyle(),
@@ -327,7 +327,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'kxkaziah' /* El Dr.  Dennis, cofundador de ... */,
+                                                          '09nhwyjx' /* El Dr.  Dennis, cofundador de ... */,
                                                         ),
                                                         style: FlutterFlowTheme
                                                                 .of(context)
@@ -416,7 +416,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                              'jk9l4gx5' /* Dr. Jason Quintero */,
+                                                              'ro5zsy5l' /* Dr. Jason Quintero */,
                                                             ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
@@ -444,7 +444,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                                   text: FFLocalizations.of(
                                                                           context)
                                                                       .getText(
-                                                                    'cm3k6k2y' /* -Odontologo general
+                                                                    'r252ytv7' /* -Odontologo general
 -Se especi... */
                                                                     ,
                                                                   ),
@@ -496,7 +496,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'bde28jym' /* El Dr.  Jason, cofundador de N... */,
+                                                          '4ii1a9ut' /* El Dr.  Jason, cofundador de N... */,
                                                         ),
                                                         style: FlutterFlowTheme
                                                                 .of(context)
@@ -563,7 +563,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'fd16q3k6' /* Raquel Madrigal */,
+                                                          '2frlfq4f' /* Raquel Madrigal */,
                                                         ),
                                                         style: FlutterFlowTheme
                                                                 .of(context)
@@ -590,7 +590,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                               text: FFLocalizations
                                                                       .of(context)
                                                                   .getText(
-                                                                'mfnfyp9k' /* Asistente en NISI */,
+                                                                'iklkx1rj' /* Asistente en NISI */,
                                                               ),
                                                               style:
                                                                   TextStyle(),
@@ -633,7 +633,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'ajhaer6y' /* Es asistente de NISI desde hac... */,
+                                                      'n7xcu57d' /* Es asistente de NISI desde hac... */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -697,7 +697,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '9sz3vvt1' /* Angie León */,
+                                                'lfm9mlxs' /* Angie León */,
                                               ),
                                               style: FlutterFlowTheme.of(
                                                       context)
@@ -720,7 +720,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                                     text: FFLocalizations.of(
                                                             context)
                                                         .getText(
-                                                      'pijsmng0' /* Asistente en NISI */,
+                                                      '13lwfx2m' /* Asistente en NISI */,
                                                     ),
                                                     style: TextStyle(),
                                                   )
@@ -758,7 +758,7 @@ class _ProfesionalesWidgetState extends State<ProfesionalesWidget> {
                                             0.0, 4.0, 4.0, 12.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'qqy1issn' /* Es asistente en NISI desde hac... */,
+                                            'fwnfzae1' /* Es asistente en NISI desde hac... */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium

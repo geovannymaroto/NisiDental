@@ -73,7 +73,7 @@ class _TemasImportantesWidgetState extends State<TemasImportantesWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'vzjg9stx' /* Temas importantes */,
+              'fjwhe869' /* Temas importantes */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -117,7 +117,7 @@ class _TemasImportantesWidgetState extends State<TemasImportantesWidget> {
                               10.0, 10.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '2lkomej5' /* - El equipo profesional que co... */,
+                              'fpxl2q4p' /* - El equipo profesional que co... */,
                             ),
                             style: FlutterFlowTheme.of(context).bodyLarge,
                           ),

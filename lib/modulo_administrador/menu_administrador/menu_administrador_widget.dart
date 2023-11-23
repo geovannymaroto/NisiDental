@@ -74,7 +74,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'jhmgrnoo' /* Page Title */,
+              '8mej5dba' /* Page Title */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -98,7 +98,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                     context.pushNamed('agregar_datos_admin_doctores');
                   },
                   text: FFLocalizations.of(context).getText(
-                    'zhbfg3yv' /* Agregar doctor */,
+                    '1q5192kk' /* Agregar doctor */,
                   ),
                   options: FFButtonOptions(
                     height: 40.0,
@@ -127,7 +127,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                     context.pushNamed('agregar_datos_tratamientos');
                   },
                   text: FFLocalizations.of(context).getText(
-                    'us80wlax' /* Agregar Tratamiento */,
+                    'u5ndv8ru' /* Agregar Tratamiento */,
                   ),
                   options: FFButtonOptions(
                     height: 40.0,

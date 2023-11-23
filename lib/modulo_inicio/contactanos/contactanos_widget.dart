@@ -72,7 +72,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'iqysxikb' /* Contactanos  */,
+              'c9xmmbs3' /* Contactanos  */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -95,7 +95,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      's4t2883c' /* Informacion de contacto */,
+                      'o2ujcyok' /* Informacion de contacto */,
                     ),
                     style: FlutterFlowTheme.of(context).headlineMedium.override(
                           fontFamily: 'Outfit',
@@ -107,7 +107,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 16.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'j65ignz8' /* Estamos aquí para responder a ... */,
+                      'pu65el4g' /* Estamos aquí para responder a ... */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
@@ -119,7 +119,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 8.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'fg5fcmwh' /* Correo: */,
+                      'y2s5z7qc' /* Correo: */,
                     ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',
@@ -131,7 +131,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'kj4z5o9h' /* dennisqs@gmail.com */,
+                      '5yfd3fb6' /* dennisqs@gmail.com */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
@@ -143,7 +143,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 8.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'za0ng77h' /* Telefono: */,
+                      's1j97ly7' /* Telefono: */,
                     ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',
@@ -155,7 +155,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'vot51ze7' /* (506) 2262-1052 */,
+                      'gku54qi6' /* (506) 2262-1052 */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
@@ -167,7 +167,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 8.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'ga5ocpqx' /* Dirección: */,
+                      'jf3ewsqv' /* Dirección: */,
                     ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',
@@ -179,7 +179,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'abyzokem' /* 100 metros sur, 50 metros oest... */,
+                      'ipbt7mo1' /* 100 metros sur, 50 metros oest... */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
@@ -191,7 +191,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'fev7stbd' /* Horarios: */,
+                      'pkb0u02a' /* Horarios: */,
                     ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',
@@ -201,7 +201,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'e77untdw' /* Lunea a Viernes | 9:00 am a 5:... */,
+                    'nsb0933h' /* Lunea a Viernes | 9:00 am a 5:... */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
@@ -212,7 +212,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 8.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'lot04cad' /* Redes Sociales */,
+                      'yte4jcp3' /* Redes Sociales */,
                     ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Readex Pro',

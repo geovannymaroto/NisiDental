@@ -73,7 +73,7 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'vf1yxuab' /* Metodos de pago */,
+              'w462p5n4' /* Metodos de pago */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -123,7 +123,7 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '29ta4wd5' /* Menciona el codigo Nisi27 para... */,
+                                '9sv9woly' /* Menciona el codigo Nisi27 para... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -167,7 +167,7 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'g5hlg448' /* Menciona el codigo NavidadNisi... */,
+                                'ch9btxxu' /* Menciona el codigo NavidadNisi... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),

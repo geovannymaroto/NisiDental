@@ -90,7 +90,7 @@ class _AgregarDatosAdminDoctoresWidgetState
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'cf7mfacm' /* Agregar datos administrador */,
+              'gwnoohm5' /* Agregar datos administrador */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -115,7 +115,7 @@ class _AgregarDatosAdminDoctoresWidgetState
                   children: [
                     Text(
                       FFLocalizations.of(context).getText(
-                        'd03zbpu1' /* Agregar nombre de nuevo medico... */,
+                        '8so3yg8y' /* Agregar nombre de nuevo medico... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium,
                     ),
@@ -200,7 +200,7 @@ class _AgregarDatosAdminDoctoresWidgetState
                         );
                       },
                       text: FFLocalizations.of(context).getText(
-                        'msa6i2nb' /* Registrar */,
+                        'bmtt68zz' /* Registrar */,
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
@@ -260,7 +260,7 @@ class _AgregarDatosAdminDoctoresWidgetState
                             children: [
                               SlidableAction(
                                 label: FFLocalizations.of(context).getText(
-                                  'gqrc297a' /* Borrar */,
+                                  '1dmbbocr' /* Borrar */,
                                 ),
                                 backgroundColor:
                                     FlutterFlowTheme.of(context).error,

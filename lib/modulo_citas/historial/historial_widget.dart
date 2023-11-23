@@ -58,7 +58,7 @@ class _HistorialWidgetState extends State<HistorialWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              'urgaog64' /* Historial */,
+              'a3vc6ei2' /* Historial */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -88,7 +88,7 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                         print('btnUltCita pressed ...');
                       },
                       text: FFLocalizations.of(context).getText(
-                        '6k9r8drs' /* Ultima Cita */,
+                        'm729603i' /* Ultima Cita */,
                       ),
                       options: FFButtonOptions(
                         width: 150.0,
@@ -123,7 +123,7 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                       print('btnVolver2 pressed ...');
                     },
                     text: FFLocalizations.of(context).getText(
-                      'uq9iotr8' /* Volver
+                      'qoxqoimq' /* Volver
  */
                       ,
                     ),
