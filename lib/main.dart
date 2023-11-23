@@ -181,18 +181,6 @@ class _NavBarPageState extends State<NavBarPage> {
                       : Color(0x8A000000),
                   size: 24.0,
                 ),
-                Text(
-                  FFLocalizations.of(context).getText(
-                    '5f5l00cu' /* Registo Materiales */,
-                  ),
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    color: currentIndex == 0
-                        ? FlutterFlowTheme.of(context).secondary
-                        : Color(0x8A000000),
-                    fontSize: 11.0,
-                  ),
-                ),
               ],
             ),
           ),

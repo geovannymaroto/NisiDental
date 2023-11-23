@@ -672,7 +672,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Elige una cantidad',
       'en': 'Choose a quantity',
     },
-    '1pxq2u8n': {
+    'fjqd7v8y': {
       'es': 'Ingrese la cantidad',
       'en': '',
     },
@@ -701,7 +701,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'to register',
     },
     '5f5l00cu': {
-      'es': 'Registo Materiales',
+      'es': '',
       'en': 'Materials Registry',
     },
   },

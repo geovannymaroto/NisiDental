@@ -258,7 +258,7 @@ class _RegistrosMaterialesMedicosWidgetState
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        '1pxq2u8n' /* Ingrese la cantidad */,
+                                        'fjqd7v8y' /* Ingrese la cantidad */,
                                       ),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .labelMedium,
