@@ -107,840 +107,819 @@ Locale createLocale(String language) => language.contains('_')
 final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Registro
   {
-    'q7dt94y4': {
-      'es': 'Email',
+    'ozs7xis2': {
+      'es': 'Usuario',
       'en': 'User',
     },
-    '36cz5qs6': {
+    'p9s1u1lr': {
       'es': 'Contraseña',
       'en': 'Password',
     },
-    'bswhk8ad': {
+    'ld90q7je': {
       'es': 'Ingresar',
-      'en': 'Sign In',
+      'en': 'Sign in',
     },
-    'dwlhnolv': {
+    'ma23xa6j': {
       'es': 'Registrar',
-      'en': 'Sign Up',
+      'en': 'Register',
     },
-    'i9iurskc': {
-      'es': 'Este campo es obligatorio',
-      'en': 'This field is required',
-    },
-    'f5n3ivao': {
-      'es': 'Please choose an option from the dropdown',
-      'en': '',
-    },
-    'd5zwfxae': {
-      'es': 'Este campo es obligatorio',
-      'en': 'This field is required',
-    },
-    'q6q3ioz1': {
-      'es': 'Please choose an option from the dropdown',
-      'en': '',
-    },
-    'shg1uqu8': {
+    'gkdluj1n': {
       'es': 'NisiDental',
       'en': 'NisiDental',
     },
-    '546w14fs': {
+    '0vtzf58e': {
       'es': 'Home',
-      'en': 'Home',
+      'en': 'home',
     },
   },
   // Inicio
   {
-    'qjnj2lqf': {
+    'zpue4xyn': {
       'es': 'Agendar Cita',
-      'en': '',
+      'en': 'Schedule Appointment',
     },
-    'l7equg4v': {
+    '6bycc2re': {
       'es': 'Ver mi historial',
-      'en': '',
+      'en': 'See my history',
     },
-    '0pwncik3': {
+    '88kp6ice': {
       'es': 'Salir ',
       'en': 'Sign out',
     },
-    '6veklech': {
+    'e7jklf6f': {
       'es': 'Administracion',
       'en': 'Administration',
     },
-    '6npedqlg': {
+    'leex037o': {
       'es': 'Inicio',
       'en': 'Start',
     },
-    'c8fgvpj5': {
+    '2rk3aiz4': {
       'es': 'Home',
-      'en': 'Home',
+      'en': 'home',
     },
   },
   // CrearCita
   {
-    'jwdlhu9o': {
+    'u9iyx58b': {
       'es': 'Hora',
-      'en': 'Doctor',
+      'en': 'Hour',
     },
-    '1nvth52m': {
+    'j8ukadxv': {
       'es': '10:30',
-      'en': '',
+      'en': '10:30',
     },
-    'ai1uaw60': {
+    'o36bz804': {
       'es': 'Please select...',
-      'en': '',
+      'en': 'Please select...',
     },
-    'ep4ne1zo': {
+    'kituqlt6': {
       'es': 'Search for an item...',
-      'en': '',
+      'en': 'Search for an item...',
     },
-    '4yshuizr': {
+    'rinr4pfi': {
       'es': 'Doctor',
       'en': 'Doctor',
     },
-    'exzlq8ja': {
+    'nbubdoop': {
       'es': 'Seleccionar...',
       'en': 'Select...',
     },
-    '5egq86nl': {
+    'gqrd763r': {
       'es': 'Search for an item...',
       'en': 'Search for an item...',
     },
-    'ills0zat': {
+    '5k4948sr': {
       'es': 'Motivo',
       'en': 'Reason',
     },
-    'vocs8wfc': {
+    'z5e68t8c': {
       'es': 'Seleccionar...',
       'en': 'Select...',
     },
-    'z0deymoq': {
+    '6ffneaqi': {
       'es': 'Search for an item...',
       'en': 'Search for an item...',
     },
-    'rx9ho7ks': {
-      'es': 'Agendar',
-      'en': 'Create Appointment',
-    },
-    'thezksjn': {
-      'es': 'Volver',
-      'en': 'Return',
-    },
-    '4g7rrhmp': {
+    '22e7kke0': {
       'es': 'Crear Cita',
       'en': 'Create Appointment',
     },
-    'ebmxmiyo': {
+    'yd8upjnj': {
+      'es': 'Volver',
+      'en': 'Return',
+    },
+    '8lihhevb': {
+      'es': 'Crear Cita',
+      'en': 'Create Appointment',
+    },
+    '0b981nh4': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // Historial
   {
-    'm729603i': {
+    '6k9r8drs': {
       'es': 'Ultima Cita',
       'en': 'Last appointment',
     },
-    'qoxqoimq': {
+    'uq9iotr8': {
       'es': 'Volver\n',
       'en': 'Return',
     },
-    'a3vc6ei2': {
+    'urgaog64': {
       'es': 'Historial',
       'en': 'Record',
     },
-    '19yy4ee0': {
+    'oxl1ldx2': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // Profesionales
   {
-    '6yg2f9zo': {
+    'fhk68j9y': {
       'es': '            NISI Dental',
       'en': 'NISI Dental',
     },
-    'sx5rbj4h': {
+    'z5hmrxq3': {
       'es': 'Bio',
       'en': 'Bio',
     },
-    'r1822ead': {
+    'jriy8hgf': {
       'es':
           'Brinda el más cálido servicio en Odontología  de mano de altos profesionales, con equipos de alta tecnología, y excelentes instalaciones.\n\nNuestro equipo de profesionales con grandes capacidades y conocimientos en el campo de la salud dental está a su más atenta disposición.',
       'en':
           'It provides the warmest service in Dentistry by senior professionals, with high-tech equipment, and excellent facilities.\n\nOur team of professionals with great skills and knowledge in the field of dental health is at your most attentive disposal.',
     },
-    'eptfozdt': {
+    'tdije9s7': {
       'es': 'Dr.Dennis Quintero',
       'en': 'Dr. Dennis Quintero',
     },
-    'qy58vasw': {
+    '4t4r73pf': {
       'es':
           '- Conferencista nacional e internacional.\n- Gold Member Style Italiano Endodontics\n- Especialista Salvando Dientes\n',
       'en':
           '- National and international speaker.\n- Gold Member Style Italiano Endodontics\n- Teeth Saving Specialist',
     },
-    '09nhwyjx': {
+    'kxkaziah': {
       'es':
           'El Dr.  Dennis, cofundador de NISI Dental, profesional apasionado por la odontología.\n\nSu compromiso con la salud bucal contribuye al bienestar integral de quienes confían en su experiencia y dedicación.',
       'en':
           'Dr. Dennis, co-founder of NISI Dental, professional with a passion for dentistry.\n\nTheir commitment to oral health contributes to the comprehensive well-being of those who trust in their experience and dedication.',
     },
-    'ro5zsy5l': {
+    'jk9l4gx5': {
       'es': 'Dr. Jason Quintero',
       'en': 'Dr. Jason Quintero',
     },
-    'r252ytv7': {
+    'cm3k6k2y': {
       'es':
           '-Odontologo general\n-Se especializa en tratamiento de alineadores',
       'en': '-General dentist\n-Specializes in aligner treatment',
     },
-    '4ii1a9ut': {
+    'bde28jym': {
       'es':
           'El Dr.  Jason, cofundador de NISI Dental.\nEl profesional en odontología, más allá de ser un experto en técnicas y procedimientos, es un cuidador dedicado que valora la importancia de una sonrisa saludable en la calidad de vida.',
       'en':
           'Dr. Jason, co-founder of NISI Dental.\nThe dental professional, beyond being an expert in techniques and procedures, is a dedicated caregiver who values ​​the importance of a healthy smile in the quality of life.',
     },
-    '2frlfq4f': {
+    'fd16q3k6': {
       'es': 'Raquel Madrigal',
       'en': 'Raquel Madrigal',
     },
-    'iklkx1rj': {
+    'mfnfyp9k': {
       'es': 'Asistente en NISI',
       'en': 'Assistant at NISI',
     },
-    'n7xcu57d': {
+    'ajhaer6y': {
       'es':
           'Es asistente de NISI desde hace 5 años, nos brinda  el funcionamiento eficiente y acogedor de la práctica odontológica. Su destreza administrativa y habilidades interpersonales hacen que la experiencia del paciente sea fluida y cómoda desde el momento en que ingresan por la puerta.',
       'en':
           'He has been an NISI assistant for 5 years, providing us with the efficient and welcoming operation of the dental practice. Her administrative prowess and interpersonal skills make the patient experience seamless and comfortable from the moment they walk in the door.',
     },
-    'lfm9mlxs': {
+    '9sz3vvt1': {
       'es': 'Angie León',
       'en': 'Angie Leon',
     },
-    '13lwfx2m': {
+    'pijsmng0': {
       'es': 'Asistente en NISI',
       'en': 'Assistant at NISI',
     },
-    'fwnfzae1': {
+    'qqy1issn': {
       'es':
           'Es asistente en NISI desde hace 8 años no solo es la experta en logística detrás de escena, sino también la sonrisa amigable que da la bienvenida y guía a los pacientes en su viaje hacia una salud bucal óptima.',
       'en':
           'An assistant at NISI for 8 years, she is not only the behind-the-scenes logistics expert, but also the friendly smile that welcomes and guides patients on their journey to optimal oral health.',
     },
-    'j59jh0ao': {
+    'vto5s2ga': {
       'es': 'Profesionales  ',
       'en': 'Professionals',
     },
-    'iugm6g7i': {
+    'jouqvyqb': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // Convenios
   {
-    'mo2obmxw': {
+    'dj711e1h': {
       'es': 'Asociaciones con NISI',
       'en': 'Partnerships with NISI',
     },
-    '7dn46o3u': {
+    '350ussw7': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // Contactanos
   {
-    'o2ujcyok': {
+    's4t2883c': {
       'es': 'Informacion de contacto',
       'en': 'Contact information',
     },
-    'pu65el4g': {
+    'j65ignz8': {
       'es':
           'Estamos aquí para responder a todas tus preguntas y brindarte la mejor atención dental. Si necesitas agendar una cita, resolver dudas o simplemente quieres obtener más información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros.',
       'en':
           'We are here to answer all your questions and provide you with the best dental care. If you need to schedule an appointment, answer questions or simply want to obtain more information about our services, do not hesitate to contact us.',
     },
-    'y2s5z7qc': {
+    'fg5fcmwh': {
       'es': 'Correo:',
       'en': 'Mail:',
     },
-    '5yfd3fb6': {
+    'kj4z5o9h': {
       'es': 'dennisqs@gmail.com',
       'en': 'dennisqs@gmail.com',
     },
-    's1j97ly7': {
+    'za0ng77h': {
       'es': 'Telefono:',
       'en': 'Phone:',
     },
-    'gku54qi6': {
+    'vot51ze7': {
       'es': '(506) 2262-1052',
       'en': '(506) 2262-1052',
     },
-    'jf3ewsqv': {
+    'ga5ocpqx': {
       'es': 'Dirección:',
       'en': 'Address:',
     },
-    'ipbt7mo1': {
+    'abyzokem': {
       'es':
           '100 metros sur, 50 metros oeste del Centro Comercial Multiflores, San Francisco de Heredia, Heredia, Costa Rica.',
       'en':
           '100 meters south, 50 meters west of the Multiflores Shopping Center, San Francisco de Heredia, Heredia, Costa Rica.',
     },
-    'pkb0u02a': {
+    'fev7stbd': {
       'es': 'Horarios:',
       'en': 'Schedules:',
     },
-    'nsb0933h': {
+    'e77untdw': {
       'es':
           'Lunea a Viernes | 9:00 am a 5:00 pm\nSabados | 9:00 am a 12 : 00 md',
       'en':
           'Monday to Friday | 9:00 a.m. to 5:00 p.m.\nSaturdays | 9:00 am to 12:00 pm',
     },
-    'yte4jcp3': {
+    'lot04cad': {
       'es': 'Redes Sociales',
       'en': 'Social networks',
     },
-    'c9xmmbs3': {
+    'iqysxikb': {
       'es': 'Contactanos ',
       'en': 'Contact us',
     },
   },
   // Services
   {
-    '366cqy6h': {
+    'ejjs7c27': {
       'es': 'NISI',
       'en': 'NISI',
     },
-    'v4dt9apt': {
+    'jeo1pfze': {
       'es': 'Limpieza Dental',
       'en': 'Dental cleaning',
     },
-    'u7b9guh4': {
+    'qp8au14o': {
       'es': 'Extracción',
       'en': 'Extraction',
     },
-    '6qtmphx7': {
+    'p1fk6hkm': {
       'es': 'Blanqueamiento',
       'en': 'Whitening',
     },
-    'v0nh6swm': {
+    'abbv63qk': {
       'es': 'Tratamiento de nervio',
       'en': 'nerve treatment',
     },
-    'a2ititqb': {
+    'bojgi3bu': {
       'es': 'Puentes',
       'en': 'Bridges',
     },
-    'om13x33a': {
+    'vsky2fgh': {
       'es': 'Coronas',
       'en': 'Crowns',
     },
-    '1chmivv5': {
+    'nq5j63wa': {
       'es': 'Prótesis parciales removibles',
       'en': 'Removable partial dentures',
     },
-    '8wnuf36p': {
+    'pnv51rjo': {
       'es': 'Cirugías',
       'en': 'Surgeries',
     },
-    '988p6jph': {
+    '58v0rru1': {
       'es': 'Ortodoncia',
       'en': 'Orthodontics',
     },
-    'x3u8jv70': {
+    'eaxd3w8k': {
       'es': 'Implantes Dentales',
       'en': 'Dental implants',
     },
-    'g4mwgjgy': {
+    '8yw2pwke': {
       'es': 'Estética',
       'en': 'Esthetic',
     },
-    'hjy99ili': {
+    '84jv7c5u': {
       'es': 'Servicios',
       'en': 'Services',
     },
-    'vjwks5o0': {
+    'ot223boz': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // PreguntasFrecuentes
   {
-    '35v706vy': {
+    'hpfi8s8k': {
       'es': '¿Cuantas veces al día debemos cepillarnos?',
       'en': 'How many times a day should we brush?',
     },
-    '52r35i7a': {
+    'bya3cau1': {
       'es':
           'Es fundamental cepillarse al menos dos veces por día los dientes. Si se puede más, mejor. Busca siempre pastas dentales con fluoruro.',
       'en':
           'It is essential to brush your teeth at least twice a day. If more is possible, even better. Always look for toothpastes with fluoride.',
     },
-    'c33unplr': {
+    'om8lh3zh': {
       'es': '¿Se puede compartir el cepillo de dientes?',
       'en': 'Can the toothbrush be shared?',
     },
-    'wtzz9mlf': {
+    '4mnz70up': {
       'es':
           'No es bueno compartir el cepillo de dientes. Esto puede lograr que tú te contagies alguna infección bucal.',
       'en':
           'It is not good to share the toothbrush. This can cause you to get an oral infection.',
     },
-    'an4zqhwm': {
+    '9mvq8w08': {
       'es': '¿Como puedo desinfectar mi cepillo de dientes?',
       'en': 'How can I disinfect my toothbrush?',
     },
-    '0dad3krd': {
+    'wctmsngw': {
       'es':
           '¡No lo hagas! No limpies tu cepillo en soluciones desinfectantes, enjuagues bucales, lava vajillas, dispositivos de microondas para desinfectar o rayos ultravioleta.',
       'en':
           'Do not do it! Do not clean your brush in disinfectant solutions, mouthwashes, dishwashers, microwave disinfection devices, or ultraviolet rays.',
     },
-    '5sjsyjmg': {
+    '4ogrpdcj': {
       'es': '¿cada cuanto debo cambiar mi cepillo de dientes?',
       'en': 'How often should I change my toothbrush?',
     },
-    'y5wld3rp': {
+    'bi2zqkol': {
       'es':
           'Cada 3 ó 4 meses debes cambiar tu cepillo. Antes si tú vez que tiene las puntas de las cerdas gastadas o dobladas.',
       'en':
           'Every 3 or 4 months must change your brush. Before you see that the tips of the bristles are worn or bent.',
     },
-    'cm33ahe4': {
+    'pxz2qh7k': {
       'es': '¿Cada cuato utilizar el hilo dental?',
       'en': 'Does everyone use dental floss?',
     },
-    'dtwvtlfk': {
+    'r8ol986h': {
       'es':
           'Es fundamental. Debes usarlo a diario. Busca hilos dentales aprobados por la Academia Dental Americana (ADA).',
       'en':
           'It\'s fundamental. You must use it daily. Look for dental flosses approved by the American Dental Academy (ADA).',
     },
-    'ex7ick2q': {
+    'imtojwep': {
       'es': 'Preguntas Frecuentes',
       'en': 'Frequent questions',
     },
-    'o1pr1h2p': {
+    'kxg2eitq': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // ResenaClientes
   {
-    'bsfl0a6k': {
+    'wflp8m7i': {
       'es':
           '\"Me encantó la atención de el. Yo le tengo horror al dentista y el doc me trato de maravilla.Super recomendado\"',
       'en':
           '\"I loved his attention. I hate the dentist and the doctor treated me wonderfully. Super recommended\"',
     },
-    '79palk6x': {
+    'tbwk3dba': {
       'es': 'Ale Alvarado Soto',
       'en': 'Ale Alvarado Soto',
     },
-    'h68arkal': {
+    'iokdaayf': {
       'es': '\"Exelente la atención recibida, muy profesionales\"',
       'en': '\"Excellent service received, very professional\"',
     },
-    'lxsgbisx': {
+    '3hdrhhr9': {
       'es': 'Zaida Romero',
       'en': 'Zaida Romero',
     },
-    '7wtit33f': {
+    'sgamlu6x': {
       'es':
           '\"La verdad son muy buenos en lo que hacen, excelente trato y atencion\"',
       'en':
           '\"The truth is they are very good at what they do, excellent treatment and attention\"',
     },
-    'ezdnsmf8': {
+    'yjh2yhii': {
       'es': 'Alejandra Mendoza',
       'en': 'Alejandra Mendoza',
     },
-    'u6fs8ep8': {
+    'qx6hx0j7': {
       'es':
           '\"Recomendados. Carisma, profesionalismo y excelente comunicación\"',
       'en':
           '\"Recommended. Charisma, professionalism and excellent communication\"',
     },
-    'n660hux0': {
+    'xrafq7ha': {
       'es': 'Oscar Aguilar Aguero',
       'en': 'Oscar Aguilar Aguero',
     },
-    '16qtkwho': {
+    '5li95gtb': {
       'es': '\" Cien por cieno recomendados, excelente atencion\"',
       'en': '\"One hundred percent recommended, excellent service\"',
     },
-    '6jcq4lxn': {
+    'y6zyg2fl': {
       'es': 'Alejandra Mendoza',
       'en': 'Alejandra Mendoza',
     },
-    'mlg8ivl9': {
+    'ptjqaaxj': {
       'es':
           '\"Son los mejores, los recomienbdo al 100 %, están en San Frascisco de Heredia.\"',
       'en':
           '\"They are the best, I recommend them 100%, they are in San Frascisco de Heredia.\"',
     },
-    'fz02cs5q': {
+    '8glc1nrl': {
       'es': 'Marianela Castro',
       'en': 'Marianela Castro',
     },
-    '7xso5sx5': {
+    'sxdccqb8': {
       'es': 'Reseña de Clientes',
       'en': 'Customer Review',
     },
-    'vxtlissd': {
+    'ioysdyz6': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // Galeria
   {
-    'euy8kdb9': {
+    'f73v5m14': {
       'es': 'Galeria NISI',
       'en': 'NISI Gallery',
     },
-    'st7fkmb6': {
+    '9igvfbuh': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // CostosTratamientos
   {
-    '1jbkvjdl': {
+    '64nt7lec': {
       'es': 'Extracción',
       'en': 'Extraction',
     },
-    '82jh3lut': {
+    'd3ga94qt': {
       'es': 'Precio: ₡ 25.000',
       'en': 'Price: ₡25,000',
     },
-    'bgiu476n': {
+    'guuez0gp': {
       'es': 'Calza Dental ',
       'en': 'Dental Shoe',
     },
-    '4oay2j44': {
+    'eoelhyam': {
       'es': 'Precio: ₡ 95.000',
       'en': 'Price: ₡ 95,000',
     },
-    '4hh0tn0i': {
+    'klp3pp02': {
       'es': 'Implante ',
       'en': 'Implant',
     },
-    'ugzs5nkn': {
+    'vzc9c8pq': {
       'es': 'Precio: ₡ 35.000',
       'en': 'Price: ₡ 35,000',
     },
-    'na94r58d': {
+    'rwytwa11': {
       'es': 'Protesis',
       'en': 'Prosthesis',
     },
-    '9tq35lxn': {
+    '1p75u21a': {
       'es': 'Precio: ₡ 80.000',
       'en': 'Price: ₡80,000',
     },
-    '8eiml0du': {
+    'lts6a2m2': {
       'es': 'Corona',
       'en': 'Crown',
     },
-    'c7bg254r': {
+    'r2370zw6': {
       'es': 'Precio: ₡ 70.000',
       'en': 'Price: ₡70,000',
     },
-    '8u15n32u': {
+    '9859emn8': {
       'es': 'Limpieza',
       'en': 'Cleaning',
     },
-    'e6nq6bax': {
+    '1uuuji9m': {
       'es': 'Precio: ₡ 20.000',
       'en': 'Price: ₡20,000',
     },
-    'h83tsg9a': {
+    'ezbxy39w': {
       'es': 'Costo de Tratamientos',
       'en': 'Treatment Cost',
     },
-    'to0gmj0c': {
+    'h7xyn7fb': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // RegistrosMaterialesMedicos
   {
-    'jq2zuzuw': {
+    '2p7r6zy8': {
       'es': '     Registro de materiales médicos',
       'en': 'Registration of medical materials',
     },
-    'jxrq97xb': {
+    '7mopz7f6': {
       'es': 'Elige un material',
       'en': 'Choose a material',
     },
-    'lcwv2twa': {
+    'nb83kxv6': {
       'es': 'Option 1',
       'en': 'Option 1',
     },
-    'z3ak3h4m': {
+    'xehl9d2y': {
       'es': 'Please select...',
       'en': 'Please select...',
     },
-    'rf2nybam': {
+    'bvmxv3mh': {
       'es': 'Search for an item...',
       'en': 'Search for an item...',
     },
-    'rqtzu90p': {
+    'yzg7u2j4': {
       'es': 'Elige una cantidad',
       'en': 'Choose a quantity',
     },
-    'l3vtfbly': {
+    '2zb3yuyo': {
       'es': 'Operacion',
       'en': 'Operation',
     },
-    'qm9ynvpp': {
+    'bszoh4nl': {
       'es': 'Sumar',
       'en': 'Add',
     },
-    'v9ickksj': {
+    '4um6cb9s': {
       'es': 'Sumar',
       'en': 'Add',
     },
-    '6eky9e9v': {
+    'eb3tscpu': {
       'es': 'Restar',
       'en': 'Subtract',
     },
-    'w5iuf3bl': {
+    '3ahbq3t9': {
       'es': 'Search for an item...',
       'en': 'Search for an item...',
     },
-    'eylw72uy': {
+    '7uquarvp': {
       'es': 'Registrar',
       'en': 'to register',
     },
-    '5f5l00cu': {
+    'hbh0ek79': {
       'es': 'Registo Materiales',
       'en': 'Materials Registry',
     },
   },
   // homePage
   {
-    '58ik4lbo': {
+    '522jy0c2': {
       'es': '¡Bienvenido a NISI!',
       'en': 'Welcome to NISI!',
     },
-    '872g6nhr': {
+    'zlgva42u': {
       'es':
           'En nuestra clínica, nos esforzamos por brindar un servicio de alta calidad en un entorno acogedor y amigable.',
       'en':
           'At our clinic, we strive to provide high-quality service in a welcoming and friendly environment.',
     },
-    '28rimqoy': {
+    'i91uzfkt': {
       'es': 'Agendar Cita',
       'en': 'Schedule Appointment',
     },
-    '36l65vne': {
+    'fxb6d5zo': {
       'es': 'Contactanos',
       'en': 'Contact us',
     },
-    'ruf110jh': {
+    'heoamgfk': {
       'es': 'Nosotros',
       'en': 'Us',
     },
-    'mbwjeyna': {
+    '7644adzs': {
       'es': 'Servicios',
       'en': 'Services',
     },
-    'fax6brif': {
+    'mk5t81du': {
       'es': 'Costos tratamientos',
       'en': 'Treatment costs',
     },
-    '4ws5ju8y': {
+    'qnwyxjpn': {
       'es': 'Convenios',
       'en': 'Agreements',
     },
-    'g39ahmie': {
+    'pkxx4wlw': {
       'es': 'Galería',
       'en': 'Gallery',
     },
-    '8h5wh6pp': {
+    'dhz9lcu4': {
       'es': 'Preguntas Frecuentes',
       'en': 'Frequent questions',
     },
-    'u14inj4o': {
+    'lc6bsoqf': {
       'es': 'Reseñas',
       'en': 'Reviews',
     },
-    'rpmjmqbk': {
+    '59m6tiyp': {
       'es': 'Admin',
       'en': 'Admin',
     },
-    'c7pjm6ns': {
+    'zxxgrgcs': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // agregar_datos_admin_doctores
   {
-    '8so3yg8y': {
+    'd03zbpu1': {
       'es': 'Agregar nombre de nuevo medico:',
       'en': 'Add new doctor name:',
     },
-    '10mkhmai': {
-      'es': 'Ingrese el nombre aquí',
-      'en': '',
-    },
-    'bmtt68zz': {
+    'msa6i2nb': {
       'es': 'Registrar',
       'en': 'to register',
     },
-    '1dmbbocr': {
+    'gqrc297a': {
       'es': 'Borrar',
       'en': 'Delete',
     },
-    'gwnoohm5': {
+    'cf7mfacm': {
       'es': 'Agregar datos administrador',
       'en': 'Add administrator data',
     },
-    'lmub6eft': {
+    '341o9vn4': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // MaterialesMedicos
   {
-    'ahfnjuvr': {
+    'mad1taoq': {
       'es': 'Materiales médicos',
       'en': 'medical materials',
     },
-    'wbi0md64': {
+    'ulcnspy1': {
       'es': 'Materiales',
       'en': 'Materials',
     },
   },
   // agregar_datos_tratamientos
   {
-    'qq4cwx3j': {
+    'd62ccegg': {
       'es': 'Agregar nombre de nuevo tratamientos:',
       'en': 'Add name of new treatments:',
     },
-    'i41l9iif': {
-      'es': 'Ingrese el dato aquí',
-      'en': '',
-    },
-    '2gzk47iv': {
+    'k0y3f45x': {
       'es': 'Registrar',
       'en': 'to register',
     },
-    '488vs7h9': {
+    'bnef44vd': {
       'es': 'Borrar',
       'en': 'Delete',
     },
-    'dv72pnsx': {
+    'bur8rum2': {
       'es': 'Agregar datos administrador',
       'en': 'Add administrator data',
     },
-    'w8a8sz80': {
+    's8e8fb33': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // Menu_Administrador
   {
-    '1q5192kk': {
+    'zhbfg3yv': {
       'es': 'Agregar doctor',
       'en': 'Add doctor',
     },
-    'u5ndv8ru': {
+    'us80wlax': {
       'es': 'Agregar Tratamiento',
       'en': 'Add Treatment',
     },
-    '8mej5dba': {
+    'jhmgrnoo': {
       'es': 'Page Title',
       'en': 'Page Title',
     },
-    '0l4pa4ux': {
+    '8m7ubwd3': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // Promociones
   {
-    'qafipgxy': {
+    'v7dnofh0': {
       'es': 'Promociones',
-      'en': 'NISI',
+      'en': 'Promotions',
     },
-    'b1uqbdcb': {
+    'p9xufx9j': {
       'es': 'Al agendar tu segunda cita recibiras un 15% de descuento.',
-      'en': 'Bridges',
+      'en':
+          'When you schedule your second appointment you will receive a 15% discount.',
     },
-    '4vcae994': {
+    'w121uxvo': {
       'es': '25% de descuento al realizarte una limpieza + blanquemiento.',
-      'en': 'Bridges',
+      'en': '25% discount when you have a cleaning + whitening.',
     },
-    '8vv1w8ny': {
+    '7hjj4cfw': {
       'es': '30% de descuento al realizarte un implante dental.',
-      'en': 'Bridges',
+      'en': '30% discount when you have a dental implant.',
     },
-    '3g5i4qxj': {
+    'z14r2wj4': {
       'es': 'Recibe un 10% de descuento en limpiezas dentales.',
-      'en': 'Bridges',
+      'en': 'Receive a 10% discount on dental cleanings.',
     },
-    'lfoapy5w': {
+    '7w99e22z': {
       'es': 'Cupones de descuento*',
-      'en': 'NISI',
+      'en': 'Discount coupons*',
     },
-    'fgrwz8rm': {
+    '1yejvkwe': {
       'es':
           'Menciona el codigo Nisi27 para tener un 5% de descuento adicional.',
-      'en': 'Bridges',
+      'en': 'Mention the code Nisi27 for an additional 5% discount.',
     },
-    'rouz899r': {
+    'f3z1fgyy': {
       'es':
           'Menciona el codigo NavidadNisi para tener un 7% de descuento adicional.',
-      'en': 'Bridges',
+      'en': 'Mention the code NavidadNisi for an additional 7% discount.',
     },
-    'j9r2sj4g': {
+    'gjw593xf': {
       'es':
           '*Los cupones pueden ser utilizados solo 1 vez por paciente y no se pueden usar mas de 1 cupon por tratamiento.',
-      'en': '',
+      'en':
+          '*Coupons can be used only 1 time per patient and no more than 1 coupon can be used per treatment.',
     },
-    'xfsh3mle': {
+    'of8nhyj6': {
       'es': 'Promociones y descuentos',
-      'en': 'Services',
+      'en': 'Promotions and discounts',
     },
-    'r21ywclf': {
+    'mkwup6ql': {
+      'es': 'Home',
+      'en': 'home',
+    },
+  },
+  // TemasImportantes
+  {
+    '2lkomej5': {
+      'es':
+          '- El equipo profesional que conforman esta clinica son capacitados constante mente para asi poder brindar a los pacientes una atencion de primer nivel.\n\n- Contamos con lo ultimo en tecnologia en rayos X.\n\n- Nuestros equipos medicos estan 100% esterilizados por nuestros profesionales.\n\n- Las opiniones nos gustan y nos ayudan a tomar decisiones, asi que por favor sentirse libre de compartir cualquier opinion o comentario con nuestro equipo y esto nos ayudara a crecer en familia.',
+      'en':
+          '- The professional team that makes up this clinic is constantly trained in order to provide patients with first-class care.\n\n- We have the latest in X-ray technology.\n\n- Our medical equipment is 100% sterilized by our professionals.\n\n- We like opinions and they help us make decisions, so please feel free to share any opinion or comment with our team and this will help us grow as a family.',
+    },
+    'vzjg9stx': {
+      'es': 'Temas importantes',
+      'en': 'Important topics',
+    },
+    '0ykc7t8v': {
       'es': 'Home',
       'en': 'home',
     },
   },
   // MetodosDePago
   {
-    'vy1qwg1n': {
-      'es': 'Temas importantes',
-      'en': 'NISI',
-    },
-    'fpxl2q4p': {
-      'es': 'Contamos con lo ultimo en tecnologia en rayos X.\n\n-sad',
-      'en': 'Bridges',
-    },
-    '4xmxgsj2': {
-      'es': '25% de descuento al realizarte una limpieza + blanquemiento.',
-      'en': 'Bridges',
-    },
-    'udcyq67r': {
-      'es': 'Metodos de pago',
-      'en': 'NISI',
-    },
-    'miup9c0i': {
+    '29ta4wd5': {
       'es':
           'Menciona el codigo Nisi27 para tener un 5% de descuento adicional.',
-      'en': 'Bridges',
+      'en': 'Mention the code Nisi27 for an additional 5% discount.',
     },
-    'julyzl1g': {
+    'g5hlg448': {
       'es':
           'Menciona el codigo NavidadNisi para tener un 7% de descuento adicional.',
-      'en': 'Bridges',
+      'en': 'Mention the code NavidadNisi for an additional 7% discount.',
     },
-    'fjwhe869': {
-      'es': 'Nisi Dental',
-      'en': 'Services',
+    'vf1yxuab': {
+      'es': 'Metodos de pago',
+      'en': 'Payment methods',
     },
-    '4dg1khln': {
+    'f877xq0l': {
       'es': 'Home',
       'en': 'home',
     },

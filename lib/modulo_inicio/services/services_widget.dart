@@ -74,7 +74,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'hjy99ili' /* Servicios */,
+              '84jv7c5u' /* Servicios */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -95,7 +95,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    '366cqy6h' /* NISI */,
+                    'ejjs7c27' /* NISI */,
                   ),
                   style: FlutterFlowTheme.of(context).labelLarge,
                 ),
@@ -133,7 +133,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'v4dt9apt' /* Limpieza Dental */,
+                                'jeo1pfze' /* Limpieza Dental */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -177,7 +177,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'u7b9guh4' /* Extracción */,
+                                'qp8au14o' /* Extracción */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -221,7 +221,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '6qtmphx7' /* Blanqueamiento */,
+                                'p1fk6hkm' /* Blanqueamiento */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -265,7 +265,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'v0nh6swm' /* Tratamiento de nervio */,
+                                'abbv63qk' /* Tratamiento de nervio */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -309,7 +309,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'a2ititqb' /* Puentes */,
+                                'bojgi3bu' /* Puentes */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -353,7 +353,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'om13x33a' /* Coronas */,
+                                'vsky2fgh' /* Coronas */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -397,7 +397,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '1chmivv5' /* Prótesis parciales removibles */,
+                                'nq5j63wa' /* Prótesis parciales removibles */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -441,7 +441,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '8wnuf36p' /* Cirugías */,
+                                'pnv51rjo' /* Cirugías */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -485,7 +485,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '988p6jph' /* Ortodoncia */,
+                                '58v0rru1' /* Ortodoncia */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -529,7 +529,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'x3u8jv70' /* Implantes Dentales */,
+                                'eaxd3w8k' /* Implantes Dentales */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -573,7 +573,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'g4mwgjgy' /* Estética */,
+                                '8yw2pwke' /* Estética */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),

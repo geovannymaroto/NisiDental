@@ -29,5 +29,7 @@ export '/modulo_administrador/menu_administrador/menu_administrador_widget.dart'
     show MenuAdministradorWidget;
 export '/modulo_inicio/promociones/promociones_widget.dart'
     show PromocionesWidget;
+export '/modulo_inicio/temas_importantes/temas_importantes_widget.dart'
+    show TemasImportantesWidget;
 export '/modulo_inicio/metodos_de_pago/metodos_de_pago_widget.dart'
     show MetodosDePagoWidget;

@@ -183,7 +183,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    '5f5l00cu' /* Registo Materiales */,
+                    'hbh0ek79' /* Registo Materiales */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -209,7 +209,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'c7pjm6ns' /* Home */,
+                    'zxxgrgcs' /* Home */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -235,7 +235,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'wbi0md64' /* Materiales */,
+                    'ulcnspy1' /* Materiales */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(

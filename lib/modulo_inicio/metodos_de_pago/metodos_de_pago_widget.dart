@@ -73,7 +73,7 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'fjwhe869' /* Nisi Dental */,
+              'vf1yxuab' /* Metodos de pago */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -91,102 +91,6 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 25.0, 0.0, 0.0),
-                child: Text(
-                  FFLocalizations.of(context).getText(
-                    'vy1qwg1n' /* Temas importantes */,
-                  ),
-                  style: FlutterFlowTheme.of(context).labelLarge,
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 70.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 5.0,
-                        color: Color(0x3416202A),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(20.0),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'fpxl2q4p' /* Contamos con lo ultimo en tecn... */,
-                              ),
-                              style: FlutterFlowTheme.of(context).bodyLarge,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 70.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 5.0,
-                        color: Color(0x3416202A),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(20.0),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                '4xmxgsj2' /* 25% de descuento al realizarte... */,
-                              ),
-                              style: FlutterFlowTheme.of(context).bodyLarge,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 60.0, 0.0, 0.0),
-                child: Text(
-                  FFLocalizations.of(context).getText(
-                    'udcyq67r' /* Metodos de pago */,
-                  ),
-                  style: FlutterFlowTheme.of(context).labelLarge,
-                ),
-              ),
-              Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
@@ -219,7 +123,7 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'miup9c0i' /* Menciona el codigo Nisi27 para... */,
+                                '29ta4wd5' /* Menciona el codigo Nisi27 para... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -263,7 +167,7 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'julyzl1g' /* Menciona el codigo NavidadNisi... */,
+                                'g5hlg448' /* Menciona el codigo NavidadNisi... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),

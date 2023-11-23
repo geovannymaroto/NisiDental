@@ -71,7 +71,7 @@ class _GaleriaWidgetState extends State<GaleriaWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'euy8kdb9' /* Galeria NISI */,
+              'f73v5m14' /* Galeria NISI */,
             ),
             textAlign: TextAlign.center,
             style: FlutterFlowTheme.of(context).headlineMedium.override(

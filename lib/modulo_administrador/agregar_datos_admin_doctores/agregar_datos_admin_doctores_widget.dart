@@ -90,7 +90,7 @@ class _AgregarDatosAdminDoctoresWidgetState
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'gwnoohm5' /* Agregar datos administrador */,
+              'cf7mfacm' /* Agregar datos administrador */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -115,7 +115,7 @@ class _AgregarDatosAdminDoctoresWidgetState
                   children: [
                     Text(
                       FFLocalizations.of(context).getText(
-                        '8so3yg8y' /* Agregar nombre de nuevo medico... */,
+                        'd03zbpu1' /* Agregar nombre de nuevo medico... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium,
                     ),
@@ -137,9 +137,6 @@ class _AgregarDatosAdminDoctoresWidgetState
                           autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: FFLocalizations.of(context).getText(
-                              '10mkhmai' /* Ingrese el nombre aquí */,
-                            ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -178,161 +175,153 @@ class _AgregarDatosAdminDoctoresWidgetState
                         ),
                       ),
                     ),
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 10.0),
-                      child: FFButtonWidget(
-                        onPressed: () async {
-                          await ListaMedicosRecord.collection
-                              .doc()
-                              .set(createListaMedicosRecordData(
-                                nombreDoctor:
-                                    _model.txtNombreMedicoController.text,
-                              ));
-                          await showDialog(
-                            context: context,
-                            builder: (alertDialogContext) {
-                              return AlertDialog(
-                                content: Text('Registro exitoso'),
-                                actions: [
-                                  TextButton(
-                                    onPressed: () =>
-                                        Navigator.pop(alertDialogContext),
-                                    child: Text('Ok'),
-                                  ),
-                                ],
-                              );
-                            },
-                          );
-                        },
-                        text: FFLocalizations.of(context).getText(
-                          'bmtt68zz' /* Registrar */,
+                    FFButtonWidget(
+                      onPressed: () async {
+                        await ListaMedicosRecord.collection
+                            .doc()
+                            .set(createListaMedicosRecordData(
+                              nombreDoctor:
+                                  _model.txtNombreMedicoController.text,
+                            ));
+                        await showDialog(
+                          context: context,
+                          builder: (alertDialogContext) {
+                            return AlertDialog(
+                              content: Text('Registro exitoso'),
+                              actions: [
+                                TextButton(
+                                  onPressed: () =>
+                                      Navigator.pop(alertDialogContext),
+                                  child: Text('Ok'),
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                      },
+                      text: FFLocalizations.of(context).getText(
+                        'msa6i2nb' /* Registrar */,
+                      ),
+                      options: FFButtonOptions(
+                        height: 40.0,
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFF2EC4B6),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
                         ),
-                        options: FFButtonOptions(
-                          height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFF2EC4B6),
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Readex Pro',
-                                    color: Colors.white,
-                                  ),
-                          elevation: 3.0,
-                          borderSide: BorderSide(
-                            color: Colors.transparent,
-                            width: 1.0,
-                          ),
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
+                        borderRadius: BorderRadius.circular(8.0),
                       ),
                     ),
                   ],
                 ),
               ),
               Expanded(
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
-                  child: StreamBuilder<List<ListaMedicosRecord>>(
-                    stream: queryListaMedicosRecord(),
-                    builder: (context, snapshot) {
-                      // Customize what your widget looks like when it's loading.
-                      if (!snapshot.hasData) {
-                        return Center(
-                          child: SizedBox(
-                            width: 50.0,
-                            height: 50.0,
-                            child: CircularProgressIndicator(
-                              valueColor: AlwaysStoppedAnimation<Color>(
-                                FlutterFlowTheme.of(context).primary,
-                              ),
+                child: StreamBuilder<List<ListaMedicosRecord>>(
+                  stream: queryListaMedicosRecord(),
+                  builder: (context, snapshot) {
+                    // Customize what your widget looks like when it's loading.
+                    if (!snapshot.hasData) {
+                      return Center(
+                        child: SizedBox(
+                          width: 50.0,
+                          height: 50.0,
+                          child: CircularProgressIndicator(
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              FlutterFlowTheme.of(context).primary,
                             ),
                           ),
-                        );
-                      }
-                      List<ListaMedicosRecord> listViewListaMedicosRecordList =
-                          snapshot.data!;
-                      return ListView.builder(
-                        padding: EdgeInsets.zero,
-                        shrinkWrap: true,
-                        scrollDirection: Axis.vertical,
-                        itemCount: listViewListaMedicosRecordList.length,
-                        itemBuilder: (context, listViewIndex) {
-                          final listViewListaMedicosRecord =
-                              listViewListaMedicosRecordList[listViewIndex];
-                          return Slidable(
-                            endActionPane: ActionPane(
-                              motion: const ScrollMotion(),
-                              extentRatio: 0.25,
-                              children: [
-                                SlidableAction(
-                                  label: FFLocalizations.of(context).getText(
-                                    '1dmbbocr' /* Borrar */,
-                                  ),
-                                  backgroundColor:
-                                      FlutterFlowTheme.of(context).error,
-                                  icon: Icons.delete,
-                                  onPressed: (_) async {
-                                    // accionborrar
-                                    var confirmDialogResponse =
-                                        await showDialog<bool>(
-                                              context: context,
-                                              builder: (alertDialogContext) {
-                                                return AlertDialog(
-                                                  title: Text('Borrar'),
-                                                  actions: [
-                                                    TextButton(
-                                                      onPressed: () =>
-                                                          Navigator.pop(
-                                                              alertDialogContext,
-                                                              false),
-                                                      child: Text('Cancel'),
-                                                    ),
-                                                    TextButton(
-                                                      onPressed: () =>
-                                                          Navigator.pop(
-                                                              alertDialogContext,
-                                                              true),
-                                                      child: Text('Confirm'),
-                                                    ),
-                                                  ],
-                                                );
-                                              },
-                                            ) ??
-                                            false;
-                                    if (confirmDialogResponse) {
-                                      await listViewListaMedicosRecord.reference
-                                          .delete();
-                                    }
-                                  },
-                                ),
-                              ],
-                            ),
-                            child: ListTile(
-                              title: Text(
-                                listViewListaMedicosRecord.nombreDoctor,
-                                textAlign: TextAlign.center,
-                                style: FlutterFlowTheme.of(context).titleLarge,
-                              ),
-                              trailing: Icon(
-                                Icons.arrow_forward_ios,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                size: 20.0,
-                              ),
-                              tileColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              dense: false,
-                              contentPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                            ),
-                          );
-                        },
+                        ),
                       );
-                    },
-                  ),
+                    }
+                    List<ListaMedicosRecord> listViewListaMedicosRecordList =
+                        snapshot.data!;
+                    return ListView.builder(
+                      padding: EdgeInsets.zero,
+                      shrinkWrap: true,
+                      scrollDirection: Axis.vertical,
+                      itemCount: listViewListaMedicosRecordList.length,
+                      itemBuilder: (context, listViewIndex) {
+                        final listViewListaMedicosRecord =
+                            listViewListaMedicosRecordList[listViewIndex];
+                        return Slidable(
+                          endActionPane: ActionPane(
+                            motion: const ScrollMotion(),
+                            extentRatio: 0.25,
+                            children: [
+                              SlidableAction(
+                                label: FFLocalizations.of(context).getText(
+                                  'gqrc297a' /* Borrar */,
+                                ),
+                                backgroundColor:
+                                    FlutterFlowTheme.of(context).error,
+                                icon: Icons.delete,
+                                onPressed: (_) async {
+                                  // accionborrar
+                                  var confirmDialogResponse =
+                                      await showDialog<bool>(
+                                            context: context,
+                                            builder: (alertDialogContext) {
+                                              return AlertDialog(
+                                                title: Text('Borrar'),
+                                                actions: [
+                                                  TextButton(
+                                                    onPressed: () =>
+                                                        Navigator.pop(
+                                                            alertDialogContext,
+                                                            false),
+                                                    child: Text('Cancel'),
+                                                  ),
+                                                  TextButton(
+                                                    onPressed: () =>
+                                                        Navigator.pop(
+                                                            alertDialogContext,
+                                                            true),
+                                                    child: Text('Confirm'),
+                                                  ),
+                                                ],
+                                              );
+                                            },
+                                          ) ??
+                                          false;
+                                  if (confirmDialogResponse) {
+                                    await listViewListaMedicosRecord.reference
+                                        .delete();
+                                  }
+                                },
+                              ),
+                            ],
+                          ),
+                          child: ListTile(
+                            title: Text(
+                              listViewListaMedicosRecord.nombreDoctor,
+                              textAlign: TextAlign.center,
+                              style: FlutterFlowTheme.of(context).titleLarge,
+                            ),
+                            trailing: Icon(
+                              Icons.arrow_forward_ios,
+                              color: FlutterFlowTheme.of(context).secondaryText,
+                              size: 20.0,
+                            ),
+                            tileColor: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            dense: false,
+                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                          ),
+                        );
+                      },
+                    );
+                  },
                 ),
               ),
             ],

@@ -71,7 +71,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'ex7ick2q' /* Preguntas Frecuentes */,
+              'imtojwep' /* Preguntas Frecuentes */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -94,7 +94,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      '35v706vy' /* ¿Cuantas veces al día debemos ... */,
+                      'hpfi8s8k' /* ¿Cuantas veces al día debemos ... */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Roboto',
@@ -106,7 +106,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      '52r35i7a' /* Es fundamental cepillarse al m... */,
+                      'bya3cau1' /* Es fundamental cepillarse al m... */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium,
                   ),
@@ -115,7 +115,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'c33unplr' /* ¿Se puede compartir el cepillo... */,
+                      'om8lh3zh' /* ¿Se puede compartir el cepillo... */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
@@ -125,7 +125,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'wtzz9mlf' /* No es bueno compartir el cepil... */,
+                    '4mnz70up' /* No es bueno compartir el cepil... */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium,
                 ),
@@ -133,7 +133,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'an4zqhwm' /* ¿Como puedo desinfectar mi cep... */,
+                      '9mvq8w08' /* ¿Como puedo desinfectar mi cep... */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
@@ -143,7 +143,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    '0dad3krd' /* ¡No lo hagas! No limpies tu ce... */,
+                    'wctmsngw' /* ¡No lo hagas! No limpies tu ce... */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium,
                 ),
@@ -151,7 +151,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      '5sjsyjmg' /* ¿cada cuanto debo cambiar mi c... */,
+                      '4ogrpdcj' /* ¿cada cuanto debo cambiar mi c... */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
@@ -161,7 +161,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'y5wld3rp' /* Cada 3 ó 4 meses debes cambiar... */,
+                    'bi2zqkol' /* Cada 3 ó 4 meses debes cambiar... */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium,
                 ),
@@ -169,7 +169,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'cm33ahe4' /* ¿Cada cuato utilizar el hilo d... */,
+                      'pxz2qh7k' /* ¿Cada cuato utilizar el hilo d... */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
@@ -179,7 +179,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'dtwvtlfk' /* Es fundamental. Debes usarlo a... */,
+                    'r8ol986h' /* Es fundamental. Debes usarlo a... */,
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium,
                 ),

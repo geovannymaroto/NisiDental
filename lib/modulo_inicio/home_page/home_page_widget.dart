@@ -109,7 +109,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         child: ListTile(
                           title: Text(
                             FFLocalizations.of(context).getText(
-                              'mbwjeyna' /* Servicios */,
+                              '7644adzs' /* Servicios */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
@@ -151,7 +151,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         child: ListTile(
                           title: Text(
                             FFLocalizations.of(context).getText(
-                              'fax6brif' /* Costos tratamientos */,
+                              'mk5t81du' /* Costos tratamientos */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
@@ -193,7 +193,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         child: ListTile(
                           title: Text(
                             FFLocalizations.of(context).getText(
-                              '4ws5ju8y' /* Convenios */,
+                              'qnwyxjpn' /* Convenios */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
@@ -235,7 +235,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         child: ListTile(
                           title: Text(
                             FFLocalizations.of(context).getText(
-                              'g39ahmie' /* Galería */,
+                              'pkxx4wlw' /* Galería */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
@@ -277,7 +277,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         child: ListTile(
                           title: Text(
                             FFLocalizations.of(context).getText(
-                              '8h5wh6pp' /* Preguntas Frecuentes */,
+                              'dhz9lcu4' /* Preguntas Frecuentes */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
@@ -312,7 +312,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         child: ListTile(
                           title: Text(
                             FFLocalizations.of(context).getText(
-                              'u14inj4o' /* Reseñas */,
+                              'lc6bsoqf' /* Reseñas */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
@@ -343,7 +343,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       print('Button pressed ...');
                     },
                     text: FFLocalizations.of(context).getText(
-                      'rpmjmqbk' /* Admin */,
+                      '59m6tiyp' /* Admin */,
                     ),
                     icon: Icon(
                       Icons.admin_panel_settings_outlined,
@@ -436,7 +436,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      '58ik4lbo' /* ¡Bienvenido a NISI! */,
+                      '522jy0c2' /* ¡Bienvenido a NISI! */,
                     ),
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -451,7 +451,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      '872g6nhr' /* En nuestra clínica, nos esforz... */,
+                      'zlgva42u' /* En nuestra clínica, nos esforz... */,
                     ),
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -483,7 +483,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             50.0, 12.0, 50.0, 10.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '28rimqoy' /* Agendar Cita */,
+                            'i91uzfkt' /* Agendar Cita */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -519,7 +519,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             50.0, 12.0, 50.0, 10.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '36l65vne' /* Contactanos */,
+                            'fxb6d5zo' /* Contactanos */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -555,7 +555,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             50.0, 12.0, 50.0, 10.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'ruf110jh' /* Nosotros */,
+                            'heoamgfk' /* Nosotros */,
                           ),
                           textAlign: TextAlign.center,
                           style:

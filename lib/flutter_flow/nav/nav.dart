@@ -189,6 +189,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => PromocionesWidget(),
         ),
         FFRoute(
+          name: 'TemasImportantes',
+          path: '/temasImportantes',
+          builder: (context, params) => TemasImportantesWidget(),
+        ),
+        FFRoute(
           name: 'MetodosDePago',
           path: '/metodosDePago',
           builder: (context, params) => MetodosDePagoWidget(),

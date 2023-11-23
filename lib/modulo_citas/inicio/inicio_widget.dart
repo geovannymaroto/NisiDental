@@ -58,7 +58,7 @@ class _InicioWidgetState extends State<InicioWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              '6npedqlg' /* Inicio */,
+              'leex037o' /* Inicio */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -106,31 +106,24 @@ class _InicioWidgetState extends State<InicioWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    FFButtonWidget(
-                      onPressed: () async {
+                    Icon(
+                      Icons.person_outlined,
+                      color: FlutterFlowTheme.of(context).secondaryText,
+                      size: 24.0,
+                    ),
+                    InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
                         context.pushNamed('CrearCita');
                       },
-                      text: FFLocalizations.of(context).getText(
-                        'qjnj2lqf' /* Agendar Cita */,
-                      ),
-                      options: FFButtonOptions(
-                        height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFFFBF69),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          'zpue4xyn' /* Agendar Cita */,
                         ),
-                        borderRadius: BorderRadius.circular(15.0),
+                        style: FlutterFlowTheme.of(context).bodyLarge,
                       ),
                     ),
                   ],
@@ -142,31 +135,24 @@ class _InicioWidgetState extends State<InicioWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    FFButtonWidget(
-                      onPressed: () async {
+                    Icon(
+                      Icons.medical_information_sharp,
+                      color: FlutterFlowTheme.of(context).secondaryText,
+                      size: 24.0,
+                    ),
+                    InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
                         context.pushNamed('Historial');
                       },
-                      text: FFLocalizations.of(context).getText(
-                        'l7equg4v' /* Ver mi historial */,
-                      ),
-                      options: FFButtonOptions(
-                        height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFFFBF69),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          '6bycc2re' /* Ver mi historial */,
                         ),
-                        borderRadius: BorderRadius.circular(15.0),
+                        style: FlutterFlowTheme.of(context).bodyLarge,
                       ),
                     ),
                   ],
@@ -197,7 +183,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                       },
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          '0pwncik3' /* Salir  */,
+                          '88kp6ice' /* Salir  */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
@@ -232,7 +218,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                         },
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '6veklech' /* Administracion */,
+                            'e7jklf6f' /* Administracion */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(

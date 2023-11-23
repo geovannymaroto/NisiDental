@@ -12,48 +12,26 @@ class RegistroModel extends FlutterFlowModel<RegistroWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
-  final formKey = GlobalKey<FormState>();
-  // State field(s) for txtemail widget.
-  FocusNode? txtemailFocusNode;
-  TextEditingController? txtemailController;
-  String? Function(BuildContext, String?)? txtemailControllerValidator;
-  String? _txtemailControllerValidator(BuildContext context, String? val) {
-    if (val == null || val.isEmpty) {
-      return FFLocalizations.of(context).getText(
-        'i9iurskc' /* Este campo es obligatorio */,
-      );
-    }
-
-    return null;
-  }
-
+  // State field(s) for txtUser widget.
+  FocusNode? txtUserFocusNode;
+  TextEditingController? txtUserController;
+  String? Function(BuildContext, String?)? txtUserControllerValidator;
   // State field(s) for txtPass widget.
   FocusNode? txtPassFocusNode;
   TextEditingController? txtPassController;
   late bool txtPassVisibility;
   String? Function(BuildContext, String?)? txtPassControllerValidator;
-  String? _txtPassControllerValidator(BuildContext context, String? val) {
-    if (val == null || val.isEmpty) {
-      return FFLocalizations.of(context).getText(
-        'd5zwfxae' /* Este campo es obligatorio */,
-      );
-    }
-
-    return null;
-  }
 
   /// Initialization and disposal methods.
 
   void initState(BuildContext context) {
-    txtemailControllerValidator = _txtemailControllerValidator;
     txtPassVisibility = false;
-    txtPassControllerValidator = _txtPassControllerValidator;
   }
 
   void dispose() {
     unfocusNode.dispose();
-    txtemailFocusNode?.dispose();
-    txtemailController?.dispose();
+    txtUserFocusNode?.dispose();
+    txtUserController?.dispose();
 
     txtPassFocusNode?.dispose();
     txtPassController?.dispose();

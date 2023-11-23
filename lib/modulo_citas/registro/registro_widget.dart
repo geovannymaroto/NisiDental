@@ -26,8 +26,8 @@ class _RegistroWidgetState extends State<RegistroWidget> {
     super.initState();
     _model = createModel(context, () => RegistroModel());
 
-    _model.txtemailController ??= TextEditingController();
-    _model.txtemailFocusNode ??= FocusNode();
+    _model.txtUserController ??= TextEditingController();
+    _model.txtUserFocusNode ??= FocusNode();
 
     _model.txtPassController ??= TextEditingController();
     _model.txtPassFocusNode ??= FocusNode();
@@ -65,7 +65,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              'shg1uqu8' /* NisiDental */,
+              'gkdluj1n' /* NisiDental */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -101,267 +101,254 @@ class _RegistroWidgetState extends State<RegistroWidget> {
         ),
         body: SafeArea(
           top: true,
-          child: Form(
-            key: _model.formKey,
-            autovalidateMode: AutovalidateMode.always,
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Row(
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Align(
+                    alignment: AlignmentDirectional(-1.00, 1.00),
+                    child: Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/logo.jpg',
+                          width: 300.0,
+                          height: 200.0,
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                child: Row(
                   mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Align(
-                      alignment: AlignmentDirectional(-1.00, 1.00),
+                    Expanded(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
-                          child: Image.asset(
-                            'assets/images/logo.jpg',
-                            width: 300.0,
-                            height: 200.0,
-                            fit: BoxFit.contain,
+                            EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                        child: TextFormField(
+                          controller: _model.txtUserController,
+                          focusNode: _model.txtUserFocusNode,
+                          autofocus: true,
+                          obscureText: false,
+                          decoration: InputDecoration(
+                            labelText: FFLocalizations.of(context).getText(
+                              'ozs7xis2' /* Usuario */,
+                            ),
+                            labelStyle:
+                                FlutterFlowTheme.of(context).labelMedium,
+                            hintStyle: FlutterFlowTheme.of(context).labelMedium,
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: FlutterFlowTheme.of(context).alternate,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: FlutterFlowTheme.of(context).primary,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            errorBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: FlutterFlowTheme.of(context).error,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            focusedErrorBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: FlutterFlowTheme.of(context).error,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
                           ),
+                          style: FlutterFlowTheme.of(context).bodyMedium,
+                          validator: _model.txtUserControllerValidator
+                              .asValidator(context),
                         ),
                       ),
                     ),
                   ],
                 ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              8.0, 0.0, 8.0, 0.0),
-                          child: TextFormField(
-                            controller: _model.txtemailController,
-                            focusNode: _model.txtemailFocusNode,
-                            autofocus: true,
-                            obscureText: false,
-                            decoration: InputDecoration(
-                              labelText: FFLocalizations.of(context).getText(
-                                'q7dt94y4' /* Email */,
-                              ),
-                              labelStyle:
-                                  FlutterFlowTheme.of(context).labelMedium,
-                              hintStyle:
-                                  FlutterFlowTheme.of(context).labelMedium,
-                              enabledBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                  width: 2.0,
-                                ),
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
-                              focusedBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  width: 2.0,
-                                ),
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
-                              errorBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).error,
-                                  width: 2.0,
-                                ),
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
-                              focusedErrorBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).error,
-                                  width: 2.0,
-                                ),
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
-                            ),
-                            style: FlutterFlowTheme.of(context).bodyMedium,
-                            validator: _model.txtemailControllerValidator
-                                .asValidator(context),
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                      child: TextFormField(
+                        controller: _model.txtPassController,
+                        focusNode: _model.txtPassFocusNode,
+                        autofocus: true,
+                        obscureText: !_model.txtPassVisibility,
+                        decoration: InputDecoration(
+                          labelText: FFLocalizations.of(context).getText(
+                            'p9s1u1lr' /* Contraseña */,
                           ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              8.0, 0.0, 8.0, 0.0),
-                          child: TextFormField(
-                            controller: _model.txtPassController,
-                            focusNode: _model.txtPassFocusNode,
-                            autofocus: true,
-                            obscureText: !_model.txtPassVisibility,
-                            decoration: InputDecoration(
-                              labelText: FFLocalizations.of(context).getText(
-                                '36cz5qs6' /* Contraseña */,
-                              ),
-                              labelStyle:
-                                  FlutterFlowTheme.of(context).labelMedium,
-                              hintStyle:
-                                  FlutterFlowTheme.of(context).labelMedium,
-                              enabledBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                  width: 2.0,
-                                ),
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
-                              focusedBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  width: 2.0,
-                                ),
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
-                              errorBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).error,
-                                  width: 2.0,
-                                ),
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
-                              focusedErrorBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).error,
-                                  width: 2.0,
-                                ),
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
-                              suffixIcon: InkWell(
-                                onTap: () => setState(
-                                  () => _model.txtPassVisibility =
-                                      !_model.txtPassVisibility,
-                                ),
-                                focusNode: FocusNode(skipTraversal: true),
-                                child: Icon(
-                                  _model.txtPassVisibility
-                                      ? Icons.visibility_outlined
-                                      : Icons.visibility_off_outlined,
-                                  size: 22,
-                                ),
-                              ),
-                            ),
-                            style: FlutterFlowTheme.of(context).bodyMedium,
-                            validator: _model.txtPassControllerValidator
-                                .asValidator(context),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
-                        child: FFButtonWidget(
-                          onPressed: () async {
-                            GoRouter.of(context).prepareAuthEvent();
-
-                            final user = await authManager.signInWithEmail(
-                              context,
-                              _model.txtemailController.text,
-                              _model.txtPassController.text,
-                            );
-                            if (user == null) {
-                              return;
-                            }
-
-                            context.pushNamedAuth('Inicio', context.mounted);
-                          },
-                          text: FFLocalizations.of(context).getText(
-                            'bswhk8ad' /* Ingresar */,
-                          ),
-                          options: FFButtonOptions(
-                            height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFF2EC4B6),
-                            textStyle: FlutterFlowTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                            elevation: 3.0,
+                          labelStyle: FlutterFlowTheme.of(context).labelMedium,
+                          hintStyle: FlutterFlowTheme.of(context).labelMedium,
+                          enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
-                              color: Colors.transparent,
-                              width: 1.0,
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                        child: FFButtonWidget(
-                          onPressed: () async {
-                            GoRouter.of(context).prepareAuthEvent();
-
-                            final user =
-                                await authManager.createAccountWithEmail(
-                              context,
-                              _model.txtemailController.text,
-                              _model.txtPassController.text,
-                            );
-                            if (user == null) {
-                              return;
-                            }
-
-                            context.goNamedAuth('homePage', context.mounted);
-                          },
-                          text: FFLocalizations.of(context).getText(
-                            'dwlhnolv' /* Registrar */,
-                          ),
-                          options: FFButtonOptions(
-                            height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).warning,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                            elevation: 3.0,
+                          focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
-                              color: Colors.transparent,
-                              width: 1.0,
+                              color: FlutterFlowTheme.of(context).primary,
+                              width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
+                          errorBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).error,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          focusedErrorBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).error,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          suffixIcon: InkWell(
+                            onTap: () => setState(
+                              () => _model.txtPassVisibility =
+                                  !_model.txtPassVisibility,
+                            ),
+                            focusNode: FocusNode(skipTraversal: true),
+                            child: Icon(
+                              _model.txtPassVisibility
+                                  ? Icons.visibility_outlined
+                                  : Icons.visibility_off_outlined,
+                              size: 22,
+                            ),
+                          ),
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyMedium,
+                        validator: _model.txtPassControllerValidator
+                            .asValidator(context),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 80.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          GoRouter.of(context).prepareAuthEvent();
+
+                          final user = await authManager.signInWithEmail(
+                            context,
+                            _model.txtUserController.text,
+                            _model.txtPassController.text,
+                          );
+                          if (user == null) {
+                            return;
+                          }
+
+                          context.pushNamedAuth('Inicio', context.mounted);
+                        },
+                        text: FFLocalizations.of(context).getText(
+                          'ld90q7je' /* Ingresar */,
+                        ),
+                        options: FFButtonOptions(
+                          height: 40.0,
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              24.0, 0.0, 24.0, 0.0),
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: Color(0xFF2EC4B6),
+                          textStyle:
+                              FlutterFlowTheme.of(context).titleSmall.override(
+                                    fontFamily: 'Readex Pro',
+                                    color: Colors.white,
+                                  ),
+                          elevation: 3.0,
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          GoRouter.of(context).prepareAuthEvent();
+
+                          final user = await authManager.createAccountWithEmail(
+                            context,
+                            _model.txtUserController.text,
+                            _model.txtPassController.text,
+                          );
+                          if (user == null) {
+                            return;
+                          }
+
+                          context.goNamedAuth('homePage', context.mounted);
+                        },
+                        text: FFLocalizations.of(context).getText(
+                          'ma23xa6j' /* Registrar */,
+                        ),
+                        options: FFButtonOptions(
+                          height: 40.0,
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              24.0, 0.0, 24.0, 0.0),
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: FlutterFlowTheme.of(context).warning,
+                          textStyle:
+                              FlutterFlowTheme.of(context).titleSmall.override(
+                                    fontFamily: 'Readex Pro',
+                                    color: Colors.white,
+                                  ),
+                          elevation: 3.0,
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

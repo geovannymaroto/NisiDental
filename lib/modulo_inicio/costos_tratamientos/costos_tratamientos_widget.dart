@@ -71,7 +71,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'h83tsg9a' /* Costo de Tratamientos */,
+              'ezbxy39w' /* Costo de Tratamientos */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -112,7 +112,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        '1jbkvjdl' /* Extracción */,
+                        '64nt7lec' /* Extracción */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -122,7 +122,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        '82jh3lut' /* Precio: ₡ 25.000 */,
+                        'd3ga94qt' /* Precio: ₡ 25.000 */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -156,7 +156,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        'bgiu476n' /* Calza Dental  */,
+                        'guuez0gp' /* Calza Dental  */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -166,7 +166,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        '4oay2j44' /* Precio: ₡ 95.000 */,
+                        'eoelhyam' /* Precio: ₡ 95.000 */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -200,7 +200,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        '4hh0tn0i' /* Implante  */,
+                        'klp3pp02' /* Implante  */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -210,7 +210,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        'ugzs5nkn' /* Precio: ₡ 35.000 */,
+                        'vzc9c8pq' /* Precio: ₡ 35.000 */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -244,7 +244,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        'na94r58d' /* Protesis */,
+                        'rwytwa11' /* Protesis */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -254,7 +254,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        '9tq35lxn' /* Precio: ₡ 80.000 */,
+                        '1p75u21a' /* Precio: ₡ 80.000 */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -288,7 +288,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        '8eiml0du' /* Corona */,
+                        'lts6a2m2' /* Corona */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -298,7 +298,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        'c7bg254r' /* Precio: ₡ 70.000 */,
+                        'r2370zw6' /* Precio: ₡ 70.000 */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -332,7 +332,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        '8u15n32u' /* Limpieza */,
+                        '9859emn8' /* Limpieza */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
@@ -342,7 +342,7 @@ class _CostosTratamientosWidgetState extends State<CostosTratamientosWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        'e6nq6bax' /* Precio: ₡ 20.000 */,
+                        '1uuuji9m' /* Precio: ₡ 20.000 */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',

@@ -90,7 +90,7 @@ class _RegistrosMaterialesMedicosWidgetState
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'jq2zuzuw' /*      Registro de materiales mé... */,
+                  '2p7r6zy8' /*      Registro de materiales mé... */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
@@ -165,7 +165,7 @@ class _RegistrosMaterialesMedicosWidgetState
                                 children: [
                                   Text(
                                     FFLocalizations.of(context).getText(
-                                      'jxrq97xb' /* Elige un material */,
+                                      '7mopz7f6' /* Elige un material */,
                                     ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyMedium,
@@ -197,7 +197,7 @@ class _RegistrosMaterialesMedicosWidgetState
                                 textStyle:
                                     FlutterFlowTheme.of(context).bodyMedium,
                                 hintText: FFLocalizations.of(context).getText(
-                                  'z3ak3h4m' /* Please select... */,
+                                  'xehl9d2y' /* Please select... */,
                                 ),
                                 icon: Icon(
                                   Icons.keyboard_arrow_down_rounded,
@@ -230,7 +230,7 @@ class _RegistrosMaterialesMedicosWidgetState
                           children: [
                             Text(
                               FFLocalizations.of(context).getText(
-                                'rqtzu90p' /* Elige una cantidad */,
+                                'yzg7u2j4' /* Elige una cantidad */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyMedium,
                             ),
@@ -321,7 +321,7 @@ class _RegistrosMaterialesMedicosWidgetState
                           children: [
                             Text(
                               FFLocalizations.of(context).getText(
-                                'l3vtfbly' /* Operacion */,
+                                '2zb3yuyo' /* Operacion */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyMedium,
                             ),
@@ -340,15 +340,15 @@ class _RegistrosMaterialesMedicosWidgetState
                                     FormFieldController<String>(
                                   _model.dropDownValue2 ??=
                                       FFLocalizations.of(context).getText(
-                                    'qm9ynvpp' /* Sumar */,
+                                    'bszoh4nl' /* Sumar */,
                                   ),
                                 ),
                                 options: [
                                   FFLocalizations.of(context).getText(
-                                    'v9ickksj' /* Sumar */,
+                                    '4um6cb9s' /* Sumar */,
                                   ),
                                   FFLocalizations.of(context).getText(
-                                    '6eky9e9v' /* Restar */,
+                                    'eb3tscpu' /* Restar */,
                                   )
                                 ],
                                 onChanged: (val) =>
@@ -447,7 +447,7 @@ class _RegistrosMaterialesMedicosWidgetState
                             );
                           },
                           text: FFLocalizations.of(context).getText(
-                            'eylw72uy' /* Registrar */,
+                            '7uquarvp' /* Registrar */,
                           ),
                           options: FFButtonOptions(
                             height: 40.0,
