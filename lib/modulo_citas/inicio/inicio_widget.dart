@@ -100,33 +100,29 @@ class _InicioWidgetState extends State<InicioWidget> {
                   ),
                 ),
               ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.person_outlined,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 24.0,
-                    ),
-                    InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                        context.pushNamed('CrearCita');
-                      },
-                      child: Text(
-                        FFLocalizations.of(context).getText(
-                          'zpue4xyn' /* Agendar Cita */,
-                        ),
-                        style: FlutterFlowTheme.of(context).bodyLarge,
+              FFButtonWidget(
+                onPressed: () async {
+                  context.pushNamed('CrearCita');
+                },
+                text: FFLocalizations.of(context).getText(
+                  '55egs7ex' /* Agendar Cita */,
+                ),
+                options: FFButtonOptions(
+                  height: 40.0,
+                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  iconPadding:
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: Color(0xFFFFBF69),
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily: 'Readex Pro',
+                        color: Colors.white,
                       ),
-                    ),
-                  ],
+                  elevation: 3.0,
+                  borderSide: BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(15.0),
                 ),
               ),
               Padding(
@@ -135,24 +131,31 @@ class _InicioWidgetState extends State<InicioWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
-                      Icons.medical_information_sharp,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 24.0,
-                    ),
-                    InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                        context.pushNamed('Historial');
+                    FFButtonWidget(
+                      onPressed: () {
+                        print('Button pressed ...');
                       },
-                      child: Text(
-                        FFLocalizations.of(context).getText(
-                          '6bycc2re' /* Ver mi historial */,
+                      text: FFLocalizations.of(context).getText(
+                        's8ecfa5t' /* Ver historial */,
+                      ),
+                      options: FFButtonOptions(
+                        height: 40.0,
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFFFFBF69),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
                         ),
-                        style: FlutterFlowTheme.of(context).bodyLarge,
+                        borderRadius: BorderRadius.circular(15.0),
                       ),
                     ),
                   ],

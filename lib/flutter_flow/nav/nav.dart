@@ -199,6 +199,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'MetodosDePago')
               : MetodosDePagoWidget(),
+        ),
+        FFRoute(
+          name: 'RandR',
+          path: '/randR',
+          builder: (context, params) => RandRWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

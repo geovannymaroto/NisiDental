@@ -25,7 +25,7 @@ export '/pages/materiales_medicos/materiales_medicos_widget.dart'
     show MaterialesMedicosWidget;
 export '/modulo_administrador/agregar_datos_tratamientos/agregar_datos_tratamientos_widget.dart'
     show AgregarDatosTratamientosWidget;
-export '/modulo_administrador/menu_administrador/menu_administrador_widget.dart'
+export '/menu_administrador/menu_administrador_widget.dart'
     show MenuAdministradorWidget;
 export '/modulo_inicio/promociones/promociones_widget.dart'
     show PromocionesWidget;
@@ -33,3 +33,4 @@ export '/modulo_inicio/temas_importantes/temas_importantes_widget.dart'
     show TemasImportantesWidget;
 export '/modulo_inicio/metodos_de_pago/metodos_de_pago_widget.dart'
     show MetodosDePagoWidget;
+export '/modulo_inicio/rand_r/rand_r_widget.dart' show RandRWidget;

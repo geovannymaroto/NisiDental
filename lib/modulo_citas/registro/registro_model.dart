@@ -12,20 +12,42 @@ class RegistroModel extends FlutterFlowModel<RegistroWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
+  final formKey = GlobalKey<FormState>();
   // State field(s) for txtUser widget.
   FocusNode? txtUserFocusNode;
   TextEditingController? txtUserController;
   String? Function(BuildContext, String?)? txtUserControllerValidator;
+  String? _txtUserControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'wf2ha32i' /* Este campo es requerido */,
+      );
+    }
+
+    return null;
+  }
+
   // State field(s) for txtPass widget.
   FocusNode? txtPassFocusNode;
   TextEditingController? txtPassController;
   late bool txtPassVisibility;
   String? Function(BuildContext, String?)? txtPassControllerValidator;
+  String? _txtPassControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'q7v9ntl8' /* Este campo es requerido */,
+      );
+    }
+
+    return null;
+  }
 
   /// Initialization and disposal methods.
 
   void initState(BuildContext context) {
+    txtUserControllerValidator = _txtUserControllerValidator;
     txtPassVisibility = false;
+    txtPassControllerValidator = _txtPassControllerValidator;
   }
 
   void dispose() {

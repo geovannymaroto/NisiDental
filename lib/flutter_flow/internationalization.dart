@@ -108,8 +108,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Registro
   {
     'ozs7xis2': {
-      'es': 'Usuario',
-      'en': 'User',
+      'es': 'Email',
+      'en': 'Email',
     },
     'p9s1u1lr': {
       'es': 'Contraseña',
@@ -123,6 +123,22 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Registrar',
       'en': 'Register',
     },
+    'wf2ha32i': {
+      'es': 'Este campo es requerido',
+      'en': 'Field is required',
+    },
+    '3rcvte7j': {
+      'es': 'Please choose an option from the dropdown',
+      'en': '',
+    },
+    'q7v9ntl8': {
+      'es': 'Este campo es requerido',
+      'en': 'Field is required',
+    },
+    '323ucu9u': {
+      'es': 'Please choose an option from the dropdown',
+      'en': '',
+    },
     'gkdluj1n': {
       'es': 'NisiDental',
       'en': 'NisiDental',
@@ -134,13 +150,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Inicio
   {
-    'zpue4xyn': {
+    '55egs7ex': {
       'es': 'Agendar Cita',
-      'en': 'Schedule Appointment',
+      'en': '',
     },
-    '6bycc2re': {
-      'es': 'Ver mi historial',
-      'en': 'See my history',
+    's8ecfa5t': {
+      'es': 'Ver historial',
+      'en': '',
     },
     '88kp6ice': {
       'es': 'Salir ',
@@ -220,11 +236,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Historial
   {
-    'tgblg5f3': {
+    '8nwq7nuz': {
       'es': 'Fecha',
       'en': '',
     },
-    'ssbym18v': {
+    'p3p3b8r9': {
       'es': 'Motivo',
       'en': '',
     },
@@ -926,6 +942,46 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'f877xq0l': {
       'es': 'Pago',
       'en': 'home',
+    },
+  },
+  // RandR
+  {
+    '4bumesn7': {
+      'es': 'Rating & Review',
+      'en': '',
+    },
+    'cx9alid7': {
+      'es': 'Evalúe y comente su experiencia',
+      'en': '',
+    },
+    'skbvle98': {
+      'es':
+          'Tómese un momento para evaluar y comentar su reciente experiencia con nosotros. Sus comentarios son importantes para nosotros y nos ayudarán a mejorar nuestros servicios.',
+      'en': '',
+    },
+    '2uauowue': {
+      'es': 'Escriba su opinión',
+      'en': '',
+    },
+    'omhp1s1s': {
+      'es': 'cuentanos tu experiencia',
+      'en': '',
+    },
+    'i5wtpzs4': {
+      'es': 'enviar',
+      'en': '',
+    },
+    'zjswz5i7': {
+      'es': 'Usuario',
+      'en': '',
+    },
+    '848ah0pr': {
+      'es': 'Md',
+      'en': '',
+    },
+    'amhxe78r': {
+      'es': 'comentario',
+      'en': '',
     },
   },
   // Miscellaneous
