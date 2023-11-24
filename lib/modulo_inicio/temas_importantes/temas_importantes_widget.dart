@@ -91,9 +91,10 @@ class _TemasImportantesWidgetState extends State<TemasImportantesWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 4.0, 20.0, 0.0),
                 child: Container(
                   width: double.infinity,
+                  height: 180.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     boxShadow: [
@@ -117,7 +118,133 @@ class _TemasImportantesWidgetState extends State<TemasImportantesWidget> {
                               10.0, 10.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '2lkomej5' /* - El equipo profesional que co... */,
+                              'g1f429eo' /* Servicios Ofrecidos:
+
+"En nues... */
+                              ,
+                            ),
+                            style: FlutterFlowTheme.of(context).bodyLarge,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 4.0, 20.0, 0.0),
+                child: Container(
+                  width: double.infinity,
+                  height: 170.0,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 5.0,
+                        color: Color(0x3416202A),
+                        offset: Offset(0.0, 2.0),
+                      )
+                    ],
+                    borderRadius: BorderRadius.circular(20.0),
+                    shape: BoxShape.rectangle,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 10.0, 0.0, 0.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'y2z3o7xi' /* Tecnología y Equipamiento:
+
+"U... */
+                              ,
+                            ),
+                            style: FlutterFlowTheme.of(context).bodyLarge,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 4.0, 20.0, 0.0),
+                child: Container(
+                  width: double.infinity,
+                  height: 180.0,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 5.0,
+                        color: Color(0x3416202A),
+                        offset: Offset(0.0, 2.0),
+                      )
+                    ],
+                    borderRadius: BorderRadius.circular(20.0),
+                    shape: BoxShape.rectangle,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 10.0, 0.0, 0.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'qbv73euz' /* Equipo Profesional:
+
+"Nuestro ... */
+                              ,
+                            ),
+                            style: FlutterFlowTheme.of(context).bodyLarge,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 4.0, 20.0, 0.0),
+                child: Container(
+                  width: double.infinity,
+                  height: 180.0,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 5.0,
+                        color: Color(0x3416202A),
+                        offset: Offset(0.0, 2.0),
+                      )
+                    ],
+                    borderRadius: BorderRadius.circular(20.0),
+                    shape: BoxShape.rectangle,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 10.0, 0.0, 0.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'rslrqn74' /* Educación del Paciente:
+
+"Ofre... */
+                              ,
                             ),
                             style: FlutterFlowTheme.of(context).bodyLarge,
                           ),

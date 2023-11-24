@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'metodos_de_pago_model.dart';
@@ -91,7 +92,7 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 18.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 70.0,
@@ -112,8 +113,8 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Icon(
-                          Icons.discount_rounded,
+                        FaIcon(
+                          FontAwesomeIcons.moneyBillAlt,
                           color: FlutterFlowTheme.of(context).secondaryText,
                           size: 24.0,
                         ),
@@ -123,7 +124,7 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
                                 30.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '29ta4wd5' /* Menciona el codigo Nisi27 para... */,
+                                '29ta4wd5' /* Conoce nuestros metodos de pag... */,
                               ),
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -134,49 +135,53 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
                   ),
                 ),
               ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 70.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 5.0,
-                        color: Color(0x3416202A),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(20.0),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Icon(
-                          Icons.discount_rounded,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                30.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'g5hlg448' /* Menciona el codigo NavidadNisi... */,
-                              ),
-                              style: FlutterFlowTheme.of(context).bodyLarge,
-                            ),
-                          ),
-                        ),
-                      ],
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Expanded(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/pago3.JPG',
+                        width: 300.0,
+                        height: 200.0,
+                        fit: BoxFit.contain,
+                      ),
                     ),
                   ),
-                ),
+                ],
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Expanded(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/pago1.JPG',
+                        width: 300.0,
+                        height: 200.0,
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Expanded(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/pago2.JPG',
+                        width: 300.0,
+                        height: 200.0,
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

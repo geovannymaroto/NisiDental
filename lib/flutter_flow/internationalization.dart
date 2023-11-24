@@ -109,7 +109,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'ozs7xis2': {
       'es': 'Email',
-      'en': 'Email',
+      'en': 'E-mail',
     },
     'p9s1u1lr': {
       'es': 'Contraseña',
@@ -121,30 +121,30 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'ma23xa6j': {
       'es': 'Registrar',
-      'en': 'Register',
+      'en': 'Sign up',
     },
     'wf2ha32i': {
       'es': 'Este campo es requerido',
-      'en': 'Field is required',
+      'en': 'This field is required',
     },
     '3rcvte7j': {
       'es': 'Please choose an option from the dropdown',
-      'en': '',
+      'en': 'Please choose an option from the dropdown',
     },
     'q7v9ntl8': {
       'es': 'Este campo es requerido',
-      'en': 'Field is required',
+      'en': 'This field is required',
     },
     '323ucu9u': {
       'es': 'Please choose an option from the dropdown',
-      'en': '',
+      'en': 'Please choose an option from the dropdown',
     },
     'gkdluj1n': {
       'es': 'NisiDental',
       'en': 'NisiDental',
     },
     '0vtzf58e': {
-      'es': 'Home',
+      'es': 'Inicio',
       'en': 'home',
     },
   },
@@ -152,11 +152,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     '55egs7ex': {
       'es': 'Agendar Cita',
-      'en': '',
+      'en': 'Schedule Appointment',
     },
     's8ecfa5t': {
       'es': 'Ver historial',
-      'en': '',
+      'en': 'View history',
     },
     '88kp6ice': {
       'es': 'Salir ',
@@ -168,10 +168,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'leex037o': {
       'es': 'Inicio',
-      'en': 'Start',
+      'en': 'Home',
     },
     '2rk3aiz4': {
-      'es': 'Home',
+      'es': 'Inicio',
       'en': 'home',
     },
   },
@@ -230,19 +230,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Create Appointment',
     },
     '0b981nh4': {
-      'es': 'Home',
-      'en': 'home',
+      'es': 'Inicio',
+      'en': 'Home',
     },
   },
   // Historial
   {
     '8nwq7nuz': {
       'es': 'Fecha',
-      'en': '',
+      'en': 'Date',
     },
     'p3p3b8r9': {
       'es': 'Motivo',
-      'en': '',
+      'en': 'Reason',
     },
     'uq9iotr8': {
       'es': 'Volver\n',
@@ -253,8 +253,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Record',
     },
     'oxl1ldx2': {
-      'es': 'Home',
-      'en': 'home',
+      'es': 'inicio',
+      'en': 'Home',
     },
   },
   // Profesionales
@@ -337,7 +337,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Professionals',
     },
     'jouqvyqb': {
-      'es': 'Home',
+      'es': 'Inicio',
       'en': 'home',
     },
   },
@@ -786,7 +786,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'msa6i2nb': {
       'es': 'Registrar',
-      'en': 'to register',
+      'en': 'Register',
     },
     'gqrc297a': {
       'es': 'Borrar',
@@ -820,7 +820,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'k0y3f45x': {
       'es': 'Registrar',
-      'en': 'to register',
+      'en': 'Register',
     },
     'bnef44vd': {
       'es': 'Borrar',
@@ -908,9 +908,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // TemasImportantes
   {
-    '2lkomej5': {
+    'g1f429eo': {
       'es':
-          '- El equipo profesional que conforman esta clinica son capacitados constante mente para asi poder brindar a los pacientes una atencion de primer nivel.\n\n- Contamos con lo ultimo en tecnologia en rayos X.\n\n- Nuestros equipos medicos estan 100% esterilizados por nuestros profesionales.\n\n- Las opiniones nos gustan y nos ayudan a tomar decisiones, asi que por favor sentirse libre de compartir cualquier opinion o comentario con nuestro equipo y esto nos ayudara a crecer en familia.',
+          'Servicios Ofrecidos:\n\n\"En nuestra clínica odontológica, ofrecemos una amplia gama de servicios, desde limpiezas dentales y empastes hasta tratamientos de ortodoncia avanzada. Nos especializamos en proporcionar soluciones completas para la salud bucal de nuestros pacientes.\"',
+      'en':
+          '- The professional team that makes up this clinic is constantly trained in order to provide patients with first-class care.\n\n- We have the latest in X-ray technology.\n\n- Our medical equipment is 100% sterilized by our professionals.\n\n- We like opinions and they help us make decisions, so please feel free to share any opinion or comment with our team and this will help us grow as a family.',
+    },
+    'y2z3o7xi': {
+      'es':
+          'Tecnología y Equipamiento:\n\n\"Utilizamos tecnología de vanguardia, como radiografías digitales que reducen la exposición a la radiación, escáneres intraorales para obtener imágenes precisas y sistemas de gestión de pacientes que garantizan una atención eficiente.\"',
+      'en':
+          '- The professional team that makes up this clinic is constantly trained in order to provide patients with first-class care.\n\n- We have the latest in X-ray technology.\n\n- Our medical equipment is 100% sterilized by our professionals.\n\n- We like opinions and they help us make decisions, so please feel free to share any opinion or comment with our team and this will help us grow as a family.',
+    },
+    'qbv73euz': {
+      'es':
+          'Equipo Profesional:\n\n\"Nuestro equipo está formado por odontólogos altamente capacitados, higienistas dentales dedicados y un personal administrativo amable. Nos enorgullece contar con profesionales comprometidos con la excelencia y la atención personalizada.\"',
+      'en':
+          '- The professional team that makes up this clinic is constantly trained in order to provide patients with first-class care.\n\n- We have the latest in X-ray technology.\n\n- Our medical equipment is 100% sterilized by our professionals.\n\n- We like opinions and they help us make decisions, so please feel free to share any opinion or comment with our team and this will help us grow as a family.',
+    },
+    'rslrqn74': {
+      'es':
+          'Educación del Paciente:\n\n\"Ofrecemos materiales educativos, charlas informativas y recordatorios personalizados para ayudar a nuestros pacientes a mantener una buena salud bucal. La educación del paciente es una parte integral de nuestra filosofía de atención.\"',
       'en':
           '- The professional team that makes up this clinic is constantly trained in order to provide patients with first-class care.\n\n- We have the latest in X-ray technology.\n\n- Our medical equipment is 100% sterilized by our professionals.\n\n- We like opinions and they help us make decisions, so please feel free to share any opinion or comment with our team and this will help us grow as a family.',
     },
@@ -926,14 +944,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // MetodosDePago
   {
     '29ta4wd5': {
-      'es':
-          'Menciona el codigo Nisi27 para tener un 5% de descuento adicional.',
+      'es': 'Conoce nuestros metodos de pago y facilidades.',
       'en': 'Mention the code Nisi27 for an additional 5% discount.',
-    },
-    'g5hlg448': {
-      'es':
-          'Menciona el codigo NavidadNisi para tener un 7% de descuento adicional.',
-      'en': 'Mention the code NavidadNisi for an additional 7% discount.',
     },
     'vf1yxuab': {
       'es': 'Metodos de pago',
@@ -948,40 +960,41 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     '4bumesn7': {
       'es': 'Rating & Review',
-      'en': '',
+      'en': 'Rating & Review',
     },
     'cx9alid7': {
       'es': 'Evalúe y comente su experiencia',
-      'en': '',
+      'en': 'Rate and comment on your experience',
     },
     'skbvle98': {
       'es':
           'Tómese un momento para evaluar y comentar su reciente experiencia con nosotros. Sus comentarios son importantes para nosotros y nos ayudarán a mejorar nuestros servicios.',
-      'en': '',
+      'en':
+          'Please take a moment to rate and comment on your recent experience with us. Your comments are important to us and will help us improve our services.',
     },
     '2uauowue': {
       'es': 'Escriba su opinión',
-      'en': '',
+      'en': 'Write your opinion',
     },
     'omhp1s1s': {
       'es': 'cuentanos tu experiencia',
-      'en': '',
+      'en': 'tell us your experience',
     },
     'i5wtpzs4': {
       'es': 'enviar',
-      'en': '',
+      'en': 'send',
     },
     'zjswz5i7': {
       'es': 'Usuario',
-      'en': '',
+      'en': 'User',
     },
     '848ah0pr': {
       'es': 'Md',
-      'en': '',
+      'en': 'MD',
     },
     'amhxe78r': {
       'es': 'comentario',
-      'en': '',
+      'en': 'comment',
     },
   },
   // Miscellaneous
