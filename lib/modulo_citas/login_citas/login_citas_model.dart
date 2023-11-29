@@ -2,13 +2,13 @@ import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'registro_widget.dart' show RegistroWidget;
+import 'login_citas_widget.dart' show LoginCitasWidget;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class RegistroModel extends FlutterFlowModel<RegistroWidget> {
+class LoginCitasModel extends FlutterFlowModel<LoginCitasWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

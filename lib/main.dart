@@ -125,7 +125,7 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'homePage';
+  String _currentPageName = 'Login_Citas';
   late Widget? _currentPage;
 
   @override
@@ -138,6 +138,7 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
+      'Login_Citas': LoginCitasWidget(),
       'homePage': HomePageWidget(),
       'Promociones': PromocionesWidget(),
       'TemasImportantes': TemasImportantesWidget(),
@@ -184,7 +185,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'zxxgrgcs' /* Home */,
+                    '0vtzf58e' /* Inicio */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -202,7 +203,7 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.discount_rounded,
+                  Icons.home_outlined,
                   color: currentIndex == 1
                       ? FlutterFlowTheme.of(context).secondary
                       : Color(0x8A000000),
@@ -210,7 +211,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'mkwup6ql' /* Promociones */,
+                    'zxxgrgcs' /* Home */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -228,7 +229,7 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.info,
+                  Icons.discount_rounded,
                   color: currentIndex == 2
                       ? FlutterFlowTheme.of(context).secondary
                       : Color(0x8A000000),
@@ -236,7 +237,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    '0ykc7t8v' /* Info */,
+                    'mkwup6ql' /* Promociones */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -254,8 +255,34 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.monetization_on,
+                  Icons.info,
                   color: currentIndex == 3
+                      ? FlutterFlowTheme.of(context).secondary
+                      : Color(0x8A000000),
+                  size: 24.0,
+                ),
+                Text(
+                  FFLocalizations.of(context).getText(
+                    '0ykc7t8v' /* Info */,
+                  ),
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: currentIndex == 3
+                        ? FlutterFlowTheme.of(context).secondary
+                        : Color(0x8A000000),
+                    fontSize: 11.0,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          FloatingNavbarItem(
+            customWidget: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.monetization_on,
+                  color: currentIndex == 4
                       ? FlutterFlowTheme.of(context).secondary
                       : Color(0x8A000000),
                   size: 24.0,
@@ -266,7 +293,7 @@ class _NavBarPageState extends State<NavBarPage> {
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    color: currentIndex == 3
+                    color: currentIndex == 4
                         ? FlutterFlowTheme.of(context).secondary
                         : Color(0x8A000000),
                     fontSize: 11.0,

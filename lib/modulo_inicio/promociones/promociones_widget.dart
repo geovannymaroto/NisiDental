@@ -389,7 +389,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 90.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(10.0, 60.0, 0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
                     'gjw593xf' /* *Los cupones pueden ser utiliz... */,

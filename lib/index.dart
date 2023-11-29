@@ -1,8 +1,11 @@
 // Export pages
-export '/modulo_citas/registro/registro_widget.dart' show RegistroWidget;
-export '/modulo_citas/inicio/inicio_widget.dart' show InicioWidget;
+export '/modulo_citas/login_citas/login_citas_widget.dart'
+    show LoginCitasWidget;
+export '/modulo_citas/inicio_citas/inicio_citas_widget.dart'
+    show InicioCitasWidget;
 export '/modulo_citas/crear_cita/crear_cita_widget.dart' show CrearCitaWidget;
-export '/modulo_citas/historial/historial_widget.dart' show HistorialWidget;
+export '/modulo_administrador/historial/historial_widget.dart'
+    show HistorialWidget;
 export '/modulo_inicio/profesionales/profesionales_widget.dart'
     show ProfesionalesWidget;
 export '/modulo_inicio/convenios/convenios_widget.dart' show ConveniosWidget;
@@ -25,7 +28,7 @@ export '/pages/materiales_medicos/materiales_medicos_widget.dart'
     show MaterialesMedicosWidget;
 export '/modulo_administrador/agregar_datos_tratamientos/agregar_datos_tratamientos_widget.dart'
     show AgregarDatosTratamientosWidget;
-export '/menu_administrador/menu_administrador_widget.dart'
+export '/modulo_administrador/menu_administrador/menu_administrador_widget.dart'
     show MenuAdministradorWidget;
 export '/modulo_inicio/promociones/promociones_widget.dart'
     show PromocionesWidget;

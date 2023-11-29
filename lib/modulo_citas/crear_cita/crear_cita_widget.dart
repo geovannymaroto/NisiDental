@@ -175,7 +175,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                           height: 50.0,
                           textStyle: FlutterFlowTheme.of(context).bodyMedium,
                           hintText: FFLocalizations.of(context).getText(
-                            'o36bz804' /* Please select... */,
+                            'o36bz804' /* Porfavor seleccione.. */,
                           ),
                           icon: Icon(
                             Icons.keyboard_arrow_down_rounded,
@@ -415,7 +415,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                     children: [
                       FFButtonWidget(
                         onPressed: () async {
-                          context.pushNamed('Inicio');
+                          context.pushNamed('Inicio_Citas');
                         },
                         text: FFLocalizations.of(context).getText(
                           'yd8upjnj' /* Volver */,

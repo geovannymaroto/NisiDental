@@ -6,25 +6,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'registro_model.dart';
-export 'registro_model.dart';
+import 'login_citas_model.dart';
+export 'login_citas_model.dart';
 
-class RegistroWidget extends StatefulWidget {
-  const RegistroWidget({Key? key}) : super(key: key);
+class LoginCitasWidget extends StatefulWidget {
+  const LoginCitasWidget({Key? key}) : super(key: key);
 
   @override
-  _RegistroWidgetState createState() => _RegistroWidgetState();
+  _LoginCitasWidgetState createState() => _LoginCitasWidgetState();
 }
 
-class _RegistroWidgetState extends State<RegistroWidget> {
-  late RegistroModel _model;
+class _LoginCitasWidgetState extends State<LoginCitasWidget> {
+  late LoginCitasModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => RegistroModel());
+    _model = createModel(context, () => LoginCitasModel());
 
     _model.txtUserController ??= TextEditingController();
     _model.txtUserFocusNode ??= FocusNode();
@@ -86,7 +86,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                   await authManager.signOut();
                   GoRouter.of(context).clearRedirectLocation();
 
-                  context.goNamedAuth('Registro', context.mounted);
+                  context.goNamedAuth('homePage', context.mounted);
                 },
                 child: Icon(
                   Icons.output_sharp,
@@ -282,7 +282,8 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                               return;
                             }
 
-                            context.pushNamedAuth('Inicio', context.mounted);
+                            context.pushNamedAuth(
+                                'Inicio_Citas', context.mounted);
                           },
                           text: FFLocalizations.of(context).getText(
                             'ld90q7je' /* Ingresar */,
@@ -326,7 +327,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                               return;
                             }
 
-                            context.goNamedAuth('homePage', context.mounted);
+                            context.goNamedAuth('Login_Citas', context.mounted);
                           },
                           text: FFLocalizations.of(context).getText(
                             'ma23xa6j' /* Registrar */,

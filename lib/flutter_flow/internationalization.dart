@@ -105,7 +105,7 @@ Locale createLocale(String language) => language.contains('_')
     : Locale(language);
 
 final kTranslationsMap = <Map<String, Map<String, String>>>[
-  // Registro
+  // Login_Citas
   {
     'ozs7xis2': {
       'es': 'Email',
@@ -128,7 +128,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'This field is required',
     },
     '3rcvte7j': {
-      'es': 'Please choose an option from the dropdown',
+      'es': 'Elija una opción del menu desplegable',
       'en': 'Please choose an option from the dropdown',
     },
     'q7v9ntl8': {
@@ -148,7 +148,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'home',
     },
   },
-  // Inicio
+  // Inicio_Citas
   {
     '55egs7ex': {
       'es': 'Agendar Cita',
@@ -186,11 +186,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '10:30',
     },
     'o36bz804': {
-      'es': 'Please select...',
+      'es': 'Porfavor seleccione..',
       'en': 'Please select...',
     },
     'kituqlt6': {
-      'es': 'Search for an item...',
+      'es': 'Busca una opción',
       'en': 'Search for an item...',
     },
     'rinr4pfi': {
@@ -223,7 +223,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'yd8upjnj': {
       'es': 'Volver',
-      'en': 'Return',
+      'en': 'go back',
     },
     '8lihhevb': {
       'es': 'Crear Cita',
@@ -246,7 +246,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'uq9iotr8': {
       'es': 'Volver\n',
-      'en': 'Return',
+      'en': 'Go back',
     },
     'urgaog64': {
       'es': 'Historial',
@@ -716,6 +716,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Registrar',
       'en': 'to register',
     },
+    'bbre12tw': {
+      'es': 'Regresar',
+      'en': '',
+    },
     'hbh0ek79': {
       'es': 'Registo Materiales',
       'en': 'Materials Registry',
@@ -846,7 +850,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Add Treatment',
     },
     'jhmgrnoo': {
-      'es': 'Page Title',
+      'es': 'Modulo administracion',
       'en': 'Page Title',
     },
     '8m7ubwd3': {

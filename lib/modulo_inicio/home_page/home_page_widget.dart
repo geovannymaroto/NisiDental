@@ -393,23 +393,31 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    FlutterFlowLanguageSelector(
-                      width: 150.0,
-                      backgroundColor: Color(0xFF2EC4B6),
-                      borderColor: Colors.transparent,
-                      dropdownIconColor: Colors.white,
-                      borderRadius: 8.0,
-                      textStyle: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.normal,
-                        fontSize: 13.0,
+                    Opacity(
+                      opacity: 0.8,
+                      child: Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                        child: FlutterFlowLanguageSelector(
+                          width: 123.0,
+                          backgroundColor: Color(0xFF2EC4B6),
+                          borderColor: Colors.transparent,
+                          dropdownIconColor: Colors.white,
+                          textStyle: GoogleFonts.getFont(
+                            'Noto Serif',
+                            color: Colors.white,
+                            fontWeight: FontWeight.normal,
+                            fontSize: 13.0,
+                          ),
+                          hideFlags: false,
+                          flagSize: 20.0,
+                          flagTextGap: 5.0,
+                          currentLanguage:
+                              FFLocalizations.of(context).languageCode,
+                          languages: FFLocalizations.languages(),
+                          onChanged: (lang) => setAppLanguage(context, lang),
+                        ),
                       ),
-                      hideFlags: false,
-                      flagSize: 24.0,
-                      flagTextGap: 8.0,
-                      currentLanguage: FFLocalizations.of(context).languageCode,
-                      languages: FFLocalizations.languages(),
-                      onChanged: (lang) => setAppLanguage(context, lang),
                     ),
                   ],
                 ),
@@ -469,7 +477,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      context.pushNamed('Registro');
+                      context.pushNamed('Login_Citas');
                     },
                     child: Container(
                       width: double.infinity,

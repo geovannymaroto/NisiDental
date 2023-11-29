@@ -176,61 +176,65 @@ class _AgregarDatosTratamientosWidgetState
                         ),
                       ),
                     ),
-                    FFButtonWidget(
-                      onPressed: () async {
-                        var tratamientosRecordReference =
-                            TratamientosRecord.collection.doc();
-                        await tratamientosRecordReference
-                            .set(createTratamientosRecordData(
-                          tratamientos:
-                              _model.txtNombreTratamientoController.text,
-                        ));
-                        _model.btnNuevoTratamiento =
-                            TratamientosRecord.getDocumentFromData(
-                                createTratamientosRecordData(
-                                  tratamientos: _model
-                                      .txtNombreTratamientoController.text,
-                                ),
-                                tratamientosRecordReference);
-                        await showDialog(
-                          context: context,
-                          builder: (alertDialogContext) {
-                            return AlertDialog(
-                              content: Text('Registro exitoso'),
-                              actions: [
-                                TextButton(
-                                  onPressed: () =>
-                                      Navigator.pop(alertDialogContext),
-                                  child: Text('Ok'),
-                                ),
-                              ],
-                            );
-                          },
-                        );
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 10.0),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          var tratamientosRecordReference =
+                              TratamientosRecord.collection.doc();
+                          await tratamientosRecordReference
+                              .set(createTratamientosRecordData(
+                            tratamientos:
+                                _model.txtNombreTratamientoController.text,
+                          ));
+                          _model.btnNuevoTratamiento =
+                              TratamientosRecord.getDocumentFromData(
+                                  createTratamientosRecordData(
+                                    tratamientos: _model
+                                        .txtNombreTratamientoController.text,
+                                  ),
+                                  tratamientosRecordReference);
+                          await showDialog(
+                            context: context,
+                            builder: (alertDialogContext) {
+                              return AlertDialog(
+                                content: Text('Registro exitoso'),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () =>
+                                        Navigator.pop(alertDialogContext),
+                                    child: Text('Ok'),
+                                  ),
+                                ],
+                              );
+                            },
+                          );
 
-                        setState(() {});
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        'k0y3f45x' /* Registrar */,
-                      ),
-                      options: FFButtonOptions(
-                        height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFF2EC4B6),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+                          setState(() {});
+                        },
+                        text: FFLocalizations.of(context).getText(
+                          'k0y3f45x' /* Registrar */,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        options: FFButtonOptions(
+                          height: 40.0,
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              24.0, 0.0, 24.0, 0.0),
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: Color(0xFF2EC4B6),
+                          textStyle:
+                              FlutterFlowTheme.of(context).titleSmall.override(
+                                    fontFamily: 'Readex Pro',
+                                    color: Colors.white,
+                                  ),
+                          elevation: 3.0,
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
                       ),
                     ),
                   ],

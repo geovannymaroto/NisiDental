@@ -74,7 +74,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              'jhmgrnoo' /* Page Title */,
+              'jhmgrnoo' /* Modulo administracion */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -90,6 +90,8 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
@@ -121,7 +123,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pushNamed('agregar_datos_tratamientos');

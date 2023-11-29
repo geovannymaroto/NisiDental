@@ -139,13 +139,17 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/images/pago3.JPG',
-                        width: 300.0,
-                        height: 200.0,
-                        fit: BoxFit.contain,
+                    child: Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(
+                          20.0, 10.0, 20.0, 10.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/pago3.JPG',
+                          width: 300.0,
+                          height: 200.0,
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
                   ),
@@ -155,13 +159,17 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/images/pago1.JPG',
-                        width: 300.0,
-                        height: 200.0,
-                        fit: BoxFit.contain,
+                    child: Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 20.0, 10.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/pago1.JPG',
+                          width: 300.0,
+                          height: 200.0,
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
                   ),
@@ -171,13 +179,17 @@ class _MetodosDePagoWidgetState extends State<MetodosDePagoWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/images/pago2.JPG',
-                        width: 300.0,
-                        height: 200.0,
-                        fit: BoxFit.contain,
+                    child: Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 20.0, 20.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/pago2.JPG',
+                          width: 300.0,
+                          height: 200.0,
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
                   ),

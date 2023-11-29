@@ -472,6 +472,30 @@ class _RegistrosMaterialesMedicosWidgetState
                           ),
                         ),
                       ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            0.0, 100.0, 0.0, 0.0),
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed('Menu_Administrador');
+                          },
+                          child: Icon(
+                            Icons.chevron_left,
+                            color: FlutterFlowTheme.of(context).secondaryText,
+                            size: 60.0,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        FFLocalizations.of(context).getText(
+                          'bbre12tw' /* Regresar */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyMedium,
+                      ),
                     ],
                   );
                 },

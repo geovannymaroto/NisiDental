@@ -175,7 +175,7 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                   children: [
                     FFButtonWidget(
                       onPressed: () async {
-                        context.pushNamed('Inicio');
+                        context.pushNamed('Inicio_Citas');
                       },
                       text: FFLocalizations.of(context).getText(
                         'uq9iotr8' /* Volver

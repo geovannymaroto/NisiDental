@@ -79,23 +79,25 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : RegistroWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : HomePageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : RegistroWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : HomePageWidget(),
         ),
         FFRoute(
-          name: 'Registro',
-          path: '/registro',
-          builder: (context, params) => RegistroWidget(),
+          name: 'Login_Citas',
+          path: '/loginCitas',
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'Login_Citas')
+              : LoginCitasWidget(),
         ),
         FFRoute(
-          name: 'Inicio',
-          path: '/inicio',
-          builder: (context, params) => InicioWidget(),
+          name: 'Inicio_Citas',
+          path: '/inicioCitas',
+          builder: (context, params) => InicioCitasWidget(),
         ),
         FFRoute(
           name: 'CrearCita',
@@ -370,7 +372,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/registro';
+            return '/homePage';
           }
           return null;
         },
