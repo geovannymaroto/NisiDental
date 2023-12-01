@@ -240,26 +240,30 @@ class _InicioCitasWidgetState extends State<InicioCitasWidget> {
                             color: FlutterFlowTheme.of(context).secondaryText,
                             size: 24.0,
                           ),
-                          InkWell(
-                            splashColor: Colors.transparent,
-                            focusColor: Colors.transparent,
-                            hoverColor: Colors.transparent,
-                            highlightColor: Colors.transparent,
-                            onTap: () async {
-                              context.pushNamed('Menu_Administrador');
-                            },
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'e7jklf6f' /* Administracion */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    fontSize: 16.0,
+                          if (valueOrDefault<bool>(
+                              currentUserDocument?.admin, false))
+                            AuthUserStreamWidget(
+                              builder: (context) => InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  context.pushNamed('Menu_Administrador');
+                                },
+                                child: Text(
+                                  FFLocalizations.of(context).getText(
+                                    'e7jklf6f' /* Administracion */,
                                   ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Readex Pro',
+                                        fontSize: 16.0,
+                                      ),
+                                ),
+                              ),
                             ),
-                          ),
                         ],
                       ),
                     ),

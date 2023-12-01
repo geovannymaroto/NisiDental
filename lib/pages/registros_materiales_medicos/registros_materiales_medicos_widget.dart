@@ -481,7 +481,7 @@ class _RegistrosMaterialesMedicosWidgetState
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            context.pushNamed('Menu_Administrador');
+                            context.pushNamed('Inicio_Citas');
                           },
                           child: Icon(
                             Icons.chevron_left,
@@ -492,7 +492,7 @@ class _RegistrosMaterialesMedicosWidgetState
                       ),
                       Text(
                         FFLocalizations.of(context).getText(
-                          'bbre12tw' /* Regresar */,
+                          'j0h35bmg' /* Regresar */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium,
                       ),

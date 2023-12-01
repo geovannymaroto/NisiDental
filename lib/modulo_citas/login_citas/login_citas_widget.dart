@@ -327,6 +327,24 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                               return;
                             }
 
+                            await showDialog(
+                              context: context,
+                              builder: (alertDialogContext) {
+                                return AlertDialog(
+                                  title: Text('Registro Usuario'),
+                                  content: Text(
+                                      'El usuario se ha registrado correctamente.'),
+                                  actions: [
+                                    TextButton(
+                                      onPressed: () =>
+                                          Navigator.pop(alertDialogContext),
+                                      child: Text('Ok'),
+                                    ),
+                                  ],
+                                );
+                              },
+                            );
+
                             context.goNamedAuth('Login_Citas', context.mounted);
                           },
                           text: FFLocalizations.of(context).getText(
@@ -355,6 +373,15 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                         ),
                       ),
                     ],
+                  ),
+                ),
+                Flexible(
+                  child: Text(
+                    FFLocalizations.of(context).getText(
+                      'kim2f6we' /* Estimado cliente si usted ingr... */,
+                    ),
+                    textAlign: TextAlign.center,
+                    style: FlutterFlowTheme.of(context).bodyMedium,
                   ),
                 ),
               ],

@@ -123,6 +123,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Registrar',
       'en': 'Sign up',
     },
+    'kim2f6we': {
+      'es':
+          'Estimado cliente si usted ingresa por primera vez lo invitamos a registrarse.',
+      'en': '',
+    },
     'wf2ha32i': {
       'es': 'Este campo es requerido',
       'en': 'This field is required',
@@ -716,7 +721,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Registrar',
       'en': 'to register',
     },
-    'bbre12tw': {
+    'j0h35bmg': {
       'es': 'Regresar',
       'en': '',
     },
