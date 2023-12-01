@@ -237,7 +237,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'mkwup6ql' /* Promociones */,
+                    'mkwup6ql' /* Promo */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(

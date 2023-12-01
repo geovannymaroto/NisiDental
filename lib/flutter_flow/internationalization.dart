@@ -107,6 +107,11 @@ Locale createLocale(String language) => language.contains('_')
 final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Login_Citas
   {
+    'bov2q47x': {
+      'es':
+          'Estimado cliente si usted ingresa por primera vez lo invitamos a registrarse.',
+      'en': '',
+    },
     'ozs7xis2': {
       'es': 'Email',
       'en': 'E-mail',
@@ -122,11 +127,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'ma23xa6j': {
       'es': 'Registrar',
       'en': 'Sign up',
-    },
-    'kim2f6we': {
-      'es':
-          'Estimado cliente si usted ingresa por primera vez lo invitamos a registrarse.',
-      'en': '',
     },
     'wf2ha32i': {
       'es': 'Este campo es requerido',
@@ -847,11 +847,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Menu_Administrador
   {
     'zhbfg3yv': {
+      'es': 'Ver cuentas generadas',
+      'en': 'Add doctor',
+    },
+    '9dgwc7qv': {
       'es': 'Agregar doctor',
       'en': 'Add doctor',
     },
     'us80wlax': {
       'es': 'Agregar Tratamiento',
+      'en': 'Add Treatment',
+    },
+    'd0yni10d': {
+      'es': 'Historial General de Citas ',
       'en': 'Add Treatment',
     },
     'jhmgrnoo': {
@@ -911,7 +919,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Promotions and discounts',
     },
     'mkwup6ql': {
-      'es': 'Promociones',
+      'es': 'Promo',
       'en': 'home',
     },
   },
@@ -1004,6 +1012,33 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'amhxe78r': {
       'es': 'comentario',
       'en': 'comment',
+    },
+  },
+  // Cuentas_agregadas_app
+  {
+    'y7jaxjq2': {
+      'es': 'Cuentas agregadas a sistema',
+      'en': '',
+    },
+    '9v3ygltn': {
+      'es': 'Home',
+      'en': '',
+    },
+  },
+  // specialoffer
+  {
+    '8650oi1m': {
+      'es': 'Oferta Special!!',
+      'en': '',
+    },
+    'ulb8tkr1': {
+      'es': '#NSM123',
+      'en': '',
+    },
+    'ncqnis32': {
+      'es':
+          ' 20% de descuento en todos nuestros tratamientos con el codigo de la app',
+      'en': '',
     },
   },
   // Miscellaneous

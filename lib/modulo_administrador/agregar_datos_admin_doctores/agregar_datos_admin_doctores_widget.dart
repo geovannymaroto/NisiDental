@@ -190,6 +190,7 @@ class _AgregarDatosAdminDoctoresWidgetState
                             context: context,
                             builder: (alertDialogContext) {
                               return AlertDialog(
+                                title: Text('Registro'),
                                 content: Text('Registro exitoso'),
                                 actions: [
                                   TextButton(

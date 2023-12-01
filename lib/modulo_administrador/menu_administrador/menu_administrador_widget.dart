@@ -90,20 +90,20 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pushNamed('agregar_datos_admin_doctores');
                   },
                   text: FFLocalizations.of(context).getText(
-                    'zhbfg3yv' /* Agregar doctor */,
+                    'zhbfg3yv' /* Ver cuentas generadas */,
                   ),
                   options: FFButtonOptions(
-                    height: 40.0,
+                    height: 50.0,
                     padding:
                         EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                     iconPadding:
@@ -118,12 +118,41 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                       color: Colors.transparent,
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(70.0),
                   ),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    context.pushNamed('agregar_datos_admin_doctores');
+                  },
+                  text: FFLocalizations.of(context).getText(
+                    '9dgwc7qv' /* Agregar doctor */,
+                  ),
+                  options: FFButtonOptions(
+                    height: 50.0,
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                    iconPadding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: Color(0xFF2EC4B6),
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Readex Pro',
+                          color: Colors.white,
+                        ),
+                    elevation: 3.0,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1.0,
+                    ),
+                    borderRadius: BorderRadius.circular(70.0),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pushNamed('agregar_datos_tratamientos');
@@ -132,7 +161,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                     'us80wlax' /* Agregar Tratamiento */,
                   ),
                   options: FFButtonOptions(
-                    height: 40.0,
+                    height: 50.0,
                     padding:
                         EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                     iconPadding:
@@ -147,7 +176,36 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                       color: Colors.transparent,
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(70.0),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    context.pushNamed('Historial');
+                  },
+                  text: FFLocalizations.of(context).getText(
+                    'd0yni10d' /* Historial General de Citas  */,
+                  ),
+                  options: FFButtonOptions(
+                    height: 50.0,
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                    iconPadding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: Color(0xFF2EC4B6),
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Readex Pro',
+                          color: Colors.white,
+                        ),
+                    elevation: 3.0,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1.0,
+                    ),
+                    borderRadius: BorderRadius.circular(70.0),
                   ),
                 ),
               ),

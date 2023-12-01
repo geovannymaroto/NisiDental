@@ -1,3 +1,4 @@
+import '/components/specialoffer_widget.dart';
 import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -385,198 +386,231 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           top: true,
           child: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Opacity(
-                      opacity: 0.8,
+            child: InkWell(
+              splashColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              onTap: () async {
+                await showModalBottomSheet(
+                  isScrollControlled: true,
+                  backgroundColor: Colors.transparent,
+                  enableDrag: false,
+                  context: context,
+                  builder: (context) {
+                    return GestureDetector(
+                      onTap: () => _model.unfocusNode.canRequestFocus
+                          ? FocusScope.of(context)
+                              .requestFocus(_model.unfocusNode)
+                          : FocusScope.of(context).unfocus(),
                       child: Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                        child: FlutterFlowLanguageSelector(
-                          width: 123.0,
-                          backgroundColor: Color(0xFF2EC4B6),
-                          borderColor: Colors.transparent,
-                          dropdownIconColor: Colors.white,
-                          textStyle: GoogleFonts.getFont(
-                            'Noto Serif',
-                            color: Colors.white,
-                            fontWeight: FontWeight.normal,
-                            fontSize: 13.0,
+                        padding: MediaQuery.viewInsetsOf(context),
+                        child: SpecialofferWidget(),
+                      ),
+                    );
+                  },
+                ).then((value) => safeSetState(() {}));
+              },
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Opacity(
+                        opacity: 0.8,
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              5.0, 0.0, 0.0, 0.0),
+                          child: FlutterFlowLanguageSelector(
+                            width: 123.0,
+                            backgroundColor: Color(0xFF2EC4B6),
+                            borderColor: Colors.transparent,
+                            dropdownIconColor: Colors.white,
+                            textStyle: GoogleFonts.getFont(
+                              'Noto Serif',
+                              color: Colors.white,
+                              fontWeight: FontWeight.normal,
+                              fontSize: 13.0,
+                            ),
+                            hideFlags: false,
+                            flagSize: 20.0,
+                            flagTextGap: 5.0,
+                            currentLanguage:
+                                FFLocalizations.of(context).languageCode,
+                            languages: FFLocalizations.languages(),
+                            onChanged: (lang) => setAppLanguage(context, lang),
                           ),
-                          hideFlags: false,
-                          flagSize: 20.0,
-                          flagTextGap: 5.0,
-                          currentLanguage:
-                              FFLocalizations.of(context).languageCode,
-                          languages: FFLocalizations.languages(),
-                          onChanged: (lang) => setAppLanguage(context, lang),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Opacity(
+                    opacity: 0.6,
+                    child: Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+                      child: Container(
+                        width: 120.0,
+                        height: 120.0,
+                        clipBehavior: Clip.antiAlias,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: Image.asset(
+                          'assets/images/logo2.jpg',
+                          fit: BoxFit.scaleDown,
                         ),
                       ),
                     ),
-                  ],
-                ),
-                Opacity(
-                  opacity: 0.6,
-                  child: Padding(
+                  ),
+                  Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
-                    child: Container(
-                      width: 120.0,
-                      height: 120.0,
-                      clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                    child: Text(
+                      FFLocalizations.of(context).getText(
+                        '522jy0c2' /* ¡Bienvenido a NISI! */,
                       ),
-                      child: Image.asset(
-                        'assets/images/logo2.jpg',
-                        fit: BoxFit.scaleDown,
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
-                  child: Text(
-                    FFLocalizations.of(context).getText(
-                      '522jy0c2' /* ¡Bienvenido a NISI! */,
-                    ),
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Noto Serif',
-                          color: Color(0xFFFFBF69),
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
-                  child: Text(
-                    FFLocalizations.of(context).getText(
-                      'zlgva42u' /* En nuestra clínica, nos esforz... */,
-                    ),
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Noto Serif',
-                          color: Color(0xFF020A09),
-                          fontSize: 15.0,
-                        ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 60.0, 0.0),
-                  child: InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      context.pushNamed('Login_Citas');
-                    },
-                    child: Container(
-                      width: double.infinity,
-                      height: 50.0,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFCBF3F0),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            50.0, 12.0, 50.0, 10.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'i91uzfkt' /* Agendar Cita */,
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Noto Serif',
+                            color: Color(0xFFFFBF69),
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
                           ),
-                          textAlign: TextAlign.center,
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Noto Serif',
-                                    fontSize: 16.0,
-                                  ),
-                        ),
-                      ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(60.0, 10.0, 60.0, 10.0),
-                  child: InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      context.pushNamed('Contactanos');
-                    },
-                    child: Container(
-                      width: double.infinity,
-                      height: 50.0,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFCBF3F0),
-                        borderRadius: BorderRadius.circular(20.0),
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                    child: Text(
+                      FFLocalizations.of(context).getText(
+                        'zlgva42u' /* En nuestra clínica, nos esforz... */,
                       ),
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            50.0, 12.0, 50.0, 10.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'fxb6d5zo' /* Contactanos */,
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Noto Serif',
+                            color: Color(0xFF020A09),
+                            fontSize: 15.0,
                           ),
-                          textAlign: TextAlign.center,
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Noto Serif',
-                                    fontSize: 16.0,
-                                  ),
-                        ),
-                      ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 60.0, 0.0),
-                  child: InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      context.pushNamed('Profesionales');
-                    },
-                    child: Container(
-                      width: double.infinity,
-                      height: 50.0,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFCBF3F0),
-                        borderRadius: BorderRadius.circular(20.0),
-                        shape: BoxShape.rectangle,
-                      ),
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            50.0, 12.0, 50.0, 10.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'heoamgfk' /* Nosotros */,
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 60.0, 0.0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('Login_Citas');
+                      },
+                      child: Container(
+                        width: double.infinity,
+                        height: 50.0,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFCBF3F0),
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              50.0, 12.0, 50.0, 10.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'i91uzfkt' /* Agendar Cita */,
+                            ),
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 16.0,
+                                ),
                           ),
-                          textAlign: TextAlign.center,
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Noto Serif',
-                                    fontSize: 16.0,
-                                  ),
                         ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(60.0, 10.0, 60.0, 10.0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('Contactanos');
+                      },
+                      child: Container(
+                        width: double.infinity,
+                        height: 50.0,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFCBF3F0),
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              50.0, 12.0, 50.0, 10.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'fxb6d5zo' /* Contactanos */,
+                            ),
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 16.0,
+                                ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 60.0, 0.0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('Profesionales');
+                      },
+                      child: Container(
+                        width: double.infinity,
+                        height: 50.0,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFCBF3F0),
+                          borderRadius: BorderRadius.circular(20.0),
+                          shape: BoxShape.rectangle,
+                        ),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              50.0, 12.0, 50.0, 10.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'heoamgfk' /* Nosotros */,
+                            ),
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 16.0,
+                                ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

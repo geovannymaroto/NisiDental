@@ -206,6 +206,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'RandR',
           path: '/randR',
           builder: (context, params) => RandRWidget(),
+        ),
+        FFRoute(
+          name: 'Cuentas_agregadas_app',
+          path: '/cuentasAgregadasApp',
+          builder: (context, params) => CuentasAgregadasAppWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

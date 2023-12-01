@@ -155,15 +155,6 @@ class _MaterialesMedicosWidgetState extends State<MaterialesMedicosWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'Nombre:    ${materialesItem.nombre}',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Readex Pro',
-                                              fontSize: 15.0,
-                                            ),
-                                      ),
-                                      Text(
                                         'Stock actual: ${materialesItem.cantidad.toString()}',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -171,6 +162,20 @@ class _MaterialesMedicosWidgetState extends State<MaterialesMedicosWidget> {
                                               fontFamily: 'Readex Pro',
                                               fontSize: 15.0,
                                             ),
+                                      ),
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Text(
+                                            'Nombre:    ${materialesItem.nombre}',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  fontSize: 15.0,
+                                                ),
+                                          ),
+                                        ],
                                       ),
                                     ],
                                   ),

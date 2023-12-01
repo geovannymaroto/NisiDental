@@ -117,7 +117,7 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                       alignment: AlignmentDirectional(-1.00, 1.00),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
                           child: Image.asset(
@@ -131,15 +131,30 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                     ),
                   ],
                 ),
+                Flexible(
+                  child: Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 30.0),
+                    child: Text(
+                      FFLocalizations.of(context).getText(
+                        'bov2q47x' /* Estimado cliente si usted ingr... */,
+                      ),
+                      textAlign: TextAlign.center,
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Noto Serif',
+                          ),
+                    ),
+                  ),
+                ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Expanded(
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
-                              8.0, 0.0, 8.0, 0.0),
+                              8.0, 10.0, 8.0, 0.0),
                           child: TextFormField(
                             controller: _model.txtUserController,
                             focusNode: _model.txtUserFocusNode,
@@ -356,7 +371,7 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                                 24.0, 0.0, 24.0, 0.0),
                             iconPadding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).warning,
+                            color: Color(0xFFFFBF69),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -373,15 +388,6 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                         ),
                       ),
                     ],
-                  ),
-                ),
-                Flexible(
-                  child: Text(
-                    FFLocalizations.of(context).getText(
-                      'kim2f6we' /* Estimado cliente si usted ingr... */,
-                    ),
-                    textAlign: TextAlign.center,
-                    style: FlutterFlowTheme.of(context).bodyMedium,
                   ),
                 ),
               ],

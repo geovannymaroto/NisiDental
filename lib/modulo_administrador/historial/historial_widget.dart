@@ -62,6 +62,7 @@ class _HistorialWidgetState extends State<HistorialWidget> {
             FFLocalizations.of(context).getText(
               'urgaog64' /* Historial */,
             ),
+            textAlign: TextAlign.start,
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
