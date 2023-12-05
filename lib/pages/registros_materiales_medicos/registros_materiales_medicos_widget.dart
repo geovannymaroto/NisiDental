@@ -271,7 +271,7 @@ class _RegistrosMaterialesMedicosWidgetState
                                           .labelMedium,
                                       hintText:
                                           FFLocalizations.of(context).getText(
-                                        '9xmtstqk' /* Ingrese cantidad */,
+                                        'tq1hg68b' /* Ingrese cantidad */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .labelMedium,
@@ -410,7 +410,7 @@ class _RegistrosMaterialesMedicosWidgetState
                               await RegistroMaterialRecord.collection
                                   .doc()
                                   .set(createRegistroMaterialRecordData(
-                                    cantidad: columnMaterialesRecord?.cantidad,
+                                    material: columnMaterialesRecord?.reference,
                                   ));
 
                               await columnMaterialesRecord!.reference.update({
@@ -426,7 +426,7 @@ class _RegistrosMaterialesMedicosWidgetState
                               await RegistroMaterialRecord.collection
                                   .doc()
                                   .set(createRegistroMaterialRecordData(
-                                    cantidad: columnMaterialesRecord?.cantidad,
+                                    material: columnMaterialesRecord?.reference,
                                   ));
 
                               await columnMaterialesRecord!.reference.update({
@@ -444,7 +444,7 @@ class _RegistrosMaterialesMedicosWidgetState
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 content: Text(
-                                  'Hecho',
+                                  'Modificado',
                                   style: TextStyle(
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
