@@ -132,7 +132,7 @@ class _TemasImportantesWidgetState extends State<TemasImportantesWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 4.0, 20.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 20.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 170.0,
@@ -173,7 +173,7 @@ class _TemasImportantesWidgetState extends State<TemasImportantesWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 4.0, 20.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 20.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 180.0,
@@ -214,7 +214,7 @@ class _TemasImportantesWidgetState extends State<TemasImportantesWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 4.0, 20.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 20.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 180.0,

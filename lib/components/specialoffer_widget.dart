@@ -107,7 +107,7 @@ class _SpecialofferWidgetState extends State<SpecialofferWidget>
                             children: [
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  '8650oi1m' /* Oferta Special!! */,
+                                  '8650oi1m' /* Oferta Especial!! */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium

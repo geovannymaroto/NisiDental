@@ -211,6 +211,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Cuentas_agregadas_app',
           path: '/cuentasAgregadasApp',
           builder: (context, params) => CuentasAgregadasAppWidget(),
+        ),
+        FFRoute(
+          name: 'recuperarpassword',
+          path: '/recuperarpassword',
+          builder: (context, params) => RecuperarpasswordWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

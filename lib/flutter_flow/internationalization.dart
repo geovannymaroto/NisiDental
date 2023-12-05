@@ -128,6 +128,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Registrar',
       'en': 'Sign up',
     },
+    'xgmj33h0': {
+      'es': 'olvido su contraseña?',
+      'en': '',
+    },
     'wf2ha32i': {
       'es': 'Este campo es requerido',
       'en': 'This field is required',
@@ -183,12 +187,72 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // CrearCita
   {
     'u9iyx58b': {
-      'es': 'Hora',
+      'es': 'Hora     ',
       'en': 'Hour',
     },
     'j8ukadxv': {
-      'es': '10:30',
+      'es': '9:00 am',
       'en': '10:30',
+    },
+    'n8pl67kc': {
+      'es': '9:30 am',
+      'en': '',
+    },
+    'ifuv6pr6': {
+      'es': '10:00 am',
+      'en': '',
+    },
+    'v3yijqpd': {
+      'es': '10:30 am',
+      'en': '',
+    },
+    'xvajyuq3': {
+      'es': '11:00 am',
+      'en': '',
+    },
+    '302pqgjy': {
+      'es': '11:30 am',
+      'en': '',
+    },
+    'npup6ayg': {
+      'es': '1:00 pm',
+      'en': '',
+    },
+    'j7zeogaw': {
+      'es': '1:30 pm',
+      'en': '',
+    },
+    'twvw45n6': {
+      'es': '2:00 pm',
+      'en': '',
+    },
+    'bsgqyou1': {
+      'es': '2:30 pm',
+      'en': '',
+    },
+    'gv4ibz55': {
+      'es': '3:00 pm',
+      'en': '',
+    },
+    'u72ss4lk': {
+      'es': '3:30 pm',
+      'en': '',
+    },
+    '6u9ijtrh': {
+      'es': '4:00 pm',
+      'en': '',
+    },
+    'zaz6ta7s': {
+      'es': '4:30pm',
+      'en': '',
+    },
+    'p8sy82ei': {
+      'es': '5:00 pm',
+      'en': '',
+    },
+    'r3y5zq31': {
+      'es': '5:30 pm',
+      'en': '',
     },
     'o36bz804': {
       'es': 'Porfavor seleccione..',
@@ -673,10 +737,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // RegistrosMaterialesMedicos
   {
-    '2p7r6zy8': {
-      'es': '     Registro de materiales médicos',
-      'en': 'Registration of medical materials',
-    },
     '7mopz7f6': {
       'es': 'Elige un material',
       'en': 'Choose a material',
@@ -686,7 +746,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Option 1',
     },
     'xehl9d2y': {
-      'es': 'Please select...',
+      'es': 'Seleccione producto',
       'en': 'Please select...',
     },
     'bvmxv3mh': {
@@ -697,20 +757,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Elige una cantidad',
       'en': 'Choose a quantity',
     },
+    '9xmtstqk': {
+      'es': 'Ingrese cantidad',
+      'en': '',
+    },
     '2zb3yuyo': {
       'es': 'Operacion',
       'en': 'Operation',
     },
     'bszoh4nl': {
-      'es': 'Sumar',
+      'es': 'Agregar',
       'en': 'Add',
     },
     '4um6cb9s': {
-      'es': 'Sumar',
+      'es': 'Agregar',
       'en': 'Add',
     },
     'eb3tscpu': {
-      'es': 'Restar',
+      'es': 'Quitar',
       'en': 'Subtract',
     },
     '3ahbq3t9': {
@@ -721,9 +785,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Registrar',
       'en': 'to register',
     },
-    'j0h35bmg': {
-      'es': 'Regresar',
-      'en': '',
+    '8eyfu6p5': {
+      'es': 'Inventario',
+      'en': 'to register',
+    },
+    '5mbj1fii': {
+      'es': ' Registro materiales médicos',
+      'en': 'Registration of medical materials',
     },
     'hbh0ek79': {
       'es': 'Registo Materiales',
@@ -812,7 +880,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // MaterialesMedicos
   {
-    'mad1taoq': {
+    'cir85g4b': {
       'es': 'Materiales médicos',
       'en': 'medical materials',
     },
@@ -1025,10 +1093,33 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
   },
+  // recuperarpassword
+  {
+    'jjtwts1t': {
+      'es': 'Olvide mi contraseña',
+      'en': '',
+    },
+    'h0fk1af0': {
+      'es': 'Ingrese su correo electronico, para recuperar su contraseña',
+      'en': '',
+    },
+    'p1vsdgh8': {
+      'es': 'Email Address',
+      'en': '',
+    },
+    'gpidahst': {
+      'es': 'Ingrese su email',
+      'en': '',
+    },
+    'hwtmx52o': {
+      'es': 'Restablecer contraseña',
+      'en': '',
+    },
+  },
   // specialoffer
   {
     '8650oi1m': {
-      'es': 'Oferta Special!!',
+      'es': 'Oferta Especial!!',
       'en': '',
     },
     'ulb8tkr1': {

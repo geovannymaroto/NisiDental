@@ -378,6 +378,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         appBar: AppBar(
           backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
+          title: InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              context.pushNamed('Login_Citas');
+            },
+            child: Icon(
+              Icons.arrow_circle_left_outlined,
+              color: FlutterFlowTheme.of(context).secondaryText,
+              size: 24.0,
+            ),
+          ),
           actions: [],
           centerTitle: false,
           elevation: 2.0,

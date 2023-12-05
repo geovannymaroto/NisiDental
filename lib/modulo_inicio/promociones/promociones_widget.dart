@@ -1,9 +1,12 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'promociones_model.dart';
@@ -16,10 +19,86 @@ class PromocionesWidget extends StatefulWidget {
   _PromocionesWidgetState createState() => _PromocionesWidgetState();
 }
 
-class _PromocionesWidgetState extends State<PromocionesWidget> {
+class _PromocionesWidgetState extends State<PromocionesWidget>
+    with TickerProviderStateMixin {
   late PromocionesModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final animationsMap = {
+    'containerOnPageLoadAnimation1': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        MoveEffect(
+          curve: Curves.bounceOut,
+          delay: 300.ms,
+          duration: 600.ms,
+          begin: Offset(-100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation2': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        MoveEffect(
+          curve: Curves.bounceOut,
+          delay: 400.ms,
+          duration: 600.ms,
+          begin: Offset(-100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation3': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        MoveEffect(
+          curve: Curves.bounceOut,
+          delay: 500.ms,
+          duration: 600.ms,
+          begin: Offset(-100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation4': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        MoveEffect(
+          curve: Curves.bounceOut,
+          delay: 600.ms,
+          duration: 600.ms,
+          begin: Offset(-100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation5': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        MoveEffect(
+          curve: Curves.bounceOut,
+          delay: 700.ms,
+          duration: 600.ms,
+          begin: Offset(-100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation6': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        MoveEffect(
+          curve: Curves.bounceOut,
+          delay: 800.ms,
+          duration: 600.ms,
+          begin: Offset(-100.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+  };
 
   @override
   void initState() {
@@ -145,7 +224,8 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                       ],
                     ),
                   ),
-                ),
+                ).animateOnPageLoad(
+                    animationsMap['containerOnPageLoadAnimation1']!),
               ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
@@ -193,7 +273,8 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                       ],
                     ),
                   ),
-                ),
+                ).animateOnPageLoad(
+                    animationsMap['containerOnPageLoadAnimation2']!),
               ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
@@ -241,7 +322,8 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                       ],
                     ),
                   ),
-                ),
+                ).animateOnPageLoad(
+                    animationsMap['containerOnPageLoadAnimation3']!),
               ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
@@ -289,7 +371,8 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                       ],
                     ),
                   ),
-                ),
+                ).animateOnPageLoad(
+                    animationsMap['containerOnPageLoadAnimation4']!),
               ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 60.0, 0.0, 0.0),
@@ -342,7 +425,8 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                       ],
                     ),
                   ),
-                ),
+                ).animateOnPageLoad(
+                    animationsMap['containerOnPageLoadAnimation5']!),
               ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
@@ -386,7 +470,8 @@ class _PromocionesWidgetState extends State<PromocionesWidget> {
                       ],
                     ),
                   ),
-                ),
+                ).animateOnPageLoad(
+                    animationsMap['containerOnPageLoadAnimation6']!),
               ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(10.0, 60.0, 0.0, 0.0),

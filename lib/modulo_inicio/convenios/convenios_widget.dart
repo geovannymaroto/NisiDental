@@ -1,9 +1,12 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'convenios_model.dart';
@@ -16,10 +19,98 @@ class ConveniosWidget extends StatefulWidget {
   _ConveniosWidgetState createState() => _ConveniosWidgetState();
 }
 
-class _ConveniosWidgetState extends State<ConveniosWidget> {
+class _ConveniosWidgetState extends State<ConveniosWidget>
+    with TickerProviderStateMixin {
   late ConveniosModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final animationsMap = {
+    'imageOnPageLoadAnimation1': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.bounceOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+      ],
+    ),
+    'imageOnPageLoadAnimation2': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.bounceOut,
+          delay: 100.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+      ],
+    ),
+    'imageOnPageLoadAnimation3': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.bounceOut,
+          delay: 200.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+      ],
+    ),
+    'imageOnPageLoadAnimation4': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.bounceOut,
+          delay: 300.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+      ],
+    ),
+    'imageOnPageLoadAnimation5': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.bounceOut,
+          delay: 400.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+      ],
+    ),
+    'imageOnPageLoadAnimation6': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.bounceOut,
+          delay: 400.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+      ],
+    ),
+    'imageOnPageLoadAnimation7': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.bounceOut,
+          delay: 50.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+      ],
+    ),
+  };
 
   @override
   void initState() {
@@ -119,7 +210,8 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
                             height: 200.0,
                             fit: BoxFit.cover,
                           ),
-                        ),
+                        ).animateOnPageLoad(
+                            animationsMap['imageOnPageLoadAnimation1']!),
                       ),
                       Card(
                         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -136,7 +228,8 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
                             height: 200.0,
                             fit: BoxFit.cover,
                           ),
-                        ),
+                        ).animateOnPageLoad(
+                            animationsMap['imageOnPageLoadAnimation2']!),
                       ),
                       Card(
                         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -153,7 +246,8 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
                             height: 200.0,
                             fit: BoxFit.contain,
                           ),
-                        ),
+                        ).animateOnPageLoad(
+                            animationsMap['imageOnPageLoadAnimation3']!),
                       ),
                       Card(
                         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -170,7 +264,8 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
                             height: 200.0,
                             fit: BoxFit.cover,
                           ),
-                        ),
+                        ).animateOnPageLoad(
+                            animationsMap['imageOnPageLoadAnimation4']!),
                       ),
                       Card(
                         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -187,7 +282,8 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
                             height: 200.0,
                             fit: BoxFit.cover,
                           ),
-                        ),
+                        ).animateOnPageLoad(
+                            animationsMap['imageOnPageLoadAnimation5']!),
                       ),
                       Card(
                         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -204,7 +300,8 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
                             height: 200.0,
                             fit: BoxFit.cover,
                           ),
-                        ),
+                        ).animateOnPageLoad(
+                            animationsMap['imageOnPageLoadAnimation6']!),
                       ),
                       Card(
                         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -221,7 +318,8 @@ class _ConveniosWidgetState extends State<ConveniosWidget> {
                             height: 200.0,
                             fit: BoxFit.cover,
                           ),
-                        ),
+                        ).animateOnPageLoad(
+                            animationsMap['imageOnPageLoadAnimation7']!),
                       ),
                     ],
                   ),

@@ -154,7 +154,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          'u9iyx58b' /* Hora */,
+                          'u9iyx58b' /* Hora      */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
@@ -166,7 +166,52 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                               FormFieldController<String>(null),
                           options: [
                             FFLocalizations.of(context).getText(
-                              'j8ukadxv' /* 10:30 */,
+                              'j8ukadxv' /* 9:00 am */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'n8pl67kc' /* 9:30 am */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'ifuv6pr6' /* 10:00 am */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'v3yijqpd' /* 10:30 am */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'xvajyuq3' /* 11:00 am */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              '302pqgjy' /* 11:30 am */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'npup6ayg' /* 1:00 pm */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'j7zeogaw' /* 1:30 pm */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'twvw45n6' /* 2:00 pm */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'bsgqyou1' /* 2:30 pm */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'gv4ibz55' /* 3:00 pm */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'u72ss4lk' /* 3:30 pm */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              '6u9ijtrh' /* 4:00 pm */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'zaz6ta7s' /* 4:30pm */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'p8sy82ei' /* 5:00 pm */,
+                            ),
+                            FFLocalizations.of(context).getText(
+                              'r3y5zq31' /* 5:30 pm */,
                             )
                           ],
                           onChanged: (val) =>

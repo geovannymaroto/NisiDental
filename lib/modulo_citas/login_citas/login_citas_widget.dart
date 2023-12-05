@@ -276,7 +276,7 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 80.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 30.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -297,8 +297,7 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                               return;
                             }
 
-                            context.pushNamedAuth(
-                                'Inicio_Citas', context.mounted);
+                            context.pushNamedAuth('homePage', context.mounted);
                           },
                           text: FFLocalizations.of(context).getText(
                             'ld90q7je' /* Ingresar */,
@@ -389,6 +388,30 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                       ),
                     ],
                   ),
+                ),
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('recuperarpassword');
+                      },
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          'xgmj33h0' /* olvido su contraseña? */,
+                        ),
+                        textAlign: TextAlign.center,
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Noto Serif',
+                            ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),

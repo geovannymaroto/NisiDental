@@ -1,6 +1,7 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -19,16 +20,16 @@ class RegistrosMaterialesMedicosModel
 
   final unfocusNode = FocusNode();
   final formKey = GlobalKey<FormState>();
-  // State field(s) for DropDown widget.
-  String? dropDownValue1;
-  FormFieldController<String>? dropDownValueController1;
+  // State field(s) for DropDownElegir widget.
+  String? dropDownElegirValue;
+  FormFieldController<String>? dropDownElegirValueController;
   // State field(s) for TextFieldCantidad widget.
   FocusNode? textFieldCantidadFocusNode;
   TextEditingController? textFieldCantidadController;
   String? Function(BuildContext, String?)? textFieldCantidadControllerValidator;
-  // State field(s) for DropDown widget.
-  String? dropDownValue2;
-  FormFieldController<String>? dropDownValueController2;
+  // State field(s) for DropDownOperacion widget.
+  String? dropDownOperacionValue;
+  FormFieldController<String>? dropDownOperacionValueController;
 
   /// Initialization and disposal methods.
 

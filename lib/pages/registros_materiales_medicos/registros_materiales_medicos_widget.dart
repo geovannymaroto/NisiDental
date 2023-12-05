@@ -1,6 +1,7 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -86,34 +87,33 @@ class _RegistrosMaterialesMedicosWidgetState
             key: scaffoldKey,
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             appBar: AppBar(
-              backgroundColor: Color(0xFF2EC4B6),
+              backgroundColor: FlutterFlowTheme.of(context).secondary,
               automaticallyImplyLeading: false,
+              leading: FlutterFlowIconButton(
+                borderColor: Colors.transparent,
+                borderRadius: 30.0,
+                borderWidth: 1.0,
+                buttonSize: 60.0,
+                icon: Icon(
+                  Icons.arrow_back_rounded,
+                  color: Colors.white,
+                  size: 30.0,
+                ),
+                onPressed: () async {
+                  context.pushNamed('homePage');
+                },
+              ),
               title: Text(
                 FFLocalizations.of(context).getText(
-                  '2p7r6zy8' /*      Registro de materiales mé... */,
+                  '5mbj1fii' /*  Registro materiales médicos */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: FlutterFlowTheme.of(context).primaryBackground,
                     ),
               ),
-              actions: [
-                InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    context.pushNamed('MaterialesMedicos');
-                  },
-                  child: Icon(
-                    Icons.double_arrow,
-                    color: FlutterFlowTheme.of(context).primaryBackground,
-                    size: 24.0,
-                  ),
-                ),
-              ],
-              centerTitle: false,
+              actions: [],
+              centerTitle: true,
               elevation: 2.0,
             ),
             body: SafeArea(
@@ -122,7 +122,7 @@ class _RegistrosMaterialesMedicosWidgetState
                 stream: queryMaterialesRecord(
                   queryBuilder: (materialesRecord) => materialesRecord.where(
                     'nombre',
-                    isEqualTo: _model.dropDownValue1,
+                    isEqualTo: _model.dropDownElegirValue,
                   ),
                   singleRecord: true,
                 ),
@@ -162,13 +162,18 @@ class _RegistrosMaterialesMedicosWidgetState
                                   0.0, 10.0, 0.0, 8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      '7mopz7f6' /* Elige un material */,
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 0.0, 0.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        '7mopz7f6' /* Elige un material */,
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                     ),
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyMedium,
                                   ),
                                 ],
                               ),
@@ -183,40 +188,45 @@ class _RegistrosMaterialesMedicosWidgetState
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Expanded(
-                              child: FlutterFlowDropDown<String>(
-                                controller: _model.dropDownValueController1 ??=
-                                    FormFieldController<String>(null),
-                                options:
-                                    registrosMaterialesMedicosMaterialesRecordList
-                                        .map((e) => e.nombre)
-                                        .toList(),
-                                onChanged: (val) =>
-                                    setState(() => _model.dropDownValue1 = val),
-                                width: 300.0,
-                                height: 50.0,
-                                textStyle:
-                                    FlutterFlowTheme.of(context).bodyMedium,
-                                hintText: FFLocalizations.of(context).getText(
-                                  'xehl9d2y' /* Please select... */,
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 50.0, 15.0),
+                                child: FlutterFlowDropDown<String>(
+                                  controller:
+                                      _model.dropDownElegirValueController ??=
+                                          FormFieldController<String>(null),
+                                  options:
+                                      registrosMaterialesMedicosMaterialesRecordList
+                                          .map((e) => e.nombre)
+                                          .toList(),
+                                  onChanged: (val) => setState(
+                                      () => _model.dropDownElegirValue = val),
+                                  width: 300.0,
+                                  height: 50.0,
+                                  textStyle:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                  hintText: FFLocalizations.of(context).getText(
+                                    'xehl9d2y' /* Seleccione producto */,
+                                  ),
+                                  icon: Icon(
+                                    Icons.keyboard_arrow_down_rounded,
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
+                                    size: 24.0,
+                                  ),
+                                  fillColor: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
+                                  elevation: 2.0,
+                                  borderColor:
+                                      FlutterFlowTheme.of(context).alternate,
+                                  borderWidth: 2.0,
+                                  borderRadius: 8.0,
+                                  margin: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 4.0, 16.0, 4.0),
+                                  hidesUnderline: true,
+                                  isSearchable: false,
+                                  isMultiSelect: false,
                                 ),
-                                icon: Icon(
-                                  Icons.keyboard_arrow_down_rounded,
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryText,
-                                  size: 24.0,
-                                ),
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                elevation: 2.0,
-                                borderColor:
-                                    FlutterFlowTheme.of(context).alternate,
-                                borderWidth: 2.0,
-                                borderRadius: 8.0,
-                                margin: EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 4.0, 16.0, 4.0),
-                                hidesUnderline: true,
-                                isSearchable: false,
-                                isMultiSelect: false,
                               ),
                             ),
                           ],
@@ -227,6 +237,7 @@ class _RegistrosMaterialesMedicosWidgetState
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
                               FFLocalizations.of(context).getText(
@@ -247,7 +258,7 @@ class _RegistrosMaterialesMedicosWidgetState
                               Expanded(
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      8.0, 0.0, 8.0, 0.0),
+                                      0.0, 0.0, 50.0, 15.0),
                                   child: TextFormField(
                                     controller:
                                         _model.textFieldCantidadController,
@@ -258,6 +269,10 @@ class _RegistrosMaterialesMedicosWidgetState
                                     decoration: InputDecoration(
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .labelMedium,
+                                      hintText:
+                                          FFLocalizations.of(context).getText(
+                                        '9xmtstqk' /* Ingrese cantidad */,
+                                      ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .labelMedium,
                                       enabledBorder: OutlineInputBorder(
@@ -318,6 +333,7 @@ class _RegistrosMaterialesMedicosWidgetState
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
                               FFLocalizations.of(context).getText(
@@ -335,46 +351,51 @@ class _RegistrosMaterialesMedicosWidgetState
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Expanded(
-                              child: FlutterFlowDropDown<String>(
-                                controller: _model.dropDownValueController2 ??=
-                                    FormFieldController<String>(
-                                  _model.dropDownValue2 ??=
-                                      FFLocalizations.of(context).getText(
-                                    'bszoh4nl' /* Sumar */,
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 50.0, 15.0),
+                                child: FlutterFlowDropDown<String>(
+                                  controller: _model
+                                          .dropDownOperacionValueController ??=
+                                      FormFieldController<String>(
+                                    _model.dropDownOperacionValue ??=
+                                        FFLocalizations.of(context).getText(
+                                      'bszoh4nl' /* Agregar */,
+                                    ),
                                   ),
-                                ),
-                                options: [
-                                  FFLocalizations.of(context).getText(
-                                    '4um6cb9s' /* Sumar */,
+                                  options: [
+                                    FFLocalizations.of(context).getText(
+                                      '4um6cb9s' /* Agregar */,
+                                    ),
+                                    FFLocalizations.of(context).getText(
+                                      'eb3tscpu' /* Quitar */,
+                                    )
+                                  ],
+                                  onChanged: (val) => setState(() =>
+                                      _model.dropDownOperacionValue = val),
+                                  width: 300.0,
+                                  height: 50.0,
+                                  textStyle:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                  icon: Icon(
+                                    Icons.keyboard_arrow_down_rounded,
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
+                                    size: 24.0,
                                   ),
-                                  FFLocalizations.of(context).getText(
-                                    'eb3tscpu' /* Restar */,
-                                  )
-                                ],
-                                onChanged: (val) =>
-                                    setState(() => _model.dropDownValue2 = val),
-                                width: 300.0,
-                                height: 50.0,
-                                textStyle:
-                                    FlutterFlowTheme.of(context).bodyMedium,
-                                icon: Icon(
-                                  Icons.keyboard_arrow_down_rounded,
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryText,
-                                  size: 24.0,
+                                  fillColor: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
+                                  elevation: 2.0,
+                                  borderColor:
+                                      FlutterFlowTheme.of(context).alternate,
+                                  borderWidth: 2.0,
+                                  borderRadius: 8.0,
+                                  margin: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 4.0, 16.0, 4.0),
+                                  hidesUnderline: true,
+                                  isSearchable: false,
+                                  isMultiSelect: false,
                                 ),
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                elevation: 2.0,
-                                borderColor:
-                                    FlutterFlowTheme.of(context).alternate,
-                                borderWidth: 2.0,
-                                borderRadius: 8.0,
-                                margin: EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 4.0, 16.0, 4.0),
-                                hidesUnderline: true,
-                                isSearchable: false,
-                                isMultiSelect: false,
                               ),
                             ),
                           ],
@@ -385,15 +406,11 @@ class _RegistrosMaterialesMedicosWidgetState
                             EdgeInsetsDirectional.fromSTEB(0.0, 26.0, 0.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            if (_model.dropDownValue2 == 'Ingreso') {
+                            if (_model.dropDownOperacionValue == 'Agregar') {
                               await RegistroMaterialRecord.collection
                                   .doc()
                                   .set(createRegistroMaterialRecordData(
-                                    material: columnMaterialesRecord?.reference,
-                                    cantidad: int.tryParse(_model
-                                        .textFieldCantidadController.text),
-                                    creado: getCurrentTimestamp,
-                                    tipoOperacion: _model.dropDownValue2,
+                                    cantidad: columnMaterialesRecord?.cantidad,
                                   ));
 
                               await columnMaterialesRecord!.reference.update({
@@ -409,11 +426,7 @@ class _RegistrosMaterialesMedicosWidgetState
                               await RegistroMaterialRecord.collection
                                   .doc()
                                   .set(createRegistroMaterialRecordData(
-                                    material: columnMaterialesRecord?.reference,
-                                    cantidad: int.tryParse(_model
-                                        .textFieldCantidadController.text),
-                                    creado: getCurrentTimestamp,
-                                    tipoOperacion: _model.dropDownValue2,
+                                    cantidad: columnMaterialesRecord?.cantidad,
                                   ));
 
                               await columnMaterialesRecord!.reference.update({
@@ -428,9 +441,6 @@ class _RegistrosMaterialesMedicosWidgetState
                               });
                             }
 
-                            setState(() {
-                              _model.textFieldCantidadController?.clear();
-                            });
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 content: Text(
@@ -473,28 +483,37 @@ class _RegistrosMaterialesMedicosWidgetState
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            0.0, 100.0, 0.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed('Inicio_Citas');
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 26.0, 0.0, 0.0),
+                        child: FFButtonWidget(
+                          onPressed: () async {
+                            context.pushNamed('MaterialesMedicos');
                           },
-                          child: Icon(
-                            Icons.chevron_left,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 60.0,
+                          text: FFLocalizations.of(context).getText(
+                            '8eyfu6p5' /* Inventario */,
+                          ),
+                          options: FFButtonOptions(
+                            height: 40.0,
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                24.0, 0.0, 24.0, 0.0),
+                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            color: Color(0xFF2EC4B6),
+                            textStyle: FlutterFlowTheme.of(context)
+                                .titleSmall
+                                .override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                  fontSize: 20.0,
+                                ),
+                            elevation: 3.0,
+                            borderSide: BorderSide(
+                              color: Colors.transparent,
+                              width: 1.0,
+                            ),
+                            borderRadius: BorderRadius.circular(25.0),
                           ),
                         ),
-                      ),
-                      Text(
-                        FFLocalizations.of(context).getText(
-                          'j0h35bmg' /* Regresar */,
-                        ),
-                        style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
                     ],
                   );
