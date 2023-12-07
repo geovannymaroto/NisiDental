@@ -224,7 +224,7 @@ class _RecuperarpasswordWidgetState extends State<RecuperarpasswordWidget> {
                           context.safePop();
                         },
                         text: FFLocalizations.of(context).getText(
-                          'bih0xdi9' /* volver */,
+                          '3b6eaamn' /* volver */,
                         ),
                         options: FFButtonOptions(
                           height: 40.0,

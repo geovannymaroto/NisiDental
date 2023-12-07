@@ -194,6 +194,26 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hora     ',
       'en': 'Hour',
     },
+    'xjxbkp39': {
+      'es': '20',
+      'en': '',
+    },
+    'qq7go50n': {
+      'es': '15',
+      'en': '',
+    },
+    'z8resmjv': {
+      'es': '10',
+      'en': '',
+    },
+    '4vzg2i1z': {
+      'es': '5',
+      'en': '',
+    },
+    'z89wnp31': {
+      'es': '0',
+      'en': '',
+    },
     'o36bz804': {
       'es': 'Seleccionar..',
       'en': 'Please select...',
@@ -248,6 +268,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'p3p3b8r9': {
       'es': 'Motivo',
       'en': 'Reason',
+    },
+    'ird1lq2k': {
+      'es': 'Hora de Cita',
+      'en': '',
     },
     'uq9iotr8': {
       'es': 'Volver\n',
@@ -516,7 +540,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Every 3 or 4 months must change your brush. Before you see that the tips of the bristles are worn or bent.',
     },
     'pxz2qh7k': {
-      'es': '¿Cada cuato utilizar el hilo dental?',
+      'es': '¿Cada cuanto utilizar el hilo dental?',
       'en': 'Does everyone use dental floss?',
     },
     'r8ol986h': {
@@ -538,7 +562,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'wflp8m7i': {
       'es':
-          '\"Me encantó la atención de el. Yo le tengo horror al dentista y el doc me trato de maravilla.Super recomendado\"',
+          '\"Me encantó la atención de el. Yo le tengo horror al dentista y el doc me trato de maravilla. Super recomendado\"',
       'en':
           '\"I loved his attention. I hate the dentist and the doctor treated me wonderfully. Super recommended\"',
     },
@@ -575,7 +599,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Oscar Aguilar Aguero',
     },
     '5li95gtb': {
-      'es': '\" Cien por cieno recomendados, excelente atencion\"',
+      'es': '\" Cien por ciento recomendados, excelente atencion\"',
       'en': '\"One hundred percent recommended, excellent service\"',
     },
     'y6zyg2fl': {
@@ -584,7 +608,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'ptjqaaxj': {
       'es':
-          '\"Son los mejores, los recomienbdo al 100 %, están en San Frascisco de Heredia.\"',
+          '\"Son los mejores, los recomiendo al 100 %, están en San Frascisco de Heredia.\"',
       'en':
           '\"They are the best, I recommend them 100%, they are in San Frascisco de Heredia.\"',
     },
@@ -781,10 +805,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'lc6bsoqf': {
       'es': 'Reseñas',
       'en': 'Reviews',
-    },
-    '59m6tiyp': {
-      'es': 'Admin',
-      'en': 'Admin',
     },
     'zxxgrgcs': {
       'es': 'Home',
@@ -1016,7 +1036,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Restablecer contraseña',
       'en': '',
     },
-    'bih0xdi9': {
+    '3b6eaamn': {
       'es': 'volver',
       'en': '',
     },

@@ -264,8 +264,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                     return FFButtonWidget(
                       onPressed: () async {
                         await actions.exportarPDF(
-                          agregarTratamientoCitasRecordList[
-                              agregarTratamientoCitasRecordList.length],
+                          agregarTratamientoCitasRecordList.toList(),
                         );
                       },
                       text: FFLocalizations.of(context).getText(

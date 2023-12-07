@@ -2,6 +2,7 @@ import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -116,16 +117,12 @@ class _InicioCitasWidgetState extends State<InicioCitasWidget> {
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
-                        child: Opacity(
-                          opacity: 0.5,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(8.0),
-                            child: Image.asset(
-                              'assets/images/logo2.jpg',
-                              width: 500.0,
-                              height: 300.0,
-                              fit: BoxFit.cover,
-                            ),
+                        child: Container(
+                          width: MediaQuery.sizeOf(context).width * 1.0,
+                          height: MediaQuery.sizeOf(context).height * 1.0,
+                          child: custom_widgets.IconoPersonalizado(
+                            width: MediaQuery.sizeOf(context).width * 1.0,
+                            height: MediaQuery.sizeOf(context).height * 1.0,
                           ),
                         ),
                       ),

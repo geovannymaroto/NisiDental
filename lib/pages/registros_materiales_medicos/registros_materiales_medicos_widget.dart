@@ -100,7 +100,7 @@ class _RegistrosMaterialesMedicosWidgetState
                   size: 30.0,
                 ),
                 onPressed: () async {
-                  context.safePop();
+                  context.pushNamed('Menu_Administrador');
                 },
               ),
               title: Text(

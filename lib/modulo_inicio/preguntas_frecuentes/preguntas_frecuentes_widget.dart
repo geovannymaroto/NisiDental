@@ -169,7 +169,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'pxz2qh7k' /* ¿Cada cuato utilizar el hilo d... */,
+                      'pxz2qh7k' /* ¿Cada cuanto utilizar el hilo ... */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',

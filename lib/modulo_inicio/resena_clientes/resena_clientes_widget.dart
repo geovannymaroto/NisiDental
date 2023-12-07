@@ -286,7 +286,7 @@ class _ResenaClientesWidgetState extends State<ResenaClientesWidget> {
                             children: [
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  '5li95gtb' /* " Cien por cieno recomendados,... */,
+                                  '5li95gtb' /* " Cien por ciento recomendados... */,
                                 ),
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),

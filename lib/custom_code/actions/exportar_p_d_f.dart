@@ -7,26 +7,25 @@ import 'package:flutter/material.dart';
 // Begin custom action code
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
-import 'index.dart'; // Imports other custom actions
-
-import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
+import 'package:pdf/pdf.dart';
 import 'package:printing/printing.dart';
 
-Future exportarPDF(CitasRecord citasDoc) async {
-  // Add your function code here!
-
+Future exportarPDF(List<CitasRecord> citasDoc) async {
   final pdf = pw.Document();
 
-  pdf.addPage(pw.Page(
-      build: (pw.Context context) => pw.Column(
-            children: [
-              pw.Text('Datos citas'),
-              pw.Divider(thickness: 2),
-              pw.Text('Fecha : ' + citasDoc.fecha),
-              pw.Text('Motivo : ' + citasDoc.motivo),
-            ],
-          )));
+  pdf.addPage(pw.MultiPage(
+      build: (context) => [
+            pw.Header(
+                level: 0,
+                child: pw.Text('Informacion de Citas',
+                    style: pw.TextStyle(fontWeight: pw.FontWeight.bold))),
+            pw.Table.fromTextArray(context: context, data: <List<String>>[
+              <String>['Hora', 'Doctor', 'Motivo'],
+              ...citasDoc.map(
+                  (Citas) => [Citas.hora, Citas.doctor, Citas.motivoconsulta])
+            ])
+          ]));
 
   await Printing.layoutPdf(
       onLayout: (PdfPageFormat format) async => pdf.save());

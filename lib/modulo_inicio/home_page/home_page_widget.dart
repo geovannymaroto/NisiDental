@@ -337,41 +337,6 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                   ],
                 ),
-                Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(115.0, 370.0, 0.0, 0.0),
-                  child: FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed('RegistrosMaterialesMedicos');
-                    },
-                    text: FFLocalizations.of(context).getText(
-                      '59m6tiyp' /* Admin */,
-                    ),
-                    icon: Icon(
-                      Icons.admin_panel_settings_outlined,
-                      size: 15.0,
-                    ),
-                    options: FFButtonOptions(
-                      height: 40.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(6.0, 0.0, 6.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFFFBF69),
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Readex Pro',
-                                color: Colors.white,
-                              ),
-                      elevation: 3.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(15.0),
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
@@ -379,20 +344,6 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         appBar: AppBar(
           backgroundColor: Color(0xFF2EC4B6),
           automaticallyImplyLeading: false,
-          title: InkWell(
-            splashColor: Colors.transparent,
-            focusColor: Colors.transparent,
-            hoverColor: Colors.transparent,
-            highlightColor: Colors.transparent,
-            onTap: () async {
-              context.pushNamed('Login_Citas');
-            },
-            child: Icon(
-              Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).primaryBackground,
-              size: 24.0,
-            ),
-          ),
           actions: [],
           centerTitle: false,
           elevation: 2.0,

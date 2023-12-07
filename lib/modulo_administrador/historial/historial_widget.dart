@@ -126,27 +126,53 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                               ),
                             ),
                           ),
+                          DataColumn2(
+                            label: DefaultTextStyle.merge(
+                              softWrap: true,
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  'ird1lq2k' /* Hora de Cita */,
+                                ),
+                                style: FlutterFlowTheme.of(context).labelLarge,
+                              ),
+                            ),
+                          ),
                         ],
                         rows: dataTableCitasRecordList
-                            .mapIndexed((dataTableIndex,
-                                    dataTableCitasRecord) =>
-                                [
-                                  Text(
-                                    valueOrDefault<String>(
-                                      dataTableCitasRecord.fecha?.toString(),
-                                      '.',
-                                    ),
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyMedium,
-                                  ),
-                                  Text(
-                                    dataTableCitasRecord
-                                        .hasMotivoconsulta()
-                                        .toString(),
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyMedium,
-                                  ),
-                                ].map((c) => DataCell(c)).toList())
+                            .mapIndexed(
+                                (dataTableIndex, dataTableCitasRecord) => [
+                                      Text(
+                                        valueOrDefault<String>(
+                                          dataTableCitasRecord.fecha
+                                              ?.toString(),
+                                          '.',
+                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 12.0,
+                                            ),
+                                      ),
+                                      Text(
+                                        dataTableCitasRecord.motivoconsulta,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 12.0,
+                                            ),
+                                      ),
+                                      Text(
+                                        dataTableCitasRecord.hora,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 12.0,
+                                            ),
+                                      ),
+                                    ].map((c) => DataCell(c)).toList())
                             .map((e) => DataRow(cells: e))
                             .toList(),
                         headingRowColor: MaterialStateProperty.all(

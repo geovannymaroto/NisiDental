@@ -201,8 +201,12 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                                       setState(() => _model.txtHoraValue = val),
                                   width: 300.0,
                                   height: 50.0,
-                                  textStyle:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Readex Pro',
+                                        fontSize: 14.0,
+                                      ),
                                   hintText: FFLocalizations.of(context).getText(
                                     'o36bz804' /* Seleccionar.. */,
                                   ),
@@ -214,7 +218,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                                   ),
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  elevation: 2.0,
+                                  elevation: 11.0,
                                   borderColor:
                                       FlutterFlowTheme.of(context).alternate,
                                   borderWidth: 2.0,
