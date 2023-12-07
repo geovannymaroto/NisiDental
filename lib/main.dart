@@ -132,7 +132,6 @@ class _NavBarPageState extends State<NavBarPage> {
   Widget build(BuildContext context) {
     final tabs = {
       'Login_Citas': LoginCitasWidget(),
-      'homePage': HomePageWidget(),
       'Promociones': PromocionesWidget(),
       'TemasImportantes': TemasImportantesWidget(),
       'MetodosDePago': MetodosDePagoWidget(),
@@ -174,7 +173,6 @@ class _NavBarPageState extends State<NavBarPage> {
                   color: currentIndex == 0
                       ? FlutterFlowTheme.of(context).secondary
                       : Color(0x8A000000),
-                  size: 24.0,
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
@@ -196,7 +194,7 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.home_outlined,
+                  Icons.discount_rounded,
                   color: currentIndex == 1
                       ? FlutterFlowTheme.of(context).secondary
                       : Color(0x8A000000),
@@ -204,7 +202,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'zxxgrgcs' /* Home */,
+                    'mkwup6ql' /* Promo */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -222,7 +220,7 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.discount_rounded,
+                  Icons.info,
                   color: currentIndex == 2
                       ? FlutterFlowTheme.of(context).secondary
                       : Color(0x8A000000),
@@ -230,7 +228,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'mkwup6ql' /* Promo */,
+                    '0ykc7t8v' /* Info */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -248,34 +246,8 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.info,
-                  color: currentIndex == 3
-                      ? FlutterFlowTheme.of(context).secondary
-                      : Color(0x8A000000),
-                  size: 24.0,
-                ),
-                Text(
-                  FFLocalizations.of(context).getText(
-                    '0ykc7t8v' /* Info */,
-                  ),
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    color: currentIndex == 3
-                        ? FlutterFlowTheme.of(context).secondary
-                        : Color(0x8A000000),
-                    fontSize: 11.0,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          FloatingNavbarItem(
-            customWidget: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
                   Icons.monetization_on,
-                  color: currentIndex == 4
+                  color: currentIndex == 3
                       ? FlutterFlowTheme.of(context).secondary
                       : Color(0x8A000000),
                   size: 24.0,
@@ -286,7 +258,7 @@ class _NavBarPageState extends State<NavBarPage> {
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    color: currentIndex == 4
+                    color: currentIndex == 3
                         ? FlutterFlowTheme.of(context).secondary
                         : Color(0x8A000000),
                     fontSize: 11.0,

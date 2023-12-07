@@ -1,9 +1,11 @@
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cuentas_agregadas_app_model.dart';
@@ -90,7 +92,106 @@ class _CuentasAgregadasAppWidgetState extends State<CuentasAgregadasAppWidget> {
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
-            children: [],
+            children: [
+              Expanded(
+                child: StreamBuilder<List<UsersRecord>>(
+                  stream: queryUsersRecord(),
+                  builder: (context, snapshot) {
+                    // Customize what your widget looks like when it's loading.
+                    if (!snapshot.hasData) {
+                      return Center(
+                        child: SizedBox(
+                          width: 50.0,
+                          height: 50.0,
+                          child: CircularProgressIndicator(
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              FlutterFlowTheme.of(context).primary,
+                            ),
+                          ),
+                        ),
+                      );
+                    }
+                    List<UsersRecord> listViewUsersRecordList = snapshot.data!;
+                    return ListView.builder(
+                      padding: EdgeInsets.zero,
+                      shrinkWrap: true,
+                      scrollDirection: Axis.vertical,
+                      itemCount: listViewUsersRecordList.length,
+                      itemBuilder: (context, listViewIndex) {
+                        final listViewUsersRecord =
+                            listViewUsersRecordList[listViewIndex];
+                        return Slidable(
+                          endActionPane: ActionPane(
+                            motion: const ScrollMotion(),
+                            extentRatio: 0.25,
+                            children: [
+                              SlidableAction(
+                                label: FFLocalizations.of(context).getText(
+                                  'npudsz72' /* Borrar */,
+                                ),
+                                backgroundColor:
+                                    FlutterFlowTheme.of(context).error,
+                                icon: Icons.delete,
+                                onPressed: (_) async {
+                                  // accionborrar
+                                  var confirmDialogResponse =
+                                      await showDialog<bool>(
+                                            context: context,
+                                            builder: (alertDialogContext) {
+                                              return AlertDialog(
+                                                title: Text('Borrar'),
+                                                actions: [
+                                                  TextButton(
+                                                    onPressed: () =>
+                                                        Navigator.pop(
+                                                            alertDialogContext,
+                                                            false),
+                                                    child: Text('Cancel'),
+                                                  ),
+                                                  TextButton(
+                                                    onPressed: () =>
+                                                        Navigator.pop(
+                                                            alertDialogContext,
+                                                            true),
+                                                    child: Text('Confirm'),
+                                                  ),
+                                                ],
+                                              );
+                                            },
+                                          ) ??
+                                          false;
+                                  if (confirmDialogResponse) {
+                                    await listViewUsersRecord.reference
+                                        .delete();
+                                  }
+                                },
+                              ),
+                            ],
+                          ),
+                          child: ListTile(
+                            title: Text(
+                              listViewUsersRecord.uid,
+                              textAlign: TextAlign.center,
+                              style: FlutterFlowTheme.of(context).titleLarge,
+                            ),
+                            trailing: Icon(
+                              Icons.arrow_forward_ios,
+                              color: FlutterFlowTheme.of(context).secondaryText,
+                              size: 20.0,
+                            ),
+                            tileColor: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            dense: false,
+                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                ),
+              ),
+            ],
           ),
         ),
       ),

@@ -157,9 +157,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'homePage',
           path: '/homePage',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'homePage')
-              : HomePageWidget(),
+          builder: (context, params) => HomePageWidget(),
         ),
         FFRoute(
           name: 'agregar_datos_admin_doctores',
@@ -201,11 +199,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'MetodosDePago')
               : MetodosDePagoWidget(),
-        ),
-        FFRoute(
-          name: 'RandR',
-          path: '/randR',
-          builder: (context, params) => RandRWidget(),
         ),
         FFRoute(
           name: 'Cuentas_agregadas_app',

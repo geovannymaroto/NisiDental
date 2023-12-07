@@ -179,7 +179,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 70.0,
@@ -228,7 +228,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget>
                     animationsMap['containerOnPageLoadAnimation1']!),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 70.0,
@@ -277,7 +277,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget>
                     animationsMap['containerOnPageLoadAnimation2']!),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 70.0,
@@ -326,7 +326,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget>
                     animationsMap['containerOnPageLoadAnimation3']!),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 70.0,
@@ -384,7 +384,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 70.0,
@@ -429,7 +429,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget>
                     animationsMap['containerOnPageLoadAnimation5']!),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 50.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 50.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 70.0,
@@ -474,7 +474,7 @@ class _PromocionesWidgetState extends State<PromocionesWidget>
                     animationsMap['containerOnPageLoadAnimation6']!),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 60.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(10.0, 50.0, 0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
                     'gjw593xf' /* *Los cupones pueden ser utiliz... */,

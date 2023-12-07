@@ -297,7 +297,7 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                               return;
                             }
 
-                            context.pushNamedAuth('homePage', context.mounted);
+                            context.pushNamedAuth('CrearCita', context.mounted);
                           },
                           text: FFLocalizations.of(context).getText(
                             'ld90q7je' /* Ingresar */,
@@ -403,7 +403,7 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                       },
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'xgmj33h0' /* olvido su contraseña? */,
+                          'xgmj33h0' /* ¿Olvidó su contraseña? */,
                         ),
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -412,6 +412,41 @@ class _LoginCitasWidgetState extends State<LoginCitasWidget> {
                       ),
                     ),
                   ],
+                ),
+                Padding(
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(115.0, 370.0, 0.0, 0.0),
+                  child: FFButtonWidget(
+                    onPressed: () async {
+                      context.pushNamed('RegistrosMaterialesMedicos');
+                    },
+                    text: FFLocalizations.of(context).getText(
+                      'bkbcbbff' /* Admin */,
+                    ),
+                    icon: Icon(
+                      Icons.admin_panel_settings_outlined,
+                      size: 15.0,
+                    ),
+                    options: FFButtonOptions(
+                      height: 40.0,
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(6.0, 0.0, 6.0, 0.0),
+                      iconPadding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: Color(0xFFFFBF69),
+                      textStyle:
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                                fontFamily: 'Readex Pro',
+                                color: Colors.white,
+                              ),
+                      elevation: 3.0,
+                      borderSide: BorderSide(
+                        color: Colors.transparent,
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.circular(15.0),
+                    ),
+                  ),
                 ),
               ],
             ),

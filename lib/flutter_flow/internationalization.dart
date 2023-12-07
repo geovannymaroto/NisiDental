@@ -129,8 +129,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Sign up',
     },
     'xgmj33h0': {
-      'es': 'olvido su contraseña?',
-      'en': '',
+      'es': '¿Olvidó su contraseña?',
+      'en': 'Forgot your password?',
+    },
+    'bkbcbbff': {
+      'es': 'Admin',
+      'en': 'Admin',
     },
     'wf2ha32i': {
       'es': 'Este campo es requerido',
@@ -167,10 +171,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Ver historial',
       'en': 'View history',
     },
-    '88kp6ice': {
-      'es': 'Salir ',
-      'en': 'Sign out',
-    },
     'e7jklf6f': {
       'es': 'Administracion',
       'en': 'Administration',
@@ -186,6 +186,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // CrearCita
   {
+    '8lihhevb': {
+      'es': 'Crear Cita',
+      'en': 'Create Appointment',
+    },
     'u9iyx58b': {
       'es': 'Hora     ',
       'en': 'Hour',
@@ -255,7 +259,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
     'o36bz804': {
-      'es': 'Porfavor seleccione..',
+      'es': 'Seleccionar..',
       'en': 'Please select...',
     },
     'kituqlt6': {
@@ -293,10 +297,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'yd8upjnj': {
       'es': 'Volver',
       'en': 'go back',
-    },
-    '8lihhevb': {
-      'es': 'Crear Cita',
-      'en': 'Create Appointment',
     },
     '0b981nh4': {
       'es': 'Inicio',
@@ -930,6 +930,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Historial General de Citas ',
       'en': 'Add Treatment',
     },
+    'h8ds15o9': {
+      'es': 'Registro de Materiales Medicos',
+      'en': 'Add Treatment',
+    },
     'jhmgrnoo': {
       'es': 'Modulo administracion',
       'en': 'Page Title',
@@ -1041,49 +1045,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'home',
     },
   },
-  // RandR
-  {
-    '4bumesn7': {
-      'es': 'Rating & Review',
-      'en': 'Rating & Review',
-    },
-    'cx9alid7': {
-      'es': 'Evalúe y comente su experiencia',
-      'en': 'Rate and comment on your experience',
-    },
-    'skbvle98': {
-      'es':
-          'Tómese un momento para evaluar y comentar su reciente experiencia con nosotros. Sus comentarios son importantes para nosotros y nos ayudarán a mejorar nuestros servicios.',
-      'en':
-          'Please take a moment to rate and comment on your recent experience with us. Your comments are important to us and will help us improve our services.',
-    },
-    '2uauowue': {
-      'es': 'Escriba su opinión',
-      'en': 'Write your opinion',
-    },
-    'omhp1s1s': {
-      'es': 'cuentanos tu experiencia',
-      'en': 'tell us your experience',
-    },
-    'i5wtpzs4': {
-      'es': 'enviar',
-      'en': 'send',
-    },
-    'zjswz5i7': {
-      'es': 'Usuario',
-      'en': 'User',
-    },
-    '848ah0pr': {
-      'es': 'Md',
-      'en': 'MD',
-    },
-    'amhxe78r': {
-      'es': 'comentario',
-      'en': 'comment',
-    },
-  },
   // Cuentas_agregadas_app
   {
+    'npudsz72': {
+      'es': 'Borrar',
+      'en': 'Delete',
+    },
     'y7jaxjq2': {
       'es': 'Cuentas agregadas a sistema',
       'en': '',
@@ -1120,16 +1087,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     '8650oi1m': {
       'es': 'Oferta Especial!!',
-      'en': '',
+      'en': 'Special offer!!',
     },
     'ulb8tkr1': {
       'es': '#NSM123',
-      'en': '',
+      'en': '#NSM123',
     },
     'ncqnis32': {
       'es':
           ' 20% de descuento en todos nuestros tratamientos con el codigo de la app',
-      'en': '',
+      'en': '20% discount on all our treatments with the app code',
     },
   },
   // Miscellaneous

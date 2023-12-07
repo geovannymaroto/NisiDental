@@ -94,10 +94,10 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(30.0, 60.0, 30.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
-                    context.pushNamed('agregar_datos_admin_doctores');
+                    context.pushNamed('Cuentas_agregadas_app');
                   },
                   text: FFLocalizations.of(context).getText(
                     'zhbfg3yv' /* Ver cuentas generadas */,
@@ -123,7 +123,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(30.0, 40.0, 30.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pushNamed('agregar_datos_admin_doctores');
@@ -152,7 +152,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(30.0, 40.0, 30.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pushNamed('agregar_datos_tratamientos');
@@ -181,13 +181,42 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(30.0, 40.0, 30.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pushNamed('Historial');
                   },
                   text: FFLocalizations.of(context).getText(
                     'd0yni10d' /* Historial General de Citas  */,
+                  ),
+                  options: FFButtonOptions(
+                    height: 50.0,
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                    iconPadding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: Color(0xFF2EC4B6),
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Readex Pro',
+                          color: Colors.white,
+                        ),
+                    elevation: 3.0,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1.0,
+                    ),
+                    borderRadius: BorderRadius.circular(70.0),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(30.0, 40.0, 30.0, 0.0),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    context.pushNamed('RegistrosMaterialesMedicos');
+                  },
+                  text: FFLocalizations.of(context).getText(
+                    'h8ds15o9' /* Registro de Materiales Medicos */,
                   ),
                   options: FFButtonOptions(
                     height: 50.0,

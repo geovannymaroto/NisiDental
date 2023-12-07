@@ -166,7 +166,7 @@ class _RegistrosMaterialesMedicosWidgetState
                                 children: [
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 20.0, 0.0, 0.0),
+                                        20.0, 20.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
                                         '7mopz7f6' /* Elige un material */,
@@ -190,7 +190,7 @@ class _RegistrosMaterialesMedicosWidgetState
                             Expanded(
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 50.0, 15.0),
+                                    40.0, 0.0, 50.0, 15.0),
                                 child: FlutterFlowDropDown<String>(
                                   controller:
                                       _model.dropDownElegirValueController ??=
@@ -239,11 +239,15 @@ class _RegistrosMaterialesMedicosWidgetState
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Text(
-                              FFLocalizations.of(context).getText(
-                                'yzg7u2j4' /* Elige una cantidad */,
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  20.0, 0.0, 0.0, 0.0),
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  'yzg7u2j4' /* Elige una cantidad */,
+                                ),
+                                style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
-                              style: FlutterFlowTheme.of(context).bodyMedium,
                             ),
                           ],
                         ),
@@ -258,7 +262,7 @@ class _RegistrosMaterialesMedicosWidgetState
                               Expanded(
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 50.0, 15.0),
+                                      40.0, 0.0, 40.0, 15.0),
                                   child: TextFormField(
                                     controller:
                                         _model.textFieldCantidadController,
@@ -335,11 +339,15 @@ class _RegistrosMaterialesMedicosWidgetState
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Text(
-                              FFLocalizations.of(context).getText(
-                                '2zb3yuyo' /* Operacion */,
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  20.0, 0.0, 0.0, 0.0),
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  '2zb3yuyo' /* Operacion */,
+                                ),
+                                style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
-                              style: FlutterFlowTheme.of(context).bodyMedium,
                             ),
                           ],
                         ),
@@ -353,7 +361,7 @@ class _RegistrosMaterialesMedicosWidgetState
                             Expanded(
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 50.0, 15.0),
+                                    40.0, 0.0, 40.0, 15.0),
                                 child: FlutterFlowDropDown<String>(
                                   controller: _model
                                           .dropDownOperacionValueController ??=
@@ -444,7 +452,7 @@ class _RegistrosMaterialesMedicosWidgetState
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 content: Text(
-                                  'Modificado',
+                                  'Hecho',
                                   style: TextStyle(
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,

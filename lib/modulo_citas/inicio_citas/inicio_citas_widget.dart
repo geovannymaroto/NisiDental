@@ -71,7 +71,29 @@ class _InicioCitasWidgetState extends State<InicioCitasWidget> {
                       fontSize: 22.0,
                     ),
               ),
-              actions: [],
+              actions: [
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      GoRouter.of(context).prepareAuthEvent();
+                      await authManager.signOut();
+                      GoRouter.of(context).clearRedirectLocation();
+
+                      context.goNamedAuth('homePage', context.mounted);
+                    },
+                    child: Icon(
+                      Icons.logout_outlined,
+                      color: FlutterFlowTheme.of(context).secondaryText,
+                      size: 24.0,
+                    ),
+                  ),
+                ),
+              ],
               centerTitle: false,
               elevation: 2.0,
             )
@@ -173,58 +195,6 @@ class _InicioCitasWidgetState extends State<InicioCitasWidget> {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
-                    child: InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                        GoRouter.of(context).prepareAuthEvent();
-                        await authManager.signOut();
-                        GoRouter.of(context).clearRedirectLocation();
-
-                        context.goNamedAuth('homePage', context.mounted);
-                      },
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.logout_outlined,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 24.0,
-                          ),
-                          InkWell(
-                            splashColor: Colors.transparent,
-                            focusColor: Colors.transparent,
-                            hoverColor: Colors.transparent,
-                            highlightColor: Colors.transparent,
-                            onTap: () async {
-                              GoRouter.of(context).prepareAuthEvent();
-                              await authManager.signOut();
-                              GoRouter.of(context).clearRedirectLocation();
-
-                              context.goNamedAuth('homePage', context.mounted);
-                            },
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                '88kp6ice' /* Salir  */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    fontSize: 16.0,
-                                  ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
                   Align(
                     alignment: AlignmentDirectional(0.00, -1.00),
                     child: Padding(
@@ -266,35 +236,6 @@ class _InicioCitasWidgetState extends State<InicioCitasWidget> {
                             ),
                         ],
                       ),
-                    ),
-                  ),
-                  FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed('RegistrosMaterialesMedicos');
-                    },
-                    text: '',
-                    icon: Icon(
-                      Icons.admin_panel_settings_outlined,
-                      size: 15.0,
-                    ),
-                    options: FFButtonOptions(
-                      height: 40.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFFFFBF69),
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Readex Pro',
-                                color: Colors.white,
-                              ),
-                      elevation: 3.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(12.0),
                     ),
                   ),
                 ],

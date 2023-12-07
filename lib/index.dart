@@ -36,7 +36,6 @@ export '/modulo_inicio/temas_importantes/temas_importantes_widget.dart'
     show TemasImportantesWidget;
 export '/modulo_inicio/metodos_de_pago/metodos_de_pago_widget.dart'
     show MetodosDePagoWidget;
-export '/modulo_inicio/rand_r/rand_r_widget.dart' show RandRWidget;
 export '/modulo_administrador/cuentas_agregadas_app/cuentas_agregadas_app_widget.dart'
     show CuentasAgregadasAppWidget;
 export '/recuperarpassword/recuperarpassword_widget.dart'
