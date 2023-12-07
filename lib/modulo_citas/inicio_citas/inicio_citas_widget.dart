@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'inicio_citas_model.dart';
@@ -165,8 +166,8 @@ class _InicioCitasWidgetState extends State<InicioCitasWidget> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            context.pushNamed('Historial');
                           },
                           text: FFLocalizations.of(context).getText(
                             's8ecfa5t' /* Ver historial */,
@@ -205,32 +206,40 @@ class _InicioCitasWidgetState extends State<InicioCitasWidget> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Icon(
-                            Icons.account_box,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 24.0,
-                          ),
                           if (valueOrDefault<bool>(
                               currentUserDocument?.admin, false))
                             AuthUserStreamWidget(
-                              builder: (context) => InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {
+                              builder: (context) => FFButtonWidget(
+                                onPressed: () async {
                                   context.pushNamed('Menu_Administrador');
                                 },
-                                child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    'e7jklf6f' /* Administracion */,
-                                  ),
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
+                                text: FFLocalizations.of(context).getText(
+                                  'jwsv5rn0' /* Admin */,
+                                ),
+                                icon: FaIcon(
+                                  FontAwesomeIcons.tools,
+                                  color: Color(0xFF5C626A),
+                                  size: 20.0,
+                                ),
+                                options: FFButtonOptions(
+                                  height: 40.0,
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      24.0, 0.0, 24.0, 0.0),
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  color: Color(0xFFFFBF69),
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
                                       .override(
                                         fontFamily: 'Readex Pro',
-                                        fontSize: 16.0,
+                                        color: Color(0xFF5C626A),
                                       ),
+                                  elevation: 3.0,
+                                  borderSide: BorderSide(
+                                    color: Color(0xFF5C626A),
+                                    width: 1.0,
+                                  ),
+                                  borderRadius: BorderRadius.circular(20.0),
                                 ),
                               ),
                             ),

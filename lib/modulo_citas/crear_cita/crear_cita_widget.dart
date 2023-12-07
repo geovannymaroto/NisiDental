@@ -167,86 +167,65 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 10.0),
-                            child: FlutterFlowDropDown<String>(
-                              controller: _model.txtHoraValueController ??=
-                                  FormFieldController<String>(null),
-                              options: [
-                                FFLocalizations.of(context).getText(
-                                  'j8ukadxv' /* 9:00 am */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'n8pl67kc' /* 9:30 am */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'ifuv6pr6' /* 10:00 am */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'v3yijqpd' /* 10:30 am */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'xvajyuq3' /* 11:00 am */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  '302pqgjy' /* 11:30 am */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'npup6ayg' /* 1:00 pm */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'j7zeogaw' /* 1:30 pm */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'twvw45n6' /* 2:00 pm */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'bsgqyou1' /* 2:30 pm */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'gv4ibz55' /* 3:00 pm */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'u72ss4lk' /* 3:30 pm */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  '6u9ijtrh' /* 4:00 pm */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'zaz6ta7s' /* 4:30pm */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'p8sy82ei' /* 5:00 pm */,
-                                ),
-                                FFLocalizations.of(context).getText(
-                                  'r3y5zq31' /* 5:30 pm */,
-                                )
-                              ],
-                              onChanged: (val) =>
-                                  setState(() => _model.txtHoraValue = val),
-                              width: 300.0,
-                              height: 50.0,
-                              textStyle:
-                                  FlutterFlowTheme.of(context).bodyMedium,
-                              hintText: FFLocalizations.of(context).getText(
-                                'o36bz804' /* Seleccionar.. */,
-                              ),
-                              icon: Icon(
-                                Icons.keyboard_arrow_down_rounded,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                size: 24.0,
-                              ),
-                              fillColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              elevation: 2.0,
-                              borderColor:
-                                  FlutterFlowTheme.of(context).alternate,
-                              borderWidth: 2.0,
-                              borderRadius: 8.0,
-                              margin: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 4.0, 16.0, 4.0),
-                              hidesUnderline: true,
-                              isSearchable: false,
-                              isMultiSelect: false,
+                            child: StreamBuilder<List<HoraCitasRecord>>(
+                              stream: queryHoraCitasRecord(),
+                              builder: (context, snapshot) {
+                                // Customize what your widget looks like when it's loading.
+                                if (!snapshot.hasData) {
+                                  return Center(
+                                    child: SizedBox(
+                                      width: 50.0,
+                                      height: 50.0,
+                                      child: CircularProgressIndicator(
+                                        valueColor:
+                                            AlwaysStoppedAnimation<Color>(
+                                          FlutterFlowTheme.of(context).primary,
+                                        ),
+                                      ),
+                                    ),
+                                  );
+                                }
+                                List<HoraCitasRecord>
+                                    txtHoraHoraCitasRecordList = snapshot.data!;
+                                return FlutterFlowDropDown<String>(
+                                  controller: _model.txtHoraValueController ??=
+                                      FormFieldController<String>(
+                                    _model.txtHoraValue ??=
+                                        txtHoraHoraCitasRecordList.length
+                                            .toString(),
+                                  ),
+                                  options: txtHoraHoraCitasRecordList
+                                      .map((e) => e.hora)
+                                      .toList(),
+                                  onChanged: (val) =>
+                                      setState(() => _model.txtHoraValue = val),
+                                  width: 300.0,
+                                  height: 50.0,
+                                  textStyle:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                  hintText: FFLocalizations.of(context).getText(
+                                    'o36bz804' /* Seleccionar.. */,
+                                  ),
+                                  icon: Icon(
+                                    Icons.keyboard_arrow_down_rounded,
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
+                                    size: 24.0,
+                                  ),
+                                  fillColor: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
+                                  elevation: 2.0,
+                                  borderColor:
+                                      FlutterFlowTheme.of(context).alternate,
+                                  borderWidth: 2.0,
+                                  borderRadius: 8.0,
+                                  margin: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 4.0, 16.0, 4.0),
+                                  hidesUnderline: true,
+                                  isSearchable: false,
+                                  isMultiSelect: false,
+                                );
+                              },
                             ),
                           ),
                         ],

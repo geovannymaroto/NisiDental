@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -387,8 +388,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               context.pushNamed('Login_Citas');
             },
             child: Icon(
-              Icons.arrow_circle_left_outlined,
-              color: FlutterFlowTheme.of(context).secondaryText,
+              Icons.arrow_back_rounded,
+              color: FlutterFlowTheme.of(context).primaryBackground,
               size: 24.0,
             ),
           ),
@@ -461,24 +462,23 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       ),
                     ],
                   ),
-                  Opacity(
-                    opacity: 0.6,
-                    child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
-                      child: Container(
-                        width: 120.0,
-                        height: 120.0,
-                        clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                        ),
-                        child: Image.asset(
-                          'assets/images/logo2.jpg',
-                          fit: BoxFit.scaleDown,
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            10.0, 10.0, 10.0, 10.0),
+                        child: Container(
+                          width: 100.0,
+                          height: 100.0,
+                          child: custom_widgets.IconoPersonalizado(
+                            width: 100.0,
+                            height: 100.0,
+                          ),
                         ),
                       ),
-                    ),
+                    ],
                   ),
                   Padding(
                     padding:
@@ -587,7 +587,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 60.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 60.0, 30.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,

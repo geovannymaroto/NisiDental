@@ -171,9 +171,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Ver historial',
       'en': 'View history',
     },
-    'e7jklf6f': {
-      'es': 'Administracion',
-      'en': 'Administration',
+    'jwsv5rn0': {
+      'es': 'Admin',
+      'en': 'Admin',
     },
     'leex037o': {
       'es': 'Inicio',
@@ -193,70 +193,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'u9iyx58b': {
       'es': 'Hora     ',
       'en': 'Hour',
-    },
-    'j8ukadxv': {
-      'es': '9:00 am',
-      'en': '10:30',
-    },
-    'n8pl67kc': {
-      'es': '9:30 am',
-      'en': '',
-    },
-    'ifuv6pr6': {
-      'es': '10:00 am',
-      'en': '',
-    },
-    'v3yijqpd': {
-      'es': '10:30 am',
-      'en': '',
-    },
-    'xvajyuq3': {
-      'es': '11:00 am',
-      'en': '',
-    },
-    '302pqgjy': {
-      'es': '11:30 am',
-      'en': '',
-    },
-    'npup6ayg': {
-      'es': '1:00 pm',
-      'en': '',
-    },
-    'j7zeogaw': {
-      'es': '1:30 pm',
-      'en': '',
-    },
-    'twvw45n6': {
-      'es': '2:00 pm',
-      'en': '',
-    },
-    'bsgqyou1': {
-      'es': '2:30 pm',
-      'en': '',
-    },
-    'gv4ibz55': {
-      'es': '3:00 pm',
-      'en': '',
-    },
-    'u72ss4lk': {
-      'es': '3:30 pm',
-      'en': '',
-    },
-    '6u9ijtrh': {
-      'es': '4:00 pm',
-      'en': '',
-    },
-    'zaz6ta7s': {
-      'es': '4:30pm',
-      'en': '',
-    },
-    'p8sy82ei': {
-      'es': '5:00 pm',
-      'en': '',
-    },
-    'r3y5zq31': {
-      'es': '5:30 pm',
-      'en': '',
     },
     'o36bz804': {
       'es': 'Seleccionar..',
@@ -438,7 +374,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Mail:',
     },
     'kj4z5o9h': {
-      'es': 'dennisqs@gmail.com',
+      'es': 'clinicanisidental@gmail.com',
       'en': 'dennisqs@gmail.com',
     },
     'za0ng77h': {
@@ -934,6 +870,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Registro de Materiales Medicos',
       'en': 'Add Treatment',
     },
+    'oqeohpqn': {
+      'es': 'Exportar a PDF',
+      'en': 'Add Treatment',
+    },
     'jhmgrnoo': {
       'es': 'Modulo administracion',
       'en': 'Page Title',
@@ -979,12 +919,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es':
           'Menciona el codigo NavidadNisi para tener un 7% de descuento adicional.',
       'en': 'Mention the code NavidadNisi for an additional 7% discount.',
-    },
-    'gjw593xf': {
-      'es':
-          '*Los cupones pueden ser utilizados solo 1 vez por paciente y no se pueden usar mas de 1 cupon por tratamiento.',
-      'en':
-          '*Coupons can be used only 1 time per patient and no more than 1 coupon can be used per treatment.',
     },
     'of8nhyj6': {
       'es': 'Promociones y descuentos',
@@ -1080,6 +1014,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'hwtmx52o': {
       'es': 'Restablecer contraseña',
+      'en': '',
+    },
+    'bih0xdi9': {
+      'es': 'volver',
       'en': '',
     },
   },

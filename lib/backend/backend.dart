@@ -13,6 +13,7 @@ import 'schema/registro_material_record.dart';
 import 'schema/tratamientos_record.dart';
 import 'schema/comments_record.dart';
 import 'schema/initial_comment_record.dart';
+import 'schema/hora_citas_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart';
@@ -28,6 +29,7 @@ export 'schema/registro_material_record.dart';
 export 'schema/tratamientos_record.dart';
 export 'schema/comments_record.dart';
 export 'schema/initial_comment_record.dart';
+export 'schema/hora_citas_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -320,6 +322,43 @@ Future<List<InitialCommentRecord>> queryInitialCommentRecordOnce({
     queryCollectionOnce(
       InitialCommentRecord.collection,
       InitialCommentRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query HoraCitasRecords (as a Stream and as a Future).
+Future<int> queryHoraCitasRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      HoraCitasRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<HoraCitasRecord>> queryHoraCitasRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      HoraCitasRecord.collection,
+      HoraCitasRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<HoraCitasRecord>> queryHoraCitasRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      HoraCitasRecord.collection,
+      HoraCitasRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

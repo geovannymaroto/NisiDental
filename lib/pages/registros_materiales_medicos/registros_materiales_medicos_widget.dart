@@ -100,7 +100,7 @@ class _RegistrosMaterialesMedicosWidgetState
                   size: 30.0,
                 ),
                 onPressed: () async {
-                  context.pushNamed('homePage');
+                  context.safePop();
                 },
               ),
               title: Text(

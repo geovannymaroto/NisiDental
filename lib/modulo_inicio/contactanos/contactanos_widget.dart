@@ -131,7 +131,7 @@ class _ContactanosWidgetState extends State<ContactanosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'kj4z5o9h' /* dennisqs@gmail.com */,
+                      'kj4z5o9h' /* clinicanisidental@gmail.com */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',

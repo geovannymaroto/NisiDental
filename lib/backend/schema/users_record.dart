@@ -66,6 +66,11 @@ class UsersRecord extends FirestoreRecord {
   String get apellido => _apellido ?? '';
   bool hasApellido() => _apellido != null;
 
+  // "contrasenna" field.
+  String? _contrasenna;
+  String get contrasenna => _contrasenna ?? '';
+  bool hasContrasenna() => _contrasenna != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -77,6 +82,7 @@ class UsersRecord extends FirestoreRecord {
     _noAdmin = snapshotData['noAdmin'] as bool?;
     _nombre = snapshotData['nombre'] as String?;
     _apellido = snapshotData['apellido'] as String?;
+    _contrasenna = snapshotData['contrasenna'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -123,6 +129,7 @@ Map<String, dynamic> createUsersRecordData({
   bool? noAdmin,
   String? nombre,
   String? apellido,
+  String? contrasenna,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -136,6 +143,7 @@ Map<String, dynamic> createUsersRecordData({
       'noAdmin': noAdmin,
       'nombre': nombre,
       'apellido': apellido,
+      'contrasenna': contrasenna,
     }.withoutNulls,
   );
 
@@ -156,7 +164,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.admin == e2?.admin &&
         e1?.noAdmin == e2?.noAdmin &&
         e1?.nombre == e2?.nombre &&
-        e1?.apellido == e2?.apellido;
+        e1?.apellido == e2?.apellido &&
+        e1?.contrasenna == e2?.contrasenna;
   }
 
   @override
@@ -170,7 +179,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.admin,
         e?.noAdmin,
         e?.nombre,
-        e?.apellido
+        e?.apellido,
+        e?.contrasenna
       ]);
 
   @override

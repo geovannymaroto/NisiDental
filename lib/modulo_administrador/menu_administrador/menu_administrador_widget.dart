@@ -1,7 +1,9 @@
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -236,6 +238,60 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
                     ),
                     borderRadius: BorderRadius.circular(70.0),
                   ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(30.0, 40.0, 30.0, 0.0),
+                child: StreamBuilder<List<CitasRecord>>(
+                  stream: queryCitasRecord(),
+                  builder: (context, snapshot) {
+                    // Customize what your widget looks like when it's loading.
+                    if (!snapshot.hasData) {
+                      return Center(
+                        child: SizedBox(
+                          width: 50.0,
+                          height: 50.0,
+                          child: CircularProgressIndicator(
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              FlutterFlowTheme.of(context).primary,
+                            ),
+                          ),
+                        ),
+                      );
+                    }
+                    List<CitasRecord> agregarTratamientoCitasRecordList =
+                        snapshot.data!;
+                    return FFButtonWidget(
+                      onPressed: () async {
+                        await actions.exportarPDF(
+                          agregarTratamientoCitasRecordList[
+                              agregarTratamientoCitasRecordList.length],
+                        );
+                      },
+                      text: FFLocalizations.of(context).getText(
+                        'oqeohpqn' /* Exportar a PDF */,
+                      ),
+                      options: FFButtonOptions(
+                        height: 50.0,
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFF2EC4B6),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
+                        ),
+                        borderRadius: BorderRadius.circular(70.0),
+                      ),
+                    );
+                  },
                 ),
               ),
             ],

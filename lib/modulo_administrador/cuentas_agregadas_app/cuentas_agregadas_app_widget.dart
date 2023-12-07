@@ -170,7 +170,7 @@ class _CuentasAgregadasAppWidgetState extends State<CuentasAgregadasAppWidget> {
                           ),
                           child: ListTile(
                             title: Text(
-                              listViewUsersRecord.uid,
+                              listViewUsersRecord.email,
                               textAlign: TextAlign.center,
                               style: FlutterFlowTheme.of(context).titleLarge,
                             ),

@@ -128,24 +128,25 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                           ),
                         ],
                         rows: dataTableCitasRecordList
-                            .mapIndexed(
-                                (dataTableIndex, dataTableCitasRecord) => [
-                                      Text(
-                                        dateTimeFormat(
-                                          'yMMMd',
-                                          dataTableCitasRecord.fecha!,
-                                          locale: FFLocalizations.of(context)
-                                              .languageCode,
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
-                                      ),
-                                      Text(
-                                        dataTableCitasRecord.motivoconsulta,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
-                                      ),
-                                    ].map((c) => DataCell(c)).toList())
+                            .mapIndexed((dataTableIndex,
+                                    dataTableCitasRecord) =>
+                                [
+                                  Text(
+                                    valueOrDefault<String>(
+                                      dataTableCitasRecord.fecha?.toString(),
+                                      '.',
+                                    ),
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyMedium,
+                                  ),
+                                  Text(
+                                    dataTableCitasRecord
+                                        .hasMotivoconsulta()
+                                        .toString(),
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyMedium,
+                                  ),
+                                ].map((c) => DataCell(c)).toList())
                             .map((e) => DataRow(cells: e))
                             .toList(),
                         headingRowColor: MaterialStateProperty.all(
@@ -176,7 +177,7 @@ class _HistorialWidgetState extends State<HistorialWidget> {
                   children: [
                     FFButtonWidget(
                       onPressed: () async {
-                        context.pushNamed('Inicio_Citas');
+                        context.safePop();
                       },
                       text: FFLocalizations.of(context).getText(
                         'uq9iotr8' /* Volver
