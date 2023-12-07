@@ -392,7 +392,7 @@ class _CrearCitaWidgetState extends State<CrearCitaWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 7.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,

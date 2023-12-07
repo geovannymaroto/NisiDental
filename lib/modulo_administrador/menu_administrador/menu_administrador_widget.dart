@@ -71,7 +71,7 @@ class _MenuAdministradorWidgetState extends State<MenuAdministradorWidget> {
               size: 30.0,
             ),
             onPressed: () async {
-              context.pop();
+              context.pushNamed('Inicio_Citas');
             },
           ),
           title: Text(

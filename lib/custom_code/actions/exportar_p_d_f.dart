@@ -15,18 +15,30 @@ Future exportarPDF(List<CitasRecord> citasDoc) async {
   final pdf = pw.Document();
 
   pdf.addPage(pw.MultiPage(
-      build: (context) => [
-            pw.Header(
-                level: 0,
-                child: pw.Text('Informacion de Citas',
-                    style: pw.TextStyle(fontWeight: pw.FontWeight.bold))),
-            pw.Table.fromTextArray(context: context, data: <List<String>>[
-              <String>['Hora', 'Doctor', 'Motivo'],
-              ...citasDoc.map(
-                  (Citas) => [Citas.hora, Citas.doctor, Citas.motivoconsulta])
-            ])
-          ]));
+    build: (context) => [
+      pw.Header(
+        level: 0,
+        child: pw.Text('Informacion de Citas',
+            style: pw.TextStyle(fontWeight: pw.FontWeight.bold)),
+      ),
+      pw.Table.fromTextArray(
+        context: context,
+        data: <List<String>>[
+          <String>['Fecha', 'Hora', 'Doctor', 'Motivo'],
+          ...citasDoc.map((Citas) => [
+                Citas.fecha != null
+                    ? DateFormat('yyyy-MM-dd').format(Citas.fecha!)
+                    : '',
+                Citas.hora ?? '',
+                Citas.doctor ?? '',
+                Citas.motivoconsulta ?? '',
+              ]),
+        ],
+      ),
+    ],
+  ));
 
   await Printing.layoutPdf(
-      onLayout: (PdfPageFormat format) async => pdf.save());
+    onLayout: (PdfPageFormat format) async => pdf.save(),
+  );
 }

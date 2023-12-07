@@ -57,288 +57,267 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         key: scaffoldKey,
         endDrawer: Drawer(
           elevation: 16.0,
-          child: InkWell(
-            splashColor: Colors.transparent,
-            focusColor: Colors.transparent,
-            hoverColor: Colors.transparent,
-            highlightColor: Colors.transparent,
-            onTap: () async {
-              context.pushNamed('RegistrosMaterialesMedicos');
-            },
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Opacity(
-                        opacity: 0.5,
-                        child: Container(
-                          width: 120.0,
-                          height: 120.0,
-                          clipBehavior: Clip.antiAlias,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                          ),
-                          child: Image.asset(
-                            'assets/images/logo2.jpg',
-                            fit: BoxFit.fitWidth,
-                          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Opacity(
+                      opacity: 0.5,
+                      child: Container(
+                        width: 120.0,
+                        height: 120.0,
+                        clipBehavior: Clip.antiAlias,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: Image.asset(
+                          'assets/images/logo2.jpg',
+                          fit: BoxFit.fitWidth,
                         ),
                       ),
-                    ],
+                    ),
+                  ],
+                ),
+              ),
+              ListView(
+                padding: EdgeInsets.zero,
+                shrinkWrap: true,
+                scrollDirection: Axis.vertical,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 5.0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('Services');
+                      },
+                      child: ListTile(
+                        title: Text(
+                          FFLocalizations.of(context).getText(
+                            '7644adzs' /* Servicios */,
+                          ),
+                          style:
+                              FlutterFlowTheme.of(context).titleLarge.override(
+                                    fontFamily: 'Noto Serif',
+                                  ),
+                        ),
+                        trailing: Icon(
+                          Icons.arrow_forward_ios,
+                          color: FlutterFlowTheme.of(context).secondaryText,
+                          size: 20.0,
+                        ),
+                        tileColor: Color(0xFFCBF3F0),
+                        dense: false,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-                ListView(
-                  padding: EdgeInsets.zero,
-                  shrinkWrap: true,
-                  scrollDirection: Axis.vertical,
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 5.0),
-                      child: InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          context.pushNamed('Services');
-                        },
-                        child: ListTile(
-                          title: Text(
-                            FFLocalizations.of(context).getText(
-                              '7644adzs' /* Servicios */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                ),
+                ],
+              ),
+              ListView(
+                padding: EdgeInsets.zero,
+                shrinkWrap: true,
+                scrollDirection: Axis.vertical,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 5.0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('CostosTratamientos');
+                      },
+                      child: ListTile(
+                        title: Text(
+                          FFLocalizations.of(context).getText(
+                            'mk5t81du' /* Costos tratamientos */,
                           ),
-                          trailing: Icon(
-                            Icons.arrow_forward_ios,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 20.0,
-                          ),
-                          tileColor: Color(0xFFCBF3F0),
-                          dense: false,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).titleLarge.override(
+                                    fontFamily: 'Noto Serif',
+                                  ),
+                        ),
+                        trailing: Icon(
+                          Icons.arrow_forward_ios,
+                          color: FlutterFlowTheme.of(context).secondaryText,
+                          size: 20.0,
+                        ),
+                        tileColor: Color(0xFFCBF3F0),
+                        dense: false,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
                         ),
                       ),
                     ),
-                  ],
-                ),
-                ListView(
-                  padding: EdgeInsets.zero,
-                  shrinkWrap: true,
-                  scrollDirection: Axis.vertical,
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 5.0),
-                      child: InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          context.pushNamed('CostosTratamientos');
-                        },
-                        child: ListTile(
-                          title: Text(
-                            FFLocalizations.of(context).getText(
-                              'mk5t81du' /* Costos tratamientos */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                ),
+                  ),
+                ],
+              ),
+              ListView(
+                padding: EdgeInsets.zero,
+                shrinkWrap: true,
+                scrollDirection: Axis.vertical,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 5.0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('Convenios');
+                      },
+                      child: ListTile(
+                        title: Text(
+                          FFLocalizations.of(context).getText(
+                            'qnwyxjpn' /* Convenios */,
                           ),
-                          trailing: Icon(
-                            Icons.arrow_forward_ios,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 20.0,
-                          ),
-                          tileColor: Color(0xFFCBF3F0),
-                          dense: false,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).titleLarge.override(
+                                    fontFamily: 'Noto Serif',
+                                  ),
+                        ),
+                        trailing: Icon(
+                          Icons.arrow_forward_ios,
+                          color: FlutterFlowTheme.of(context).secondaryText,
+                          size: 20.0,
+                        ),
+                        tileColor: Color(0xFFCBF3F0),
+                        dense: false,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
                         ),
                       ),
                     ),
-                  ],
-                ),
-                ListView(
-                  padding: EdgeInsets.zero,
-                  shrinkWrap: true,
-                  scrollDirection: Axis.vertical,
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 5.0),
-                      child: InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          context.pushNamed('Convenios');
-                        },
-                        child: ListTile(
-                          title: Text(
-                            FFLocalizations.of(context).getText(
-                              'qnwyxjpn' /* Convenios */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                ),
+                  ),
+                ],
+              ),
+              ListView(
+                padding: EdgeInsets.zero,
+                shrinkWrap: true,
+                scrollDirection: Axis.vertical,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('Galeria');
+                      },
+                      child: ListTile(
+                        title: Text(
+                          FFLocalizations.of(context).getText(
+                            'pkxx4wlw' /* Galería */,
                           ),
-                          trailing: Icon(
-                            Icons.arrow_forward_ios,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 20.0,
-                          ),
-                          tileColor: Color(0xFFCBF3F0),
-                          dense: false,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).titleLarge.override(
+                                    fontFamily: 'Noto Serif',
+                                  ),
+                        ),
+                        trailing: Icon(
+                          Icons.arrow_forward_ios,
+                          color: FlutterFlowTheme.of(context).secondaryText,
+                          size: 20.0,
+                        ),
+                        tileColor: Color(0xFFCBF3F0),
+                        dense: false,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
                         ),
                       ),
                     ),
-                  ],
-                ),
-                ListView(
-                  padding: EdgeInsets.zero,
-                  shrinkWrap: true,
-                  scrollDirection: Axis.vertical,
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                      child: InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          context.pushNamed('Galeria');
-                        },
-                        child: ListTile(
-                          title: Text(
-                            FFLocalizations.of(context).getText(
-                              'pkxx4wlw' /* Galería */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                ),
+                  ),
+                ],
+              ),
+              ListView(
+                padding: EdgeInsets.zero,
+                shrinkWrap: true,
+                scrollDirection: Axis.vertical,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 5.0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('PreguntasFrecuentes');
+                      },
+                      child: ListTile(
+                        title: Text(
+                          FFLocalizations.of(context).getText(
+                            'dhz9lcu4' /* Preguntas Frecuentes */,
                           ),
-                          trailing: Icon(
-                            Icons.arrow_forward_ios,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 20.0,
-                          ),
-                          tileColor: Color(0xFFCBF3F0),
-                          dense: false,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).titleLarge.override(
+                                    fontFamily: 'Noto Serif',
+                                  ),
+                        ),
+                        trailing: Icon(
+                          Icons.arrow_forward_ios,
+                          color: FlutterFlowTheme.of(context).secondaryText,
+                          size: 20.0,
+                        ),
+                        tileColor: Color(0xFFCBF3F0),
+                        dense: false,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
                         ),
                       ),
                     ),
-                  ],
-                ),
-                ListView(
-                  padding: EdgeInsets.zero,
-                  shrinkWrap: true,
-                  scrollDirection: Axis.vertical,
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 5.0),
-                      child: InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          context.pushNamed('PreguntasFrecuentes');
-                        },
-                        child: ListTile(
-                          title: Text(
-                            FFLocalizations.of(context).getText(
-                              'dhz9lcu4' /* Preguntas Frecuentes */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('ResenaClientes');
+                      },
+                      child: ListTile(
+                        title: Text(
+                          FFLocalizations.of(context).getText(
+                            'lc6bsoqf' /* Reseñas */,
                           ),
-                          trailing: Icon(
-                            Icons.arrow_forward_ios,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 20.0,
-                          ),
-                          tileColor: Color(0xFFCBF3F0),
-                          dense: false,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
+                          style:
+                              FlutterFlowTheme.of(context).titleLarge.override(
+                                    fontFamily: 'Noto Serif',
+                                  ),
+                        ),
+                        trailing: Icon(
+                          Icons.arrow_forward_ios,
+                          color: FlutterFlowTheme.of(context).secondaryText,
+                          size: 20.0,
+                        ),
+                        tileColor: Color(0xFFCBF3F0),
+                        dense: false,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
                         ),
                       ),
                     ),
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
-                      child: InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          context.pushNamed('ResenaClientes');
-                        },
-                        child: ListTile(
-                          title: Text(
-                            FFLocalizations.of(context).getText(
-                              'lc6bsoqf' /* Reseñas */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                ),
-                          ),
-                          trailing: Icon(
-                            Icons.arrow_forward_ios,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 20.0,
-                          ),
-                          tileColor: Color(0xFFCBF3F0),
-                          dense: false,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
         appBar: AppBar(
