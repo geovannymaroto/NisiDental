@@ -252,7 +252,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'yd8upjnj': {
       'es': 'Volver',
-      'en': 'go back',
+      'en': 'Back',
     },
     '0b981nh4': {
       'es': 'Inicio',
@@ -275,7 +275,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'uq9iotr8': {
       'es': 'Volver\n',
-      'en': 'Go back',
+      'en': 'Back',
     },
     'urgaog64': {
       'es': 'Historial',
@@ -743,11 +743,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '7uquarvp': {
       'es': 'Registrar',
-      'en': 'to register',
+      'en': 'Register',
     },
     '8eyfu6p5': {
       'es': 'Inventario',
-      'en': 'to register',
+      'en': 'Inventory',
     },
     '5mbj1fii': {
       'es': ' Registro materiales médicos',
@@ -872,7 +872,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'zhbfg3yv': {
       'es': 'Ver cuentas generadas',
-      'en': 'Add doctor',
+      'en': 'View generated accounts',
     },
     '9dgwc7qv': {
       'es': 'Agregar doctor',
@@ -884,19 +884,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'd0yni10d': {
       'es': 'Historial General de Citas ',
-      'en': 'Add Treatment',
+      'en': 'General Appointment History',
     },
     'h8ds15o9': {
       'es': 'Registro de Materiales Medicos',
-      'en': 'Add Treatment',
+      'en': 'Registration of Medical Materials',
     },
     'oqeohpqn': {
       'es': 'Exportar a PDF',
-      'en': 'Add Treatment',
+      'en': 'Export to PDF',
     },
     'jhmgrnoo': {
       'es': 'Modulo administracion',
-      'en': 'Page Title',
+      'en': 'Administration module',
     },
     '8m7ubwd3': {
       'es': 'Home',
@@ -1007,38 +1007,38 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'y7jaxjq2': {
       'es': 'Cuentas agregadas a sistema',
-      'en': '',
+      'en': 'Accounts added to system',
     },
     '9v3ygltn': {
       'es': 'Home',
-      'en': '',
+      'en': 'home',
     },
   },
   // recuperarpassword
   {
     'jjtwts1t': {
       'es': 'Olvide mi contraseña',
-      'en': '',
+      'en': 'I forgot my password',
     },
     'h0fk1af0': {
       'es': 'Ingrese su correo electronico, para recuperar su contraseña',
-      'en': '',
+      'en': 'Enter your email to recover your password',
     },
     'p1vsdgh8': {
       'es': 'Email Address',
-      'en': '',
+      'en': 'Email Address',
     },
     'gpidahst': {
       'es': 'Ingrese su email',
-      'en': '',
+      'en': 'Enter your email',
     },
     'hwtmx52o': {
       'es': 'Restablecer contraseña',
-      'en': '',
+      'en': 'Restore password',
     },
     '3b6eaamn': {
       'es': 'volver',
-      'en': '',
+      'en': 'return',
     },
   },
   // specialoffer
